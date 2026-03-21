@@ -37,16 +37,16 @@ class ButtonShapeWidget extends StatelessWidget {
       width: double.infinity,
       decoration: shape,
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 6),
+        padding: const .symmetric(vertical: 6),
         child: AnimatedOpacity(
           duration: transitionDuration,
           opacity: isDownloading || isFetching ? 0.0 : 1.0,
           curve: Curves.ease,
           child: Text(
             isDownloaded ? 'OPEN' : 'GET',
-            textAlign: TextAlign.center,
+            textAlign: .center,
             style: Theme.of(context).textTheme.labelLarge?.copyWith(
-              fontWeight: FontWeight.bold,
+              fontWeight: .bold,
               color: CupertinoColors.activeBlue,
             ),
           ),

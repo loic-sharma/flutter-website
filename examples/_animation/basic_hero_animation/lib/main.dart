@@ -22,8 +22,8 @@ class BasicHeroAnimation extends StatelessWidget {
                   return Scaffold(
                     appBar: AppBar(title: const Text('Flippers Page')),
                     body: Container(
-                      padding: const EdgeInsets.all(8),
-                      alignment: Alignment.topLeft,
+                      padding: const .all(8),
+                      alignment: .topLeft,
                       // Use background color to emphasize that it's a new route.
                       color: Colors.lightBlueAccent,
                       child: Hero(

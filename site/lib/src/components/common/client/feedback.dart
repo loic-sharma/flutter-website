@@ -20,7 +20,7 @@ final class FeedbackComponent extends StatefulComponent {
 }
 
 final class _FeedbackComponentState extends State<FeedbackComponent> {
-  _FeedbackState feedback = _FeedbackState.none;
+  _FeedbackState feedback = .none;
 
   void _provideFeedback({required bool helpful}) {
     if (!kIsWeb) return;

@@ -59,7 +59,7 @@ class PhotoCheck extends StatelessWidget {
     return DecoratedBox(
       decoration: BoxDecoration(
         color: Theme.of(context).primaryColor,
-        borderRadius: const BorderRadius.all(Radius.circular(16)),
+        borderRadius: const .all(Radius.circular(16)),
       ),
       child: const Icon(Icons.check, size: 32, color: Colors.white),
     );
@@ -222,7 +222,7 @@ class _PhotoItemState extends State<PhotoItem> with TickerProviderStateMixin {
                           rect: _imagePositionAnimation,
                           child: Image.asset(
                             _oldPhoto.asset,
-                            fit: BoxFit.cover,
+                            fit: .cover,
                           ),
                         ),
                         Positioned(
@@ -233,7 +233,7 @@ class _PhotoItemState extends State<PhotoItem> with TickerProviderStateMixin {
                             child: FadeTransition(
                               opacity: _removeCheckAnimation,
                               child: ScaleTransition(
-                                alignment: Alignment.topLeft,
+                                alignment: .topLeft,
                                 scale: _checkScaleAnimation,
                                 child: const PhotoCheck(),
                               ),
@@ -243,8 +243,8 @@ class _PhotoItemState extends State<PhotoItem> with TickerProviderStateMixin {
                         PositionedTransition(
                           rect: _imagePositionAnimation,
                           child: Container(
-                            margin: const EdgeInsets.all(8),
-                            alignment: Alignment.topRight,
+                            margin: const .all(8),
+                            alignment: .topRight,
                             child: Text(
                               widget.photo.id.toString(),
                               style: const TextStyle(color: Colors.green),
@@ -322,7 +322,7 @@ class _ImagesDemoState extends State<ImagesDemo>
           Expanded(
             flex: (frame.width * 100).toInt(),
             child: Container(
-              padding: const EdgeInsets.all(4),
+              padding: const .all(4),
               height: frame.height * _photoBlockHeight,
               child: PhotoItem(
                 photo: allPhotos[photoIndex],
@@ -338,7 +338,7 @@ class _ImagesDemoState extends State<ImagesDemo>
       }
       rows.add(
         Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
+          crossAxisAlignment: .center,
           children: rowChildren,
         ),
       );
@@ -369,7 +369,7 @@ class _ImagesDemoState extends State<ImagesDemo>
       ),
       body: SizedBox.expand(
         child: ListView.builder(
-          padding: const EdgeInsets.all(4),
+          padding: const .all(4),
           itemExtent: _photoBlockHeight,
           itemCount: (allPhotos.length / photoBlockFrameCount).floor(),
           itemBuilder: (context, blockIndex) {

@@ -20,14 +20,14 @@ class _OsSelectorState extends State<OsSelector> {
   // This value is currently not synced across potential multiple instances
   // of the OS selector on the page. In practice, this currently does not
   // happen, but would need to be addressed if changed.
-  OperatingSystem selectedOs = OperatingSystem.windows;
+  OperatingSystem selectedOs = .windows;
 
   @override
   void initState() {
     super.initState();
 
     if (kIsWeb) {
-      final currentOs = getOS() ?? OperatingSystem.windows;
+      final currentOs = getOS() ?? .windows;
       setOS(currentOs);
     }
   }

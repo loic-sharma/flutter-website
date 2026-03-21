@@ -86,7 +86,7 @@ class RadialExpansionDemo extends StatelessWidget {
         child: Card(
           elevation: 8,
           child: Column(
-            mainAxisSize: MainAxisSize.min,
+            mainAxisSize: .min,
             children: [
               SizedBox(
                 width: kMaxRadius * 2.0,
@@ -107,7 +107,7 @@ class RadialExpansionDemo extends StatelessWidget {
               ),
               Text(
                 description,
-                style: const TextStyle(fontWeight: FontWeight.bold),
+                style: const TextStyle(fontWeight: .bold),
                 textScaler: const TextScaler.linear(3),
               ),
               const SizedBox(height: 16),
@@ -166,7 +166,7 @@ class RadialExpansionDemo extends StatelessWidget {
         padding: const EdgeInsets.all(32),
         alignment: FractionalOffset.bottomLeft,
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: .spaceBetween,
           children: [
             _buildHero(context, 'images/chair-alpha.png', 'Chair'),
             _buildHero(context, 'images/binoculars-alpha.png', 'Binoculars'),

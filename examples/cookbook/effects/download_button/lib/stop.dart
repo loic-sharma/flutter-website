@@ -44,9 +44,9 @@ class ButtonShapeWidget extends StatelessWidget {
           curve: Curves.ease,
           child: Text(
             isDownloaded ? 'OPEN' : 'GET',
-            textAlign: TextAlign.center,
+            textAlign: .center,
             style: Theme.of(context).textTheme.labelLarge?.copyWith(
-              fontWeight: FontWeight.bold,
+              fontWeight: .bold,
               color: CupertinoColors.activeBlue,
             ),
           ),
@@ -137,7 +137,7 @@ class DownloadButton extends StatelessWidget {
               opacity: _isDownloading || _isFetching ? 1.0 : 0.0,
               curve: Curves.ease,
               child: Stack(
-                alignment: Alignment.center,
+                alignment: .center,
                 children: [
                   ProgressIndicatorWidget(
                     downloadProgress: downloadProgress,

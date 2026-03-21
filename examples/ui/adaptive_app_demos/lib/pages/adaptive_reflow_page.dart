@@ -22,14 +22,14 @@ class AdaptiveReflowPage extends StatelessWidget {
     return LayoutBuilder(
       builder: (_, constraints) {
         /// Decide which mode to show in
-        ReflowMode reflowMode = ReflowMode.mixed;
+        ReflowMode reflowMode = .mixed;
         if (constraints.maxWidth < 800) {
-          reflowMode = ReflowMode.vertical;
+          reflowMode = .vertical;
         } else if (constraints.maxHeight < 800) {
-          reflowMode = ReflowMode.horizontal;
+          reflowMode = .horizontal;
         }
         // In mixed mode, use a mix of Colum and Row
-        if (reflowMode == ReflowMode.mixed) {
+        if (reflowMode == .mixed) {
           return Column(
             children: [
               Expanded(
@@ -46,7 +46,7 @@ class AdaptiveReflowPage extends StatelessWidget {
         }
         // In vertical or horizontal mode, use a ExpandedScrollingFlex with the same set of children
         else {
-          Axis direction = reflowMode == ReflowMode.horizontal
+          Axis direction = reflowMode == .horizontal
               ? Axis.horizontal
               : Axis.vertical;
           return ExpandedScrollingFlex(

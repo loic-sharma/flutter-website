@@ -30,7 +30,7 @@ class DraggableCard extends StatefulWidget {
 class _DraggableCardState extends State<DraggableCard>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
-  Alignment _dragAlignment = Alignment.center;
+  Alignment _dragAlignment = .center;
   // #enddocregion alignment
   // #enddocregion animation
 

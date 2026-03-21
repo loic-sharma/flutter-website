@@ -30,7 +30,7 @@ class _DraggableCardState extends State<DraggableCard>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<Alignment> _animation;
-  Alignment _dragAlignment = Alignment.center;
+  Alignment _dragAlignment = .center;
   // #enddocregion animation
 
   // #docregion init-state

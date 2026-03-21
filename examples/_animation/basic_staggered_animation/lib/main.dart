@@ -73,7 +73,7 @@ class StaggerAnimation extends StatelessWidget {
   Widget _buildAnimation(BuildContext context, Widget? child) {
     return Container(
       padding: padding.value,
-      alignment: Alignment.bottomCenter,
+      alignment: .bottomCenter,
       child: Opacity(
         opacity: opacity.value,
         child: Container(
@@ -81,7 +81,7 @@ class StaggerAnimation extends StatelessWidget {
           height: height.value,
           decoration: BoxDecoration(
             color: color.value,
-            border: Border.all(color: Colors.indigo[300]!, width: 3),
+            border: .all(color: Colors.indigo[300]!, width: 3),
             borderRadius: borderRadius.value,
           ),
         ),
@@ -145,7 +145,7 @@ class _StaggerDemoState extends State<StaggerDemo>
             height: 300,
             decoration: BoxDecoration(
               color: Colors.black.withValues(alpha: 0.1),
-              border: Border.all(color: Colors.black.withValues(alpha: 0.5)),
+              border: .all(color: Colors.black.withValues(alpha: 0.5)),
             ),
             child: StaggerAnimation(controller: _controller.view),
           ),

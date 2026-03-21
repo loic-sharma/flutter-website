@@ -30,7 +30,7 @@ class ExampleExpandableFab extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Expandable Fab')),
       body: ListView.builder(
-        padding: const EdgeInsets.symmetric(vertical: 8),
+        padding: const .symmetric(vertical: 8),
         itemCount: 25,
         itemBuilder: (context, index) {
           return FakeItem(isBig: index.isOdd);
@@ -120,8 +120,8 @@ class _ExpandableFabState extends State<ExpandableFab>
   Widget build(BuildContext context) {
     return SizedBox.expand(
       child: Stack(
-        alignment: Alignment.bottomRight,
-        clipBehavior: Clip.none,
+        alignment: .bottomRight,
+        clipBehavior: .none,
         children: [
           _buildTapToCloseFab(),
           ..._buildExpandingActionButtons(),
@@ -138,12 +138,12 @@ class _ExpandableFabState extends State<ExpandableFab>
       child: Center(
         child: Material(
           shape: const CircleBorder(),
-          clipBehavior: Clip.antiAlias,
+          clipBehavior: .antiAlias,
           elevation: 4,
           child: InkWell(
             onTap: _toggle,
             child: Padding(
-              padding: const EdgeInsets.all(8),
+              padding: const .all(8),
               child: Icon(Icons.close, color: Theme.of(context).primaryColor),
             ),
           ),
@@ -177,7 +177,7 @@ class _ExpandableFabState extends State<ExpandableFab>
     return IgnorePointer(
       ignoring: _open,
       child: AnimatedContainer(
-        transformAlignment: Alignment.center,
+        transformAlignment: .center,
         transform: Matrix4.diagonal3Values(
           _open ? 0.7 : 1.0,
           _open ? 0.7 : 1.0,
@@ -250,7 +250,7 @@ class ActionButton extends StatelessWidget {
     final theme = Theme.of(context);
     return Material(
       shape: const CircleBorder(),
-      clipBehavior: Clip.antiAlias,
+      clipBehavior: .antiAlias,
       color: theme.colorScheme.secondary,
       elevation: 4.0,
       child: IconTheme.merge(
@@ -270,10 +270,10 @@ class FakeItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 24),
+      margin: const .symmetric(vertical: 8, horizontal: 24),
       height: isBig ? 128 : 36,
       decoration: BoxDecoration(
-        borderRadius: const BorderRadius.all(Radius.circular(8)),
+        borderRadius: const .all(Radius.circular(8)),
         color: Colors.grey.shade300,
       ),
     );

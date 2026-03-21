@@ -45,7 +45,7 @@ class _ExampleGradientBubblesState extends State<ExampleGradientBubbles> {
   Widget build(BuildContext context) {
     return Theme(
       data: ThemeData(
-        brightness: Brightness.dark,
+        brightness: .dark,
         primaryColor: const Color(0xFF4F4F4F),
       ),
       child: Scaffold(

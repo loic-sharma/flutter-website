@@ -47,7 +47,7 @@ class _MainAppState extends State<MainApp> {
 
             return Center(
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: .center,
                 children: [
                   Text('Name: ${widget.viewModel.user!.name}'),
                   Text('Email: ${widget.viewModel.user!.email}'),

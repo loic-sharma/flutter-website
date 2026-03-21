@@ -37,7 +37,7 @@ class _ExpandableFabState extends State<ExpandableFab> {
   Widget build(BuildContext context) {
     return SizedBox.expand(
       child: Stack(
-        alignment: Alignment.bottomRight,
+        alignment: .bottomRight,
         clipBehavior: Clip.none,
         children: [_buildTapToCloseFab(), _buildTapToOpenFab()],
       ),
@@ -51,12 +51,12 @@ class _ExpandableFabState extends State<ExpandableFab> {
       child: Center(
         child: Material(
           shape: const CircleBorder(),
-          clipBehavior: Clip.antiAlias,
+          clipBehavior: .antiAlias,
           elevation: 4,
           child: InkWell(
             onTap: _toggle,
             child: Padding(
-              padding: const EdgeInsets.all(8),
+              padding: const .all(8),
               child: Icon(Icons.close, color: Theme.of(context).primaryColor),
             ),
           ),
@@ -69,7 +69,7 @@ class _ExpandableFabState extends State<ExpandableFab> {
     return IgnorePointer(
       ignoring: _open,
       child: AnimatedContainer(
-        transformAlignment: Alignment.center,
+        transformAlignment: .center,
         transform: Matrix4.diagonal3Values(
           _open ? 0.7 : 1.0,
           _open ? 0.7 : 1.0,

@@ -39,7 +39,7 @@ class _DraggableCardState extends State<DraggableCard>
   /// While the card is being dragged, this value is set to the values computed
   /// in the GestureDetector onPanUpdate callback. If the animation is running,
   /// this value is set to the value of the [_animation].
-  Alignment _dragAlignment = Alignment.center;
+  Alignment _dragAlignment = .center;
 
   late Animation<Alignment> _animation;
 

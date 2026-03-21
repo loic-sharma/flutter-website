@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
           //           and see that all colors change
           //           to better contrast a light background.
           // #docregion MaterialApp
-          brightness: Brightness.dark,
+          brightness: .dark,
         ),
 
         // Define the default `TextTheme`. Use this to specify the default
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
         textTheme: TextTheme(
           displayLarge: const TextStyle(
             fontSize: 72,
-            fontWeight: FontWeight.bold,
+            fontWeight: .bold,
           ),
           // #enddocregion MaterialApp
           // TRY THIS: Change one of the GoogleFonts
@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
           // #docregion MaterialApp
           titleLarge: GoogleFonts.oswald(
             fontSize: 30,
-            fontStyle: FontStyle.italic,
+            fontStyle: .italic,
           ),
           bodyMedium: GoogleFonts.merriweather(),
           displaySmall: GoogleFonts.pacifico(),
@@ -77,7 +77,7 @@ class MyHomePage extends StatelessWidget {
       body: Center(
         // #docregion Container
         child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+          padding: const .symmetric(horizontal: 12, vertical: 12),
           color: Theme.of(context).colorScheme.primary,
           child: Text(
             'Text with a background color',
@@ -99,7 +99,7 @@ class MyHomePage extends StatelessWidget {
           //           "Colors.blue".
           colorScheme: ColorScheme.fromSeed(
             seedColor: Colors.pink,
-            brightness: Brightness.dark,
+            brightness: .dark,
           ),
         ),
         child: FloatingActionButton(

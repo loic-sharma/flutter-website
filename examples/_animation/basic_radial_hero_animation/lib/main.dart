@@ -25,7 +25,7 @@ class Photo extends StatelessWidget {
       color: Theme.of(context).primaryColor.withValues(alpha: 0.25),
       child: InkWell(
         onTap: onTap,
-        child: Image.asset(photo, fit: BoxFit.contain),
+        child: Image.asset(photo, fit: .contain),
       ),
     );
   }
@@ -144,10 +144,10 @@ class RadialExpansionDemo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Basic Radial Hero Animation Demo')),
       body: Container(
-        padding: const EdgeInsets.all(32),
+        padding: const .all(32),
         alignment: FractionalOffset.bottomLeft,
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: .spaceBetween,
           children: [
             _buildHero(context, 'images/chair-alpha.png', 'Chair'),
             _buildHero(context, 'images/binoculars-alpha.png', 'Binoculars'),
