@@ -113,8 +113,8 @@ Text(
   style: GoogleFonts.lato(
     textStyle: Theme.of(context).textTheme.displayLarge,
     fontSize: 48,
-    fontWeight: FontWeight.w700,
-    fontStyle: FontStyle.italic,
+    fontWeight: .w700,
+    fontStyle: .italic,
   ),
 ),
 ```

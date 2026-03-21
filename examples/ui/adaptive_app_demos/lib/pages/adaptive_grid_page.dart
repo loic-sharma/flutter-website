@@ -65,7 +65,7 @@ class _AdaptiveGridPageState extends State<AdaptiveGridPage> {
                   controller: _scrollController,
                   child: GridView.count(
                     controller: _scrollController,
-                    padding: const EdgeInsets.all(Insets.extraLarge),
+                    padding: .all(Insets.extraLarge),
                     childAspectRatio: 1,
                     crossAxisCount: colCount,
                     children: listChildren,
@@ -110,7 +110,7 @@ class _GridItem extends StatelessWidget {
   Widget build(BuildContext context) {
     double borderWidth = isSelected ? 6 : 0;
     return Padding(
-      padding: const EdgeInsets.all(Insets.large),
+      padding: .all(Insets.large),
       child: TextButton(
         onPressed: () => onPressed.call(index),
         child: Stack(
@@ -120,12 +120,12 @@ class _GridItem extends StatelessWidget {
               color: Colors.grey.withValues(alpha: isSelected ? .5 : .7),
             ),
             Align(
-              alignment: Alignment.bottomCenter,
+              alignment: .bottomCenter,
               child: Container(
                 width: double.infinity,
                 color: Colors.grey.shade600,
                 height: 50,
-                alignment: Alignment.center,
+                alignment: .center,
                 child: Text(
                   'Grid Item $index',
                   style: const TextStyle(color: Colors.white),
@@ -135,7 +135,7 @@ class _GridItem extends StatelessWidget {
             // Selected border
             Container(
               decoration: BoxDecoration(
-                border: Border.all(
+                border: .all(
                   color: Colors.blue.shade200,
                   width: borderWidth,
                 ),

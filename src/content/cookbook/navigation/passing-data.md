@@ -132,7 +132,7 @@ class DetailScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text(todo.title)),
       body: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: .all(16),
         child: Text(todo.description),
       ),
     );
@@ -249,7 +249,7 @@ class DetailScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text(todo.title)),
       body: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: .all(16),
         child: Text(todo.description),
       ),
     );
@@ -278,7 +278,7 @@ class DetailScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text(todo.title)),
       body: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: .all(16),
         child: Text(todo.description),
       ),
     );
@@ -395,7 +395,7 @@ class DetailScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text(todo.title)),
       body: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: .all(16),
         child: Text(todo.description),
       ),
     );

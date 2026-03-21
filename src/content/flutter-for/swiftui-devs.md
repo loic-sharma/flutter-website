@@ -72,7 +72,7 @@ their properties.
 
 ```dart
 Padding(                         // <-- This is a Widget
-  padding: EdgeInsets.all(10.0), // <-- So is this
+  padding: .all(10.0), // <-- So is this
   child: Text("Hello, World!"),  // <-- This, too
 )));
 ```
@@ -299,7 +299,7 @@ HStack {
 <?code-excerpt "lib/row.dart (row)" replace="/child: //g;"?>
 ```dart dartpad="0365338f938427b01d72e37cea554f75"
 Row(
-  mainAxisAlignment: MainAxisAlignment.center,
+  mainAxisAlignment: .center,
   children: [Icon(CupertinoIcons.globe), Text('Hello, world!')],
 ),
 ```
@@ -330,7 +330,7 @@ except it swaps [`Column`][] for `Row`:
 <?code-excerpt "lib/column.dart (column)" replace="/child: //g;"?>
 ```dart dartpad="d9a288be0c2a353296fc8825680b84b8"
 Column(
-  mainAxisAlignment: MainAxisAlignment.center,
+  mainAxisAlignment: .center,
   children: [Icon(CupertinoIcons.globe), Text('Hello, world!')],
 ),
 ```
@@ -579,7 +579,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: .center,
           children: [
             Text('$_counter'),
             TextButton(
@@ -901,7 +901,7 @@ of the `App` class:
 <?code-excerpt "lib/cupertino_themes.dart (theme)" replace="/return //g;"?>
 ```dart dartpad="18790cfaa8441085994373a4bc4f46b0"
 const CupertinoApp(
-  theme: CupertinoThemeData(brightness: Brightness.dark),
+  theme: CupertinoThemeData(brightness: .dark),
   home: HomePage(),
 );
 ```
@@ -927,7 +927,7 @@ Text(
   'Hello, world!',
   style: TextStyle(
     fontSize: 30,
-    fontWeight: FontWeight.bold,
+    fontWeight: .bold,
     color: CupertinoColors.systemYellow,
   ),
 ),
@@ -961,13 +961,13 @@ In the following example:
 child: CupertinoButton(
   color: CupertinoColors.systemYellow,
   onPressed: () {},
-  padding: const EdgeInsets.all(16),
+  padding: .all(16),
   child: const Text(
     'Do something',
     style: TextStyle(
       color: CupertinoColors.systemBlue,
       fontSize: 30,
-      fontWeight: FontWeight.bold,
+      fontWeight: .bold,
     ),
   ),
 ),

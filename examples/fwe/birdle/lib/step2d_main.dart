@@ -16,7 +16,7 @@ class Tile extends StatelessWidget {
       width: 60,
       height: 60,
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.grey.shade300),
+        border: .all(color: Colors.grey.shade300),
         // TODO: add background color
       ),
     );

@@ -196,13 +196,13 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
   @override
   Widget [!build!](BuildContext context) {
     return Row(
-      mainAxisSize: MainAxisSize.min,
+      mainAxisSize: .min,
       children: [
         Container(
-          padding: const EdgeInsets.all(0),
+          padding: .all(0),
           child: IconButton(
-            padding: const EdgeInsets.all(0),
-            alignment: Alignment.center,
+            padding: .all(0),
+            alignment: .center,
             [!icon: (_isFavorited!]
                 ? const Icon(Icons.star)
                 : const Icon(Icons.star_border)),

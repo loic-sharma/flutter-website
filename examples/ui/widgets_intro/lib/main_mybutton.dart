@@ -11,10 +11,10 @@ class MyButton extends StatelessWidget {
       },
       child: Container(
         height: 50,
-        padding: const EdgeInsets.all(8),
-        margin: const EdgeInsets.symmetric(horizontal: 8),
+        padding: .all(8),
+        margin: .symmetric(horizontal: 8),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(5),
+          borderRadius: .circular(5),
           color: Colors.lightGreen[500],
         ),
         child: const Center(child: Text('Engage')),

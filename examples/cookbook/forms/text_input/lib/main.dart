@@ -24,10 +24,10 @@ class MyCustomForm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: .start,
       children: <Widget>[
         const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+          padding: .symmetric(horizontal: 8, vertical: 16),
           // #docregion TextField
           child: TextField(
             decoration: InputDecoration(
@@ -38,7 +38,7 @@ class MyCustomForm extends StatelessWidget {
           // #enddocregion TextField
         ),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+          padding: .symmetric(horizontal: 8, vertical: 16),
           // #docregion TextFormField
           child: TextFormField(
             decoration: const InputDecoration(

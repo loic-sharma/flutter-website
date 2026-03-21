@@ -30,7 +30,7 @@ void drawerListview() {
     // space to fit everything.
     child: ListView(
       // Important: Remove any padding from the ListView.
-      padding: EdgeInsets.zero,
+      padding: .zero,
       children: [
         const DrawerHeader(
           decoration: BoxDecoration(color: Colors.blue),

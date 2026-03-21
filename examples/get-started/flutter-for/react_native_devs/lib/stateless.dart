@@ -13,6 +13,6 @@ class MyStatelessWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text(text, textDirection: TextDirection.ltr));
+    return Center(child: Text(text, textDirection: .ltr));
   }
 }

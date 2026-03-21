@@ -61,7 +61,7 @@ class _MyCustomFormState extends State<MyCustomForm> {
     return Scaffold(
       appBar: AppBar(title: const Text('Retrieve Text Input')),
       body: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: .all(16),
         child: Column(
           children: [
             // #docregion TextField1

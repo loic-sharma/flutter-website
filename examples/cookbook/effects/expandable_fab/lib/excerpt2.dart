@@ -38,7 +38,7 @@ class _ExpandableFabState extends State<ExpandableFab> {
     return SizedBox.expand(
       child: Stack(
         alignment: .bottomRight,
-        clipBehavior: Clip.none,
+        clipBehavior: .none,
         children: [_buildTapToCloseFab(), _buildTapToOpenFab()],
       ),
     );

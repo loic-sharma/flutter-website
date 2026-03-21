@@ -44,7 +44,7 @@ class ArchitectureRecommendations extends CustomComponentBase {
         return table(
           classes: 'table table-striped',
           styles: Styles(
-            border: Border.only(
+            border: .only(
               bottom: BorderSide.solid(
                 color: const Color('#DADCE0'),
                 width: 1.px,

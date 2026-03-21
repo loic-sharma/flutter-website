@@ -157,7 +157,7 @@ Widget build(BuildContext context) {
     appBar: AppBar(title: Text(widget.title)),
     body: Center(
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: .center,
         children: <Widget>[
           // Add the following code
           Localizations.override(

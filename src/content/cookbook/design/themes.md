@@ -53,7 +53,7 @@ MaterialApp(
     colorScheme: ColorScheme.fromSeed(
       seedColor: Colors.purple,
       // ···
-      brightness: Brightness.dark,
+      brightness: .dark,
     ),
 
     // Define the default `TextTheme`. Use this to specify the default
@@ -61,12 +61,12 @@ MaterialApp(
     textTheme: TextTheme(
       displayLarge: const TextStyle(
         fontSize: 72,
-        fontWeight: FontWeight.bold,
+        fontWeight: .bold,
       ),
       // ···
       titleLarge: GoogleFonts.oswald(
         fontSize: 30,
-        fontStyle: FontStyle.italic,
+        fontStyle: .italic,
       ),
       bodyMedium: GoogleFonts.merriweather(),
       displaySmall: GoogleFonts.pacifico(),
@@ -103,7 +103,7 @@ In the following example, the `Container` constructor uses this technique to set
 <?code-excerpt "lib/main.dart (Container)" replace="/^child: //g"?>
 ```dart
 Container(
-  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+  padding: .symmetric(horizontal: 12, vertical: 12),
   color: Theme.of(context).colorScheme.primary,
   child: Text(
     'Text with a background color',
@@ -192,7 +192,7 @@ class MyApp extends StatelessWidget {
           // TRY THIS: Change to "Brightness.light"
           //           and see that all colors change
           //           to better contrast a light background.
-          brightness: Brightness.dark,
+          brightness: .dark,
         ),
 
         // Define the default `TextTheme`. Use this to specify the default
@@ -200,7 +200,7 @@ class MyApp extends StatelessWidget {
         textTheme: TextTheme(
           displayLarge: const TextStyle(
             fontSize: 72,
-            fontWeight: FontWeight.bold,
+            fontWeight: .bold,
           ),
           // TRY THIS: Change one of the GoogleFonts
           //           to "lato", "poppins", or "lora".
@@ -208,7 +208,7 @@ class MyApp extends StatelessWidget {
           //           and the middle text uses "bodyMedium".
           titleLarge: GoogleFonts.oswald(
             fontSize: 30,
-            fontStyle: FontStyle.italic,
+            fontStyle: .italic,
           ),
           bodyMedium: GoogleFonts.merriweather(),
           displaySmall: GoogleFonts.pacifico(),
@@ -238,7 +238,7 @@ class MyHomePage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+          padding: .symmetric(horizontal: 12, vertical: 12),
           color: Theme.of(context).colorScheme.primary,
           child: Text(
             'Text with a background color',
@@ -257,7 +257,7 @@ class MyHomePage extends StatelessWidget {
           //           "Colors.blue".
           colorScheme: ColorScheme.fromSeed(
             seedColor: Colors.pink,
-            brightness: Brightness.dark,
+            brightness: .dark,
           ),
         ),
         child: FloatingActionButton(

@@ -233,12 +233,12 @@ function or constructor:
 @Preview(
   group: 'Brightness',
   name: 'Example - light',
-  brightness: Brightness.light,
+  brightness: .light,
 )
 @Preview(
   group: 'Brightness',
   name: 'Example - dark',
-  brightness: Brightness.dark,
+  brightness: .dark,
 )
 Widget buttonPreview() => const ButtonShowcase();
 ```
@@ -260,12 +260,12 @@ final class MultiBrightnessPreview extends MultiPreview {
         Preview(
           group: 'Brightness',
           name: 'Example - light',
-          brightness: Brightness.light,
+          brightness: .light,
         ),
         Preview(
           group: 'Brightness',
           name: 'Example - dark',
-          brightness: Brightness.dark,
+          brightness: .dark,
         ),
       ];
 }
@@ -287,8 +287,8 @@ final class MultiBrightnessPreview extends MultiPreview {
 
   @override
   List<Preview> get previews => const [
-        Preview(brightness: Brightness.light),
-        Preview(brightness: Brightness.dark),
+        Preview(brightness: .light),
+        Preview(brightness: .dark),
       ];
 
   @override

@@ -47,19 +47,19 @@ class Fonts {
 class TextStyles {
   static const TextStyle raleway = TextStyle(fontFamily: Fonts.raleway);
   static TextStyle buttonText1 = const TextStyle(
-    fontWeight: FontWeight.bold,
+    fontWeight: .bold,
     fontSize: 14,
   );
   static TextStyle buttonText2 = const TextStyle(
-    fontWeight: FontWeight.normal,
+    fontWeight: .normal,
     fontSize: 11,
   );
   static TextStyle h1 = const TextStyle(
-    fontWeight: FontWeight.bold,
+    fontWeight: .bold,
     fontSize: 22,
   );
   static TextStyle h2 = const TextStyle(
-    fontWeight: FontWeight.bold,
+    fontWeight: .bold,
     fontSize: 16,
   );
   static TextStyle body1 = raleway.copyWith(color: const Color(0xFF42A5F5));
@@ -74,7 +74,7 @@ class MyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     // #docregion use-constants
     return Padding(
-      padding: const EdgeInsets.all(Insets.small),
+      padding: .all(Insets.small),
       child: Text('Hello!', style: TextStyles.body1),
     );
     // #enddocregion use-constants

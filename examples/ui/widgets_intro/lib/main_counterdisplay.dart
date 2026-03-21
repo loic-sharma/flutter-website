@@ -41,7 +41,7 @@ class _CounterState extends State<Counter> {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: .center,
       children: <Widget>[
         CounterIncrementor(onPressed: _increment),
         const SizedBox(width: 16),

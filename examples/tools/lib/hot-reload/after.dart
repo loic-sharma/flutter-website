@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 void main() {
-  runApp(const Center(child: Text('Hello', textDirection: TextDirection.ltr)));
+  runApp(const Center(child: Text('Hello', textDirection: .ltr)));
 }
 // #enddocregion main
 

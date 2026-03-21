@@ -11,7 +11,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     // #docregion theme
     return const CupertinoApp(
-      theme: CupertinoThemeData(brightness: Brightness.dark),
+      theme: CupertinoThemeData(brightness: .dark),
       home: HomePage(),
     );
     // #enddocregion theme
@@ -31,7 +31,7 @@ class HomePage extends StatelessWidget {
           'Hello, world!',
           style: TextStyle(
             fontSize: 30,
-            fontWeight: FontWeight.bold,
+            fontWeight: .bold,
             color: CupertinoColors.systemYellow,
           ),
         ),

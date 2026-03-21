@@ -81,7 +81,7 @@ property and you want to ensure you're rendering the `child` widget.
 <?code-excerpt "test/finders_test.dart (test3)"?>
 ```dart
 testWidgets('finds a specific instance', (tester) async {
-  const childWidget = Padding(padding: EdgeInsets.zero);
+  const childWidget = Padding(padding: .zero);
 
   // Provide the childWidget to the Container.
   await tester.pumpWidget(Container(child: childWidget));
@@ -130,7 +130,7 @@ void main() {
   });
 
   testWidgets('finds a specific instance', (tester) async {
-    const childWidget = Padding(padding: EdgeInsets.zero);
+    const childWidget = Padding(padding: .zero);
 
     // Provide the childWidget to the Container.
     await tester.pumpWidget(Container(child: childWidget));

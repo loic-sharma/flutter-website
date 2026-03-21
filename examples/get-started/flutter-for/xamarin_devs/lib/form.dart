@@ -24,7 +24,7 @@ class _MyFormState extends State<MyForm> {
     return Scaffold(
       appBar: AppBar(title: const Text('Retrieve Text Input')),
       body: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: .all(16),
         child: TextField(controller: myController),
       ),
       floatingActionButton: FloatingActionButton(

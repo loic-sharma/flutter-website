@@ -304,7 +304,7 @@ class ArticleWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: .all(8.0),
       child: Column(
         spacing: 10.0,
         children: [
@@ -329,7 +329,7 @@ class ArticleWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: .all(8.0),
       child: Column(
         spacing: 10.0,
         children: [
@@ -359,7 +359,7 @@ class ArticleWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: .all(8.0),
       child: Column(
         spacing: 10.0,
         children: [
@@ -369,13 +369,13 @@ class ArticleWidget extends StatelessWidget {
             ),
           Text(
             summary.titles.normalized,
-            overflow: TextOverflow.ellipsis,
+            overflow: .ellipsis,
             style: TextTheme.of(context).displaySmall,
           ),
           if (summary.description != null)
             Text(
               summary.description!,
-              overflow: TextOverflow.ellipsis,
+              overflow: .ellipsis,
               style: TextTheme.of(context).bodySmall,
             ),
           Text(

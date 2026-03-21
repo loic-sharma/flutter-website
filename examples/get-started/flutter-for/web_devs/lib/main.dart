@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 TextStyle bold24Roboto = const TextStyle(
   color: Colors.white,
   fontSize: 24,
-  fontWeight: FontWeight.bold,
+  fontWeight: .bold,
 );
 // #enddocregion text-style
 
@@ -22,10 +22,10 @@ class MyWidget extends StatelessWidget {
       style: /*[[highlight]]*/ TextStyle(
         fontFamily: 'Georgia',
         fontSize: 24,
-        fontWeight: FontWeight.bold,
+        fontWeight: .bold,
       ),
       /*[[/highlight]]*/
-      /*[[highlight]]*/ textAlign: TextAlign.center /*[[/highlight]]*/,
+      /*[[highlight]]*/ textAlign: .center /*[[/highlight]]*/,
     ),
   );
   // #enddocregion container
@@ -113,7 +113,7 @@ class Nested extends StatelessWidget {
         /*[[highlight]]*/ width: 240,
         /*[[/highlight]]*/
         // max-width is 240
-        padding: const EdgeInsets.all(16),
+        padding: .all(16),
         decoration: BoxDecoration(color: Colors.red[400]),
         child: Text('Lorem ipsum', style: bold24Roboto),
       ),
@@ -144,7 +144,7 @@ class Absolute extends StatelessWidget {
           top: 24,
           /*[[/highlight]]*/
           child: Container(
-            padding: const EdgeInsets.all(16),
+            padding: .all(16),
             decoration: BoxDecoration(color: Colors.red[400]),
             child: Text('Lorem ipsum', style: bold24Roboto),
           ),
@@ -171,16 +171,16 @@ class Rotating extends StatelessWidget {
     color: Colors.grey[300],
     child: Center(
       child: /*[[highlight]]*/ Transform(
-        alignment: Alignment.center,
+        alignment: .center,
         transform: Matrix4.identity()..rotateZ(15 * 3.1415927 / 180),
         child: /*[[/highlight]]*/ Container(
           // red box
-          padding: const EdgeInsets.all(16),
+          padding: .all(16),
           decoration: BoxDecoration(color: Colors.red[400]),
           child: Text(
             'Lorem ipsum',
             style: bold24Roboto,
-            textAlign: TextAlign.center,
+            textAlign: .center,
           ),
         ),
       ),
@@ -205,16 +205,16 @@ class Scaling extends StatelessWidget {
     color: Colors.grey[300],
     child: Center(
       child: /*[[highlight]]*/ Transform(
-        alignment: Alignment.center,
+        alignment: .center,
         transform: Matrix4.identity()..scaleByDouble(1.5, 1.5, 1.5, 1.5),
         child: /*[[/highlight]]*/ Container(
           // red box
-          padding: const EdgeInsets.all(16),
+          padding: .all(16),
           decoration: BoxDecoration(color: Colors.red[400]),
           child: Text(
             'Lorem ipsum',
             style: bold24Roboto,
-            textAlign: TextAlign.center,
+            textAlign: .center,
           ),
         ),
       ),
@@ -248,7 +248,7 @@ class Gradient extends StatelessWidget {
           ),
         ),
         /*[[/highlight]]*/
-        padding: const EdgeInsets.all(16),
+        padding: .all(16),
         child: Text('Lorem ipsum', style: bold24Roboto),
       ),
     ),
@@ -273,7 +273,7 @@ class HorizontalGradient extends StatelessWidget {
     child: Center(
       child: Container(
         // red box
-        padding: const EdgeInsets.all(16),
+        padding: .all(16),
         /*[[highlight]]*/ decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment(-1.0, 0.0),
@@ -306,10 +306,10 @@ class RoundCorners extends StatelessWidget {
     child: Center(
       child: Container(
         // red circle
-        padding: const EdgeInsets.all(16),
+        padding: .all(16),
         decoration: BoxDecoration(
           color: Colors.red[400],
-          /*[[highlight]]*/ borderRadius: const BorderRadius.all(
+          /*[[highlight]]*/ borderRadius: .all(
             Radius.circular(8),
           ) /*[[/highlight]]*/,
         ),
@@ -333,12 +333,12 @@ class BoxShadowExample extends StatelessWidget {
     // grey box
     width: 320,
     height: 240,
-    margin: const EdgeInsets.only(bottom: 16),
+    margin: .only(bottom: 16),
     decoration: BoxDecoration(color: Colors.grey[300]),
     child: Center(
       child: Container(
         // red box
-        padding: const EdgeInsets.all(16),
+        padding: .all(16),
         decoration: BoxDecoration(
           color: Colors.red[400],
           /*[[highlight]]*/ boxShadow: const <BoxShadow>[
@@ -380,16 +380,16 @@ class CircleExample extends StatelessWidget {
         // red circle
         decoration: BoxDecoration(
           color: Colors.red[400],
-          /*[[highlight]]*/ shape: BoxShape.circle /*[[/highlight]]*/,
+          /*[[highlight]]*/ shape: .circle /*[[/highlight]]*/,
         ),
-        padding: const EdgeInsets.all(16),
+        padding: .all(16),
         /*[[highlight]]*/ width: 160,
         height: 160,
         /*[[/highlight]]*/
         child: Text(
           'Lorem ipsum',
           style: bold24Roboto,
-          /*[[highlight]]*/ textAlign: TextAlign.center /*[[/highlight]]*/,
+          /*[[highlight]]*/ textAlign: .center /*[[/highlight]]*/,
         ),
       ),
     ),
@@ -414,14 +414,14 @@ class TextSpacingExample extends StatelessWidget {
     child: Center(
       child: Container(
         // red box
-        padding: const EdgeInsets.all(16),
+        padding: .all(16),
         decoration: BoxDecoration(color: Colors.red[400]),
         child: const Text(
           'Lorem ipsum',
           style: TextStyle(
             color: Colors.white,
             fontSize: 24,
-            fontWeight: FontWeight.w900,
+            fontWeight: .w900,
             /*[[highlight]]*/ letterSpacing: 4 /*[[/highlight]]*/,
           ),
         ),
@@ -449,7 +449,7 @@ class InlineFormattingExample extends StatelessWidget {
       child: Container(
         // red box
         decoration: BoxDecoration(color: Colors.red[400]),
-        padding: const EdgeInsets.all(16),
+        padding: .all(16),
         child: /*[[highlight]]*/ RichText(
           text: TextSpan(
             style: bold24Roboto,
@@ -458,8 +458,8 @@ class InlineFormattingExample extends StatelessWidget {
               TextSpan(
                 text: 'ipsum',
                 style: TextStyle(
-                  fontWeight: FontWeight.w300,
-                  fontStyle: FontStyle.italic,
+                  fontWeight: .w300,
+                  fontStyle: .italic,
                   fontSize: 48,
                 ),
               ),
@@ -490,11 +490,11 @@ class TextExcerptsExample extends StatelessWidget {
       child: Container(
         // red box
         decoration: BoxDecoration(color: Colors.red[400]),
-        padding: const EdgeInsets.all(16),
+        padding: .all(16),
         child: Text(
           'Lorem ipsum dolor sit amet, consec etur',
           style: bold24Roboto,
-          /*[[highlight]]*/ overflow: TextOverflow.ellipsis,
+          /*[[highlight]]*/ overflow: .ellipsis,
           maxLines: 1 /*[[/highlight]]*/,
         ),
       ),

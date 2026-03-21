@@ -40,7 +40,7 @@ class Tile extends StatelessWidget {
       height: 60,
       // #docregion Tile-BoxDecoration
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.grey.shade300),
+        border: .all(color: Colors.grey.shade300),
         // #docregion Tile-Colors
         color: switch (hitType) {
           HitType.hit => Colors.green,

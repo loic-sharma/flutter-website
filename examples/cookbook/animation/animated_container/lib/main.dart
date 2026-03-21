@@ -63,7 +63,7 @@ class _AnimatedContainerAppState extends State<AnimatedContainerApp> {
               );
 
               // Generate a random border radius.
-              _borderRadius = BorderRadius.circular(
+              _borderRadius = .circular(
                 random.nextInt(100).toDouble(),
               );
             });

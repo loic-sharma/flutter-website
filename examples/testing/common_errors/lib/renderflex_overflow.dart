@@ -10,8 +10,8 @@ class ProblemWidget extends StatelessWidget {
       children: [
         const Icon(Icons.message),
         Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: .min,
+          crossAxisAlignment: .start,
           children: [
             Text('Title', style: Theme.of(context).textTheme.headlineMedium),
             const Text(

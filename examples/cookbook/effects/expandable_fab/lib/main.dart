@@ -39,7 +39,7 @@ class ExampleExpandableFab extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Expandable Fab')),
       body: ListView.builder(
-        padding: const EdgeInsets.symmetric(vertical: 8),
+        padding: .symmetric(vertical: 8),
         itemCount: 25,
         itemBuilder: (context, index) {
           return FakeItem(isBig: index.isOdd);
@@ -257,7 +257,7 @@ class ActionButton extends StatelessWidget {
     final theme = Theme.of(context);
     return Material(
       shape: const CircleBorder(),
-      clipBehavior: Clip.antiAlias,
+      clipBehavior: .antiAlias,
       color: theme.colorScheme.secondary,
       elevation: 4,
       child: IconButton(
@@ -279,10 +279,10 @@ class FakeItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 24),
+      margin: .symmetric(vertical: 8, horizontal: 24),
       height: isBig ? 128 : 36,
       decoration: BoxDecoration(
-        borderRadius: const BorderRadius.all(Radius.circular(8)),
+        borderRadius: .all(Radius.circular(8)),
         color: Colors.grey.shade300,
       ),
     );

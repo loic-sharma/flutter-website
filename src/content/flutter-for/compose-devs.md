@@ -61,7 +61,7 @@ through constructor parameters.
 
 ```dart
 Padding(                         // <-- This is a Widget
-  padding: EdgeInsets.all(10.0), // <-- a parameter to Padding
+  padding: .all(10.0), // <-- a parameter to Padding
   child: Text("Hello, World!"),  // <-- This is also a Widget
 );
 ```
@@ -263,7 +263,7 @@ widgets and alignment. The following is equivalent to the Compose example.
 
 ```dart
 Row(
-  mainAxisAlignment: MainAxisAlignment.center,
+  mainAxisAlignment: .center,
   children: [
     Icon(Icons.public),
     Text('Hello, world!'),
@@ -271,7 +271,7 @@ Row(
 ),
 
 Column(
-  mainAxisAlignment: MainAxisAlignment.center,
+  mainAxisAlignment: .center,
   children: [
     Icon(MaterialIcons.globe),
     Text('Hello, world!'),
@@ -558,7 +558,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: .center,
           children: [
             Text('$_counter'),
             TextButton(
@@ -642,7 +642,7 @@ of the `App` class:
 ```dart
 const MaterialApp(
   theme: ThemeData(
-    brightness: Brightness.dark,
+    brightness: .dark,
   ),
   home: HomePage(),
 );
@@ -675,7 +675,7 @@ Text(
   'Hello, world!',
   style: TextStyle(
     fontSize: 30,
-    fontWeight: FontWeight.bold,
+    fontWeight: .bold,
     color: Colors.blue,
   ),
 ),
@@ -708,7 +708,7 @@ FilledButton(
     style: TextStyle(
       color: Colors.blue,
       fontSize: 30,
-      fontWeight: FontWeight.bold,
+      fontWeight: .bold,
     )
   )
 )

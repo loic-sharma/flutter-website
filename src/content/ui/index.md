@@ -35,7 +35,7 @@ void main() {
     const Center(
       child: Text(
         'Hello, world!',
-        textDirection: TextDirection.ltr,
+        textDirection: .ltr,
         style: TextStyle(color: Colors.blue),
       ),
     ),
@@ -109,7 +109,7 @@ class MyAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 56, // in logical pixels
-      padding: const EdgeInsets.symmetric(horizontal: 8),
+      padding: .symmetric(horizontal: 8),
       decoration: BoxDecoration(color: Colors.blue[500]),
       // Row is a horizontal, linear layout.
       child: Row(
@@ -308,10 +308,10 @@ class MyButton extends StatelessWidget {
       },
       child: Container(
         height: 50,
-        padding: const EdgeInsets.all(8),
-        margin: const EdgeInsets.symmetric(horizontal: 8),
+        padding: .all(8),
+        margin: .symmetric(horizontal: 8),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(5),
+          borderRadius: .circular(5),
           color: Colors.lightGreen[500],
         ),
         child: const Center(child: Text('Engage')),
@@ -402,7 +402,7 @@ class _CounterState extends State<Counter> {
     // rebuild anything that needs updating rather than
     // having to individually changes instances of widgets.
     return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: .center,
       children: <Widget>[
         ElevatedButton(onPressed: _increment, child: const Text('Increment')),
         const SizedBox(width: 16),
@@ -489,7 +489,7 @@ class _CounterState extends State<Counter> {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: .center,
       children: <Widget>[
         CounterIncrementor(onPressed: _increment),
         const SizedBox(width: 16),
@@ -730,7 +730,7 @@ class _ShoppingListState extends State<ShoppingList> {
     return Scaffold(
       appBar: AppBar(title: const Text('Shopping List')),
       body: ListView(
-        padding: const EdgeInsets.symmetric(vertical: 8),
+        padding: .symmetric(vertical: 8),
         children: widget.products.map((product) {
           return ShoppingListItem(
             product: product,

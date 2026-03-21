@@ -52,7 +52,7 @@ class _MenuState extends State<Menu> {
     return Container(
       color: Colors.white,
       child: Stack(
-        fit: StackFit.expand,
+        fit: .expand,
         children: [_buildFlutterLogo(), _buildContent()],
       ),
     );
@@ -65,7 +65,7 @@ class _MenuState extends State<Menu> {
 
   Widget _buildContent() {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: .start,
       children: [
         const SizedBox(height: 16),
         ..._buildListItems(),
@@ -80,11 +80,11 @@ class _MenuState extends State<Menu> {
     for (var i = 0; i < _menuTitles.length; ++i) {
       listItems.add(
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 16),
+          padding: .symmetric(horizontal: 36, vertical: 16),
           child: Text(
             _menuTitles[i],
-            textAlign: TextAlign.left,
-            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
+            textAlign: .left,
+            style: const TextStyle(fontSize: 24, fontWeight: .w500),
           ),
         ),
       );
@@ -96,12 +96,12 @@ class _MenuState extends State<Menu> {
     return SizedBox(
       width: double.infinity,
       child: Padding(
-        padding: const EdgeInsets.all(24),
+        padding: .all(24),
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
             shape: const StadiumBorder(),
             backgroundColor: Colors.blue,
-            padding: const EdgeInsets.symmetric(horizontal: 48, vertical: 14),
+            padding: .symmetric(horizontal: 48, vertical: 14),
           ),
           onPressed: () {},
           child: const Text(
@@ -288,11 +288,11 @@ List<Widget> _buildListItems() {
           );
         },
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 16),
+          padding: .symmetric(horizontal: 36, vertical: 16),
           child: Text(
             _menuTitles[i],
-            textAlign: TextAlign.left,
-            style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
+            textAlign: .left,
+            style: const TextStyle(fontSize: 24, fontWeight: .w500),
           ),
         ),
       ),
@@ -312,7 +312,7 @@ Widget _buildGetStartedButton() {
   return SizedBox(
     width: double.infinity,
     child: Padding(
-      padding: const EdgeInsets.all(24),
+      padding: .all(24),
       child: AnimatedBuilder(
         animation: _staggeredController,
         builder: (context, child) {
@@ -331,7 +331,7 @@ Widget _buildGetStartedButton() {
           style: ElevatedButton.styleFrom(
             shape: const StadiumBorder(),
             backgroundColor: Colors.blue,
-            padding: const EdgeInsets.symmetric(horizontal: 48, vertical: 14),
+            padding: .symmetric(horizontal: 48, vertical: 14),
           ),
           onPressed: () {},
           child: const Text(
@@ -537,7 +537,7 @@ class _MenuState extends State<Menu> with SingleTickerProviderStateMixin {
     return Container(
       color: Colors.white,
       child: Stack(
-        fit: StackFit.expand,
+        fit: .expand,
         children: [_buildFlutterLogo(), _buildContent()],
       ),
     );
@@ -553,7 +553,7 @@ class _MenuState extends State<Menu> with SingleTickerProviderStateMixin {
 
   Widget _buildContent() {
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: .start,
       children: [
         const SizedBox(height: 16),
         ..._buildListItems(),
@@ -585,11 +585,11 @@ class _MenuState extends State<Menu> with SingleTickerProviderStateMixin {
             );
           },
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 16),
+            padding: .symmetric(horizontal: 36, vertical: 16),
             child: Text(
               _menuTitles[i],
-              textAlign: TextAlign.left,
-              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
+              textAlign: .left,
+              style: const TextStyle(fontSize: 24, fontWeight: .w500),
             ),
           ),
         ),
@@ -602,7 +602,7 @@ class _MenuState extends State<Menu> with SingleTickerProviderStateMixin {
     return SizedBox(
       width: double.infinity,
       child: Padding(
-        padding: const EdgeInsets.all(24),
+        padding: .all(24),
         child: AnimatedBuilder(
           animation: _staggeredController,
           builder: (context, child) {
@@ -621,7 +621,7 @@ class _MenuState extends State<Menu> with SingleTickerProviderStateMixin {
             style: ElevatedButton.styleFrom(
               shape: const StadiumBorder(),
               backgroundColor: Colors.blue,
-              padding: const EdgeInsets.symmetric(horizontal: 48, vertical: 14),
+              padding: .symmetric(horizontal: 48, vertical: 14),
             ),
             onPressed: () {},
             child: const Text(

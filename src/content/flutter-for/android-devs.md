@@ -110,7 +110,7 @@ the `Text` widget you'll find that it subclasses `StatelessWidget`.
 ```dart
 Text(
   'I like Flutter!',
-  style: TextStyle(fontWeight: FontWeight.bold),
+  style: TextStyle(fontWeight: .bold),
 );
 ```
 
@@ -197,7 +197,7 @@ Widget build(BuildContext context) {
     body: Center(
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          padding: const EdgeInsets.only(left: 20, right: 30),
+          padding: .only(left: 20, right: 30),
         ),
         onPressed: () {},
         child: const Text('Hello'),
@@ -832,7 +832,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
 
   Widget getRow(int i) {
     return Padding(
-      padding: const EdgeInsets.all(10),
+      padding: .all(10),
       child: Text("Row ${widgets[i]["title"]}"),
     );
   }
@@ -1036,7 +1036,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
 
   Widget getRow(int i) {
     return Padding(
-      padding: const EdgeInsets.all(10),
+      padding: .all(10),
       child: Text("Row ${widgets[i]["title"]}"),
     );
   }
@@ -1206,7 +1206,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
 
   Widget getRow(int i) {
     return Padding(
-      padding: const EdgeInsets.all(10),
+      padding: .all(10),
       child: Text("Row ${widgets[i]["title"]}"),
     );
   }
@@ -1439,13 +1439,13 @@ class _LifecycleWatcherState extends State<LifecycleWatcher>
     if (_lastLifecycleState == null) {
       return const Text(
         'This widget has not observed any lifecycle changes.',
-        textDirection: TextDirection.ltr,
+        textDirection: .ltr,
       );
     }
 
     return Text(
       'The most recent lifecycle state this widget observed was: $_lastLifecycleState.',
-      textDirection: TextDirection.ltr,
+      textDirection: .ltr,
     );
   }
 }
@@ -1474,7 +1474,7 @@ children.
 @override
 Widget build(BuildContext context) {
   return const Row(
-    mainAxisAlignment: MainAxisAlignment.center,
+    mainAxisAlignment: .center,
     children: <Widget>[
       Text('Row One'),
       Text('Row Two'),
@@ -1490,7 +1490,7 @@ Widget build(BuildContext context) {
 @override
 Widget build(BuildContext context) {
   return const Column(
-    mainAxisAlignment: MainAxisAlignment.center,
+    mainAxisAlignment: .center,
     children: <Widget>[
       Text('Column One'),
       Text('Column Two'),
@@ -1752,7 +1752,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
     List<Widget> widgets = [];
     for (int i = 0; i < 100; i++) {
       widgets.add(
-        Padding(padding: const EdgeInsets.all(10), child: Text('Row $i')),
+        Padding(padding: .all(10), child: Text('Row $i')),
       );
     }
     return widgets;
@@ -1816,7 +1816,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
             developer.log('row tapped');
           },
           child: Padding(
-            padding: const EdgeInsets.all(10),
+            padding: .all(10),
             child: Text('Row $i'),
           ),
         ),
@@ -1903,7 +1903,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
           developer.log('row $i');
         });
       },
-      child: Padding(padding: const EdgeInsets.all(10), child: Text('Row $i')),
+      child: Padding(padding: .all(10), child: Text('Row $i')),
     );
   }
 }
@@ -1979,7 +1979,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
           developer.log('row $i');
         });
       },
-      child: Padding(padding: const EdgeInsets.all(10), child: Text('Row $i')),
+      child: Padding(padding: .all(10), child: Text('Row $i')),
     );
   }
 }

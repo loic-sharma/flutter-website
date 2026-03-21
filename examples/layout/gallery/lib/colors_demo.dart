@@ -131,11 +131,11 @@ class _ColorItem extends StatelessWidget {
       container: true,
       child: Container(
         height: _colorItemHeight,
-        padding: const EdgeInsets.symmetric(horizontal: 16),
+        padding: .symmetric(horizontal: 16),
         color: color,
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: .spaceBetween,
+          crossAxisAlignment: .center,
           children: [
             Text('$prefix$index'),
             Flexible(child: Text(_argbColorString)),

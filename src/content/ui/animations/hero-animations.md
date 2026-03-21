@@ -315,7 +315,7 @@ class PhotoHero extends StatelessWidget {
             onTap: onTap,
             child: Image.asset(
               photo,
-              fit: BoxFit.contain,
+              fit: .contain,
             ),
           ),
         ),
@@ -372,8 +372,8 @@ class HeroAnimation extends StatelessWidget {
                   body: Container(
                     // Set background to blue to emphasize that it's a new route.
                     color: Colors.lightBlueAccent,
-                    padding: const EdgeInsets.all(16),
-                    alignment: Alignment.topLeft,
+                    padding: .all(16),
+                    alignment: .topLeft,
                     [!child: PhotoHero(!]
                       photo: 'images/flippers-alpha.png',
                       width: 100.0,
@@ -515,7 +515,7 @@ class Photo extends StatelessWidget {
         onTap: [!onTap,!]
         child: [!Image.asset(!]
           photo,
-          fit: BoxFit.contain,
+          fit: .contain,
         ),
       ),
     );

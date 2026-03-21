@@ -42,7 +42,7 @@ The examples assume:
   TextStyle bold24Roboto = const TextStyle(
     color: Colors.white,
     fontSize: 24,
-    fontWeight: FontWeight.bold,
+    fontWeight: .bold,
   );
   ```
 
@@ -92,9 +92,9 @@ final container = Container(
     style: TextStyle(
       fontFamily: 'Georgia',
       fontSize: 24,
-      fontWeight: FontWeight.bold,
+      fontWeight: .bold,
     ),
-    textAlign: TextAlign.center,
+    textAlign: .center,
   ),
 );
 ```
@@ -241,7 +241,7 @@ final container = Container(
     child: Container(
       // red box
       width: 240, // max-width is 240
-      padding: const EdgeInsets.all(16),
+      padding: .all(16),
       decoration: BoxDecoration(
         color: Colors.red[400],
       ),
@@ -304,7 +304,7 @@ final container = Container(
         left: 24,
         top: 24,
         child: Container(
-          padding: const EdgeInsets.all(16),
+          padding: .all(16),
           decoration: BoxDecoration(
             color: Colors.red[400],
           ),
@@ -363,18 +363,18 @@ final container = Container(
   color: Colors.grey[300],
   child: Center(
     child: Transform(
-      alignment: Alignment.center,
+      alignment: .center,
       transform: Matrix4.identity()..rotateZ(15 * 3.1415927 / 180),
       child: Container(
         // red box
-        padding: const EdgeInsets.all(16),
+        padding: .all(16),
         decoration: BoxDecoration(
           color: Colors.red[400],
         ),
         child: Text(
           'Lorem ipsum',
           style: bold24Roboto,
-          textAlign: TextAlign.center,
+          textAlign: .center,
         ),
       ),
     ),
@@ -428,18 +428,18 @@ final container = Container(
   color: Colors.grey[300],
   child: Center(
     child: Transform(
-      alignment: Alignment.center,
+      alignment: .center,
       transform: Matrix4.identity()..scaleByDouble(1.5, 1.5, 1.5, 1.5),
       child: Container(
         // red box
-        padding: const EdgeInsets.all(16),
+        padding: .all(16),
         decoration: BoxDecoration(
           color: Colors.red[400],
         ),
         child: Text(
           'Lorem ipsum',
           style: bold24Roboto,
-          textAlign: TextAlign.center,
+          textAlign: .center,
         ),
       ),
     ),
@@ -506,7 +506,7 @@ final container = Container(
           ],
         ),
       ),
-      padding: const EdgeInsets.all(16),
+      padding: .all(16),
       child: Text(
         'Lorem ipsum',
         style: bold24Roboto,
@@ -550,7 +550,7 @@ final container = Container(
   child: Center(
     child: Container(
       // red box
-      padding: const EdgeInsets.all(16),
+      padding: .all(16),
       decoration: const BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment(-1.0, 0.0),
@@ -614,10 +614,10 @@ final container = Container(
   child: Center(
     child: Container(
       // red circle
-      padding: const EdgeInsets.all(16),
+      padding: .all(16),
       decoration: BoxDecoration(
         color: Colors.red[400],
-        borderRadius: const BorderRadius.all(
+        borderRadius: .all(
           Radius.circular(8),
         ),
       ),
@@ -675,14 +675,14 @@ final container = Container(
   // grey box
   width: 320,
   height: 240,
-  margin: const EdgeInsets.only(bottom: 16),
+  margin: .only(bottom: 16),
   decoration: BoxDecoration(
     color: Colors.grey[300],
   ),
   child: Center(
     child: Container(
       // red box
-      padding: const EdgeInsets.all(16),
+      padding: .all(16),
       decoration: BoxDecoration(
         color: Colors.red[400],
         boxShadow: const <BoxShadow>[
@@ -756,15 +756,15 @@ final container = Container(
       // red circle
       decoration: BoxDecoration(
         color: Colors.red[400],
-        shape: BoxShape.circle,
+        shape: .circle,
       ),
-      padding: const EdgeInsets.all(16),
+      padding: .all(16),
       width: 160,
       height: 160,
       child: Text(
         'Lorem ipsum',
         style: bold24Roboto,
-        textAlign: TextAlign.center,
+        textAlign: .center,
       ),
     ),
   ),
@@ -822,7 +822,7 @@ final container = Container(
   child: Center(
     child: Container(
       // red box
-      padding: const EdgeInsets.all(16),
+      padding: .all(16),
       decoration: BoxDecoration(
         color: Colors.red[400],
       ),
@@ -831,7 +831,7 @@ final container = Container(
         style: TextStyle(
           color: Colors.white,
           fontSize: 24,
-          fontWeight: FontWeight.w900,
+          fontWeight: .w900,
           letterSpacing: 4,
         ),
       ),
@@ -893,7 +893,7 @@ final container = Container(
       decoration: BoxDecoration(
         color: Colors.red[400],
       ),
-      padding: const EdgeInsets.all(16),
+      padding: .all(16),
       child: RichText(
         text: TextSpan(
           style: bold24Roboto,
@@ -902,8 +902,8 @@ final container = Container(
             TextSpan(
               text: 'ipsum',
               style: TextStyle(
-                fontWeight: FontWeight.w300,
-                fontStyle: FontStyle.italic,
+                fontWeight: .w300,
+                fontStyle: .italic,
                 fontSize: 48,
               ),
             ),
@@ -963,11 +963,11 @@ final container = Container(
       decoration: BoxDecoration(
         color: Colors.red[400],
       ),
-      padding: const EdgeInsets.all(16),
+      padding: .all(16),
       child: Text(
         'Lorem ipsum dolor sit amet, consec etur',
         style: bold24Roboto,
-        overflow: TextOverflow.ellipsis,
+        overflow: .ellipsis,
         maxLines: 1,
       ),
     ),

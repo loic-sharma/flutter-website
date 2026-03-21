@@ -29,12 +29,12 @@ class LoginPage extends StatelessWidget {
 class _LoginDetailPanel extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Container(
-    alignment: Alignment.center,
+    alignment: .center,
     color: Colors.grey.shade300,
     child: const Text(
       'LOGIN VIEW\nBRANDING',
       style: TextStyle(fontSize: 64),
-      textAlign: TextAlign.center,
+      textAlign: .center,
     ),
   );
 }
@@ -53,7 +53,7 @@ class _LoginForm extends StatelessWidget {
         // Very small screens may require vertical scrolling of the form
         child: SingleChildScrollView(
           child: Padding(
-            padding: const EdgeInsets.all(16),
+            padding: .all(16),
             child: Column(
               children: [
                 TextField(decoration: _getTextDecoration('Enter email...')),
@@ -67,8 +67,8 @@ class _LoginForm extends StatelessWidget {
                   onPressed: handleLoginPressed,
                   child: Container(
                     width: double.infinity,
-                    alignment: Alignment.center,
-                    padding: const EdgeInsets.all(16),
+                    alignment: .center,
+                    padding: .all(16),
                     child: const Text('Log In'),
                   ),
                 ),

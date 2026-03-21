@@ -248,16 +248,16 @@ class ButtonShapeWidget extends StatelessWidget {
       width: double.infinity,
       decoration: shape,
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 6),
+        padding: .symmetric(vertical: 6),
         child: AnimatedOpacity(
           duration: transitionDuration,
           opacity: isDownloading || isFetching ? 0.0 : 1.0,
           curve: Curves.ease,
           child: Text(
             isDownloaded ? 'OPEN' : 'GET',
-            textAlign: TextAlign.center,
+            textAlign: .center,
             style: Theme.of(context).textTheme.labelLarge?.copyWith(
-              fontWeight: FontWeight.bold,
+              fontWeight: .bold,
               color: CupertinoColors.activeBlue,
             ),
           ),
@@ -348,7 +348,7 @@ Widget build(BuildContext context) {
             opacity: _isDownloading || _isFetching ? 1.0 : 0.0,
             curve: Curves.ease,
             child: Stack(
-              alignment: Alignment.center,
+              alignment: .center,
               children: [
                 ProgressIndicatorWidget(
                   downloadProgress: downloadProgress,
@@ -525,12 +525,12 @@ class _ExampleCupertinoDownloadButtonState
       leading: const DemoAppIcon(),
       title: Text(
         'App ${index + 1}',
-        overflow: TextOverflow.ellipsis,
+        overflow: .ellipsis,
         style: theme.textTheme.titleLarge,
       ),
       subtitle: Text(
         'Lorem ipsum dolor #${index + 1}',
-        overflow: TextOverflow.ellipsis,
+        overflow: .ellipsis,
         style: theme.textTheme.bodySmall,
       ),
       trailing: SizedBox(
@@ -567,7 +567,7 @@ class DemoAppIcon extends StatelessWidget {
           child: DecoratedBox(
             decoration: BoxDecoration(
               gradient: LinearGradient(colors: [Colors.red, Colors.blue]),
-              borderRadius: BorderRadius.all(Radius.circular(20)),
+              borderRadius: .all(Radius.circular(20)),
             ),
             child: Center(
               child: Icon(Icons.ac_unit, color: Colors.white, size: 40),
@@ -740,7 +740,7 @@ class DownloadButton extends StatelessWidget {
               opacity: _isDownloading || _isFetching ? 1.0 : 0.0,
               curve: Curves.ease,
               child: Stack(
-                alignment: Alignment.center,
+                alignment: .center,
                 children: [
                   ProgressIndicatorWidget(
                     downloadProgress: downloadProgress,
@@ -799,16 +799,16 @@ class ButtonShapeWidget extends StatelessWidget {
       width: double.infinity,
       decoration: shape,
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 6),
+        padding: .symmetric(vertical: 6),
         child: AnimatedOpacity(
           duration: transitionDuration,
           opacity: isDownloading || isFetching ? 0.0 : 1.0,
           curve: Curves.ease,
           child: Text(
             isDownloaded ? 'OPEN' : 'GET',
-            textAlign: TextAlign.center,
+            textAlign: .center,
             style: Theme.of(context).textTheme.labelLarge?.copyWith(
-              fontWeight: FontWeight.bold,
+              fontWeight: .bold,
               color: CupertinoColors.activeBlue,
             ),
           ),

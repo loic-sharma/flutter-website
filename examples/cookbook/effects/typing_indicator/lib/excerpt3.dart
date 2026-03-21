@@ -143,7 +143,7 @@ class CircleBubble extends StatelessWidget {
     return Container(
       width: size,
       height: size,
-      decoration: BoxDecoration(shape: BoxShape.circle, color: bubbleColor),
+      decoration: BoxDecoration(shape: .circle, color: bubbleColor),
     );
   }
 }
@@ -172,7 +172,7 @@ class AnimatedBubble extends StatelessWidget {
         builder: (context, child) {
           return Transform.scale(
             scale: animation.value,
-            alignment: Alignment.bottomLeft,
+            alignment: .bottomLeft,
             child: child,
           );
         },
@@ -201,9 +201,9 @@ class StatusBubble extends StatelessWidget {
     return Container(
       width: 85,
       height: 44,
-      padding: const EdgeInsets.symmetric(horizontal: 8),
+      padding: .symmetric(horizontal: 8),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(27),
+        borderRadius: .circular(27),
         color: bubbleColor,
       ),
     );

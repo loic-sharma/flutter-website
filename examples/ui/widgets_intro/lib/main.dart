@@ -5,7 +5,7 @@ void main() {
     const Center(
       child: Text(
         'Hello, world!',
-        textDirection: TextDirection.ltr,
+        textDirection: .ltr,
         style: TextStyle(color: Colors.blue),
       ),
     ),

@@ -38,7 +38,7 @@ class _CounterState extends State<Counter> {
     // rebuild anything that needs updating rather than
     // having to individually changes instances of widgets.
     return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: .center,
       children: <Widget>[
         ElevatedButton(onPressed: _increment, child: const Text('Increment')),
         const SizedBox(width: 16),

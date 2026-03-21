@@ -108,16 +108,16 @@ class _GamePageState extends State<GamePage> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: .all(8.0),
       child: Column(
         children: [
           for (var guess in _game.guesses)
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: .center,
               children: [
                 for (var letter in guess)
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 2.5, vertical: 2.5),
+                    padding: .symmetric(horizontal: 2.5, vertical: 2.5),
                     child: Tile(letter.char, letter.type),
                   )
               ],
@@ -176,16 +176,16 @@ class _GamePageState extends State<GamePage> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: .all(8.0),
       child: Column(
         children: [
           for (var guess in _game.guesses)
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: .center,
               children: [
                 for (var letter in guess)
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 2.5, vertical: 2.5),
+                    padding: .symmetric(horizontal: 2.5, vertical: 2.5),
                     child: Tile(letter.char, letter.type),
                   )
               ],

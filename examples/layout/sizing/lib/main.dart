@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
   Widget buildOverflowingRow() =>
       // #docregion overflowing-row
       Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: .spaceEvenly,
         children: [
           Image.asset('images/pic1.jpg'),
           Image.asset('images/pic2.jpg'),
@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
   Widget buildExpandedImages() =>
       // #docregion expanded-images
       Row(
-        crossAxisAlignment: CrossAxisAlignment.center,
+        crossAxisAlignment: .center,
         children: [
           Expanded(child: Image.asset('images/pic1.jpg')),
           Expanded(child: Image.asset('images/pic2.jpg')),
@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
   Widget buildExpandedImagesWithFlex() =>
       // #docregion expanded-images-with-flex
       Row(
-        crossAxisAlignment: CrossAxisAlignment.center,
+        crossAxisAlignment: .center,
         children: [
           Expanded(child: Image.asset('images/pic1.jpg')),
           Expanded(flex: 2, child: Image.asset('images/pic2.jpg')),

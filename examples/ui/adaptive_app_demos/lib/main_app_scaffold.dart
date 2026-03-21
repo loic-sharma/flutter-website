@@ -178,7 +178,7 @@ class _SideMenu extends StatelessWidget {
           ),
           // Divider
           Align(
-            alignment: Alignment.centerRight,
+            alignment: .centerRight,
             child: Container(
               width: 1,
               height: double.infinity,

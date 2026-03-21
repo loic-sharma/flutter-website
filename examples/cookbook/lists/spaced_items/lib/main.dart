@@ -23,8 +23,8 @@ class SpacedItemsList extends StatelessWidget {
               child: ConstrainedBox(
                 constraints: BoxConstraints(minHeight: constraints.maxHeight),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  mainAxisAlignment: .spaceBetween,
+                  crossAxisAlignment: .stretch,
                   children: List.generate(
                     items,
                     (index) => ItemWidget(text: 'Item $index'),

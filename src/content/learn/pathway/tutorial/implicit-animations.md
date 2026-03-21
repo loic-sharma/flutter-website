@@ -52,7 +52,7 @@ class Tile extends StatelessWidget {
       height: 60,
       width: 60,
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.grey.shade300),
+        border: .all(color: Colors.grey.shade300),
         color: switch (type) {
           HitType.hit => Colors.green,
           HitType.partial => Colors.yellow,
@@ -97,7 +97,7 @@ class Tile extends StatelessWidget {
       height: 60,
       width: 60,
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.grey.shade300),
+        border: .all(color: Colors.grey.shade300),
         color: switch (hitType) {
           HitType.hit => Colors.green,
           HitType.partial => Colors.yellow,
@@ -163,7 +163,7 @@ class Tile extends StatelessWidget {
       height: 60,
       width: 60,
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.grey.shade300),
+        border: .all(color: Colors.grey.shade300),
         color: switch (hitType) {
           HitType.hit => Colors.green,
           HitType.partial => Colors.yellow,

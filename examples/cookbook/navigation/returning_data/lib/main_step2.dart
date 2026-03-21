@@ -61,10 +61,10 @@ class SelectionScreen extends StatelessWidget {
       appBar: AppBar(title: const Text('Pick an option')),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: .center,
           children: [
             Padding(
-              padding: const EdgeInsets.all(8),
+              padding: .all(8),
               // #docregion Yep
               child: ElevatedButton(
                 onPressed: () {
@@ -75,7 +75,7 @@ class SelectionScreen extends StatelessWidget {
               // #enddocregion Yep
             ),
             Padding(
-              padding: const EdgeInsets.all(8),
+              padding: .all(8),
               // #docregion Nope
               child: ElevatedButton(
                 onPressed: () {

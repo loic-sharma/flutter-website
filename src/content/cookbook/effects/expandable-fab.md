@@ -85,8 +85,8 @@ class _ExpandableFabState extends State<ExpandableFab> {
   Widget build(BuildContext context) {
     return SizedBox.expand(
       child: Stack(
-        alignment: Alignment.bottomRight,
-        clipBehavior: Clip.none,
+        alignment: .bottomRight,
+        clipBehavior: .none,
         children: [_buildTapToCloseFab(), _buildTapToOpenFab()],
       ),
     );
@@ -99,12 +99,12 @@ class _ExpandableFabState extends State<ExpandableFab> {
       child: Center(
         child: Material(
           shape: const CircleBorder(),
-          clipBehavior: Clip.antiAlias,
+          clipBehavior: .antiAlias,
           elevation: 4,
           child: InkWell(
             onTap: _toggle,
             child: Padding(
-              padding: const EdgeInsets.all(8),
+              padding: .all(8),
               child: Icon(Icons.close, color: Theme.of(context).primaryColor),
             ),
           ),
@@ -180,7 +180,7 @@ class ActionButton extends StatelessWidget {
     final theme = Theme.of(context);
     return Material(
       shape: const CircleBorder(),
-      clipBehavior: Clip.antiAlias,
+      clipBehavior: .antiAlias,
       color: theme.colorScheme.secondary,
       elevation: 4,
       child: IconButton(
@@ -341,8 +341,8 @@ class _ExpandableFabState extends State<ExpandableFab>
   Widget build(BuildContext context) {
     return SizedBox.expand(
       child: Stack(
-        alignment: Alignment.bottomRight,
-        clipBehavior: Clip.none,
+        alignment: .bottomRight,
+        clipBehavior: .none,
         children: [
           _buildTapToCloseFab(),
           ..._buildExpandingActionButtons(),
@@ -438,7 +438,7 @@ class ExampleExpandableFab extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Expandable Fab')),
       body: ListView.builder(
-        padding: const EdgeInsets.symmetric(vertical: 8),
+        padding: .symmetric(vertical: 8),
         itemCount: 25,
         itemBuilder: (context, index) {
           return FakeItem(isBig: index.isOdd);
@@ -525,8 +525,8 @@ class _ExpandableFabState extends State<ExpandableFab>
   Widget build(BuildContext context) {
     return SizedBox.expand(
       child: Stack(
-        alignment: Alignment.bottomRight,
-        clipBehavior: Clip.none,
+        alignment: .bottomRight,
+        clipBehavior: .none,
         children: [
           _buildTapToCloseFab(),
           ..._buildExpandingActionButtons(),
@@ -543,12 +543,12 @@ class _ExpandableFabState extends State<ExpandableFab>
       child: Center(
         child: Material(
           shape: const CircleBorder(),
-          clipBehavior: Clip.antiAlias,
+          clipBehavior: .antiAlias,
           elevation: 4,
           child: InkWell(
             onTap: _toggle,
             child: Padding(
-              padding: const EdgeInsets.all(8),
+              padding: .all(8),
               child: Icon(Icons.close, color: Theme.of(context).primaryColor),
             ),
           ),
@@ -653,7 +653,7 @@ class ActionButton extends StatelessWidget {
     final theme = Theme.of(context);
     return Material(
       shape: const CircleBorder(),
-      clipBehavior: Clip.antiAlias,
+      clipBehavior: .antiAlias,
       color: theme.colorScheme.secondary,
       elevation: 4,
       child: IconButton(
@@ -674,10 +674,10 @@ class FakeItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 24),
+      margin: .symmetric(vertical: 8, horizontal: 24),
       height: isBig ? 128 : 36,
       decoration: BoxDecoration(
-        borderRadius: const BorderRadius.all(Radius.circular(8)),
+        borderRadius: .all(Radius.circular(8)),
         color: Colors.grey.shade300,
       ),
     );

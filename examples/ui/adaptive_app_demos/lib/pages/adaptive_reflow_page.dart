@@ -82,9 +82,9 @@ class _ContentPanel extends StatelessWidget {
     return ConstrainedBox(
       constraints: const BoxConstraints(minHeight: 300, minWidth: 300),
       child: Padding(
-        padding: EdgeInsets.all(Insets.large + density.vertical * 6),
+        padding: .all(Insets.large + density.vertical * 6),
         child: Container(
-          alignment: Alignment.center,
+          alignment: .center,
           color: Colors.purple.shade100,
           child: Text(label),
         ),

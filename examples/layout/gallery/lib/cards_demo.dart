@@ -69,7 +69,7 @@ class TravelDestinationItem extends StatelessWidget {
       top: false,
       bottom: false,
       child: Padding(
-        padding: const EdgeInsets.all(8),
+        padding: .all(8),
         child: Column(
           children: [
             const SectionTitle(title: 'Normal'),
@@ -77,7 +77,7 @@ class TravelDestinationItem extends StatelessWidget {
               height: height,
               child: Card(
                 // Ensures that the Card's children are clipped correctly.
-                clipBehavior: Clip.antiAlias,
+                clipBehavior: .antiAlias,
                 shape: shape,
                 child: Semantics(
                   label: destination.title,
@@ -111,7 +111,7 @@ class TappableTravelDestinationItem extends StatelessWidget {
       top: false,
       bottom: false,
       child: Padding(
-        padding: const EdgeInsets.all(8),
+        padding: .all(8),
         child: Column(
           children: [
             const SectionTitle(title: 'Tappable'),
@@ -120,7 +120,7 @@ class TappableTravelDestinationItem extends StatelessWidget {
               child: Card(
                 // Ensures that the Card's children (including the ink splash)
                 // are clipped correctly.
-                clipBehavior: Clip.antiAlias,
+                clipBehavior: .antiAlias,
                 shape: shape,
                 child: InkWell(
                   onTap: () {},
@@ -169,7 +169,7 @@ class SelectableTravelDestinationItem extends StatelessWidget {
       top: false,
       bottom: false,
       child: Padding(
-        padding: const EdgeInsets.all(8),
+        padding: .all(8),
         child: Column(
           children: [
             const SectionTitle(title: 'Selectable (long press)'),
@@ -178,7 +178,7 @@ class SelectableTravelDestinationItem extends StatelessWidget {
               child: Card(
                 // Ensures that the Card's children (including the ink splash)
                 // are clipped correctly.
-                clipBehavior: Clip.antiAlias,
+                clipBehavior: .antiAlias,
                 shape: shape,
                 child: InkWell(
                   onLongPress: onSelected,
@@ -199,9 +199,9 @@ class SelectableTravelDestinationItem extends StatelessWidget {
                         ),
                       ),
                       Align(
-                        alignment: Alignment.topRight,
+                        alignment: .topRight,
                         child: Padding(
-                          padding: const EdgeInsets.all(8),
+                          padding: .all(8),
                           child: Icon(
                             Icons.check_circle,
                             color: isSelected
@@ -230,9 +230,9 @@ class SectionTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(4, 4, 4, 12),
+      padding: .fromLTRB(4, 4, 4, 12),
       child: Align(
-        alignment: Alignment.centerLeft,
+        alignment: .centerLeft,
         child: Text(title, style: Theme.of(context).textTheme.titleMedium),
       ),
     );
@@ -253,7 +253,7 @@ class TravelDestinationContent extends StatelessWidget {
     final descriptionStyle = theme.textTheme.titleMedium!;
 
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: .start,
       children: [
         SizedBox(
           height: 184,
@@ -266,7 +266,7 @@ class TravelDestinationContent extends StatelessWidget {
                 // Using a standard Image will obscure the ink splash.
                 child: Ink.image(
                   image: AssetImage(destination.assetName),
-                  fit: BoxFit.cover,
+                  fit: .cover,
                   child: Container(),
                 ),
               ),
@@ -275,8 +275,8 @@ class TravelDestinationContent extends StatelessWidget {
                 left: 16,
                 right: 16,
                 child: FittedBox(
-                  fit: BoxFit.scaleDown,
-                  alignment: Alignment.centerLeft,
+                  fit: .scaleDown,
+                  alignment: .centerLeft,
                   child: Semantics(
                     container: true,
                     header: true,
@@ -291,17 +291,17 @@ class TravelDestinationContent extends StatelessWidget {
         Semantics(
           container: true,
           child: Padding(
-            padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
+            padding: .fromLTRB(16, 16, 16, 0),
             child: DefaultTextStyle(
               softWrap: false,
-              overflow: TextOverflow.ellipsis,
+              overflow: .ellipsis,
               style: descriptionStyle,
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: .start,
                 children: [
                   // The three line description on each card demo.
                   Padding(
-                    padding: const EdgeInsets.only(bottom: 8),
+                    padding: .only(bottom: 8),
                     child: Text(
                       destination.description,
                       style: descriptionStyle.copyWith(color: Colors.black54),
@@ -317,7 +317,7 @@ class TravelDestinationContent extends StatelessWidget {
         if (destination.cardType == CardType.standard)
           // share, explore buttons
           Padding(
-            padding: const EdgeInsets.all(8),
+            padding: .all(8),
             child: OverflowBar(
               alignment: MainAxisAlignment.start,
               spacing: 8,
@@ -380,11 +380,11 @@ class _CardsDemoState extends State<CardsDemo> with RestorationMixin {
         body: Scrollbar(
           child: ListView(
             restorationId: 'cards_demo_list_view',
-            padding: const EdgeInsets.only(top: 8, left: 8, right: 8),
+            padding: .only(top: 8, left: 8, right: 8),
             children: [
               for (final destination in _destinations)
                 Container(
-                  margin: const EdgeInsets.only(bottom: 8),
+                  margin: .only(bottom: 8),
                   child: switch (destination.cardType) {
                     CardType.standard => TravelDestinationItem(
                       destination: destination,

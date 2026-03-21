@@ -85,7 +85,7 @@ class GridListDemo extends StatelessWidget {
           crossAxisCount: 2,
           mainAxisSpacing: 8,
           crossAxisSpacing: 8,
-          padding: const EdgeInsets.all(8),
+          padding: .all(8),
           childAspectRatio: 1,
           children: _photos.map<Widget>((photo) {
             return _GridDemoPhotoItem(photo: photo, tileStyle: type);
@@ -117,8 +117,8 @@ class _GridTitleText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FittedBox(
-      fit: BoxFit.scaleDown,
-      alignment: AlignmentDirectional.centerStart,
+      fit: .scaleDown,
+      alignment: .centerStart,
       child: Text(text),
     );
   }
@@ -135,9 +135,9 @@ class _GridDemoPhotoItem extends StatelessWidget {
     final Widget image = Semantics(
       label: '${photo.title} ${photo.subtitle}',
       child: Material(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
-        clipBehavior: Clip.antiAlias,
-        child: Image.asset(photo.assetName, fit: BoxFit.cover),
+        shape: RoundedRectangleBorder(borderRadius: .circular(4)),
+        clipBehavior: .antiAlias,
+        child: Image.asset(photo.assetName, fit: .cover),
       ),
     );
 
@@ -147,9 +147,9 @@ class _GridDemoPhotoItem extends StatelessWidget {
         header: Material(
           color: Colors.transparent,
           shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.vertical(top: Radius.circular(4)),
+            borderRadius: .vertical(top: Radius.circular(4)),
           ),
-          clipBehavior: Clip.antiAlias,
+          clipBehavior: .antiAlias,
           child: GridTileBar(
             title: _GridTitleText(photo.title),
             backgroundColor: Colors.black45,
@@ -161,9 +161,9 @@ class _GridDemoPhotoItem extends StatelessWidget {
         footer: Material(
           color: Colors.transparent,
           shape: const RoundedRectangleBorder(
-            borderRadius: BorderRadius.vertical(bottom: Radius.circular(4)),
+            borderRadius: .vertical(bottom: Radius.circular(4)),
           ),
-          clipBehavior: Clip.antiAlias,
+          clipBehavior: .antiAlias,
           child: GridTileBar(
             backgroundColor: Colors.black45,
             title: _GridTitleText(photo.title),

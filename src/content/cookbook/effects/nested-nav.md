@@ -394,7 +394,7 @@ void main() {
   runApp(
     MaterialApp(
       theme: ThemeData(
-        brightness: Brightness.dark,
+        brightness: .dark,
         appBarTheme: const AppBarTheme(backgroundColor: Colors.blue),
         floatingActionButtonTheme: const FloatingActionButtonThemeData(
           backgroundColor: Colors.blue,
@@ -570,9 +570,9 @@ class SelectDevicePage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24),
+          padding: .symmetric(horizontal: 24),
           child: Column(
-            mainAxisSize: MainAxisSize.min,
+            mainAxisSize: .min,
             children: [
               Text(
                 'Select a nearby device:',
@@ -639,9 +639,9 @@ class _WaitingPageState extends State<WaitingPage> {
     return Scaffold(
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24),
+          padding: .symmetric(horizontal: 24),
           child: Column(
-            mainAxisSize: MainAxisSize.min,
+            mainAxisSize: .min,
             children: [
               const CircularProgressIndicator(),
               const SizedBox(height: 32),
@@ -664,16 +664,16 @@ class FinishedPage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24),
+          padding: .symmetric(horizontal: 24),
           child: SingleChildScrollView(
             child: Column(
-              mainAxisSize: MainAxisSize.min,
+              mainAxisSize: .min,
               children: [
                 Container(
                   width: 200,
                   height: 200,
                   decoration: const BoxDecoration(
-                    shape: BoxShape.circle,
+                    shape: .circle,
                     color: Color(0xFF222222),
                   ),
                   child: const Center(
@@ -687,8 +687,8 @@ class FinishedPage extends StatelessWidget {
                 const SizedBox(height: 32),
                 const Text(
                   'Bulb added!',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                  textAlign: .center,
+                  style: TextStyle(fontSize: 24, fontWeight: .bold),
                 ),
                 const SizedBox(height: 32),
                 ElevatedButton(
@@ -728,15 +728,15 @@ class HomeScreen extends StatelessWidget {
       appBar: _buildAppBar(context),
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24),
+          padding: .symmetric(horizontal: 24),
           child: Column(
-            mainAxisSize: MainAxisSize.min,
+            mainAxisSize: .min,
             children: [
               Container(
                 width: 200,
                 height: 200,
                 decoration: const BoxDecoration(
-                  shape: BoxShape.circle,
+                  shape: .circle,
                   color: Color(0xFF222222),
                 ),
                 child: Center(
@@ -750,8 +750,8 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(height: 32),
               const Text(
                 'Add your first bulb',
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                textAlign: .center,
+                style: TextStyle(fontSize: 24, fontWeight: .bold),
               ),
             ],
           ),
@@ -790,14 +790,14 @@ class SettingsScreen extends StatelessWidget {
       appBar: _buildAppBar(),
       body: SingleChildScrollView(
         child: Column(
-          mainAxisSize: MainAxisSize.min,
+          mainAxisSize: .min,
           children: List.generate(8, (index) {
             return Container(
               width: double.infinity,
               height: 54,
-              margin: const EdgeInsets.only(left: 16, right: 16, top: 16),
+              margin: .only(left: 16, right: 16, top: 16),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(8),
+                borderRadius: .circular(8),
                 color: const Color(0xFF222222),
               ),
             );

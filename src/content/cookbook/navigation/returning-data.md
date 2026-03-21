@@ -100,10 +100,10 @@ class SelectionScreen extends StatelessWidget {
       appBar: AppBar(title: const Text('Pick an option')),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: .center,
           children: [
             Padding(
-              padding: const EdgeInsets.all(8),
+              padding: .all(8),
               child: ElevatedButton(
                 onPressed: () {
                   // Pop here with "Yep"...
@@ -112,7 +112,7 @@ class SelectionScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8),
+              padding: .all(8),
               child: ElevatedButton(
                 onPressed: () {
                   // Pop here with "Nope"...
@@ -266,10 +266,10 @@ class SelectionScreen extends StatelessWidget {
       appBar: AppBar(title: const Text('Pick an option')),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: .center,
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.all(8),
+              padding: .all(8),
               child: ElevatedButton(
                 onPressed: () {
                   // Close the screen and return "Yep!" as the result.
@@ -279,7 +279,7 @@ class SelectionScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8),
+              padding: .all(8),
               child: ElevatedButton(
                 onPressed: () {
                   // Close the screen and return "Nope." as the result.

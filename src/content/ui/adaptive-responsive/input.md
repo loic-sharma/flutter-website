@@ -91,7 +91,7 @@ class _BasicActionDetectorState extends State<BasicActionDetector> {
         ),
       },
       child: Stack(
-        clipBehavior: Clip.none,
+        clipBehavior: .none,
         children: [
           const FlutterLogo(size: 100),
           // Position focus in the negative margin for a cool effect

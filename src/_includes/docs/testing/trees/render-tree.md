@@ -330,7 +330,7 @@ flutter:                          ╎             │     colors: Color(0x040000
 flutter:                          ╎             │
 flutter:                          ╎             │ configuration: ImageConfiguration(bundle:
 flutter:                          ╎             │   PlatformAssetBundle#164ca(), devicePixelRatio: 1.0, locale:
-flutter:                          ╎             │   en_US, textDirection: TextDirection.ltr, platform: macOS)
+flutter:                          ╎             │   en_US, textDirection: .ltr, platform: macOS)
 flutter:                          ╎             │
 flutter:                          ╎             └─child: RenderStack#83b13
 flutter:                          ╎               │ needs compositing
@@ -342,7 +342,7 @@ flutter:                          ╎               │   _FocusInheritedScope �
 flutter:                          ╎               │ parentData: <none> (can use size)
 flutter:                          ╎               │ constraints: BoxConstraints(w=800.0, h=600.0)
 flutter:                          ╎               │ size: Size(800.0, 600.0)
-flutter:                          ╎               │ alignment: AlignmentDirectional.topStart
+flutter:                          ╎               │ alignment: .topStart
 flutter:                          ╎               │ textDirection: ltr
 flutter:                          ╎               │ fit: passthrough
 flutter:                          ╎               │
@@ -398,8 +398,8 @@ flutter:                          ╎               │       │ size: Size(800
 flutter:                          ╎               │       │ elevation: 0.0
 flutter:                          ╎               │       │ color: Color(0xfffafafa)
 flutter:                          ╎               │       │ shadowColor: Color(0xfffafafa)
-flutter:                          ╎               │       │ shape: BoxShape.rectangle
-flutter:                          ╎               │       │ borderRadius: BorderRadius.zero
+flutter:                          ╎               │       │ shape: .rectangle
+flutter:                          ╎               │       │ borderRadius: .zero
 flutter:                          ╎               │       │
 flutter:                          ╎               │       └─child: _RenderInkFeatures#ac819
 flutter:                          ╎               │         │ creator: _InkFeatures-[GlobalKey#d721e ink renderer] ←
@@ -420,7 +420,7 @@ flutter:                          ╎               │           │   Builder 
 flutter:                          ╎               │           │ parentData: <none> (can use size)
 flutter:                          ╎               │           │ constraints: BoxConstraints(w=800.0, h=600.0)
 flutter:                          ╎               │           │ size: Size(800.0, 600.0)
-flutter:                          ╎               │           │ alignment: Alignment.center
+flutter:                          ╎               │           │ alignment: .center
 flutter:                          ╎               │           │ textDirection: ltr
 flutter:                          ╎               │           │ widthFactor: expand
 flutter:                          ╎               │           │ heightFactor: expand
@@ -554,7 +554,7 @@ flutter:                          ╎               │                         
 flutter:                          ╎               │                                   │ parentData: offset=Offset(8.0, 0.0) (can use size)
 flutter:                          ╎               │                                   │ constraints: BoxConstraints(40.0<=w<=784.0, 28.0<=h<=600.0)
 flutter:                          ╎               │                                   │ size: Size(126.0, 28.0)
-flutter:                          ╎               │                                   │ alignment: Alignment.center
+flutter:                          ╎               │                                   │ alignment: .center
 flutter:                          ╎               │                                   │ textDirection: ltr
 flutter:                          ╎               │                                   │ widthFactor: 1.0
 flutter:                          ╎               │                                   │ heightFactor: 1.0

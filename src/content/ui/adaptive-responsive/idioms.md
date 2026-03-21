@@ -116,7 +116,7 @@ return Scrollbar(
   controller: _scrollController,
   child: GridView.count(
     controller: _scrollController,
-    padding: const EdgeInsets.all(Insets.extraLarge),
+    padding: .all(Insets.extraLarge),
     childAspectRatio: 1,
     crossAxisCount: colCount,
     children: listChildren,
@@ -203,7 +203,7 @@ return const SelectableText.rich(
       TextSpan(text: 'Hello'),
       TextSpan(
         text: 'Bold',
-        style: TextStyle(fontWeight: FontWeight.bold),
+        style: TextStyle(fontWeight: .bold),
       ),
     ],
   ),

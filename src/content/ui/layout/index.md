@@ -174,7 +174,7 @@ class MyApp extends StatelessWidget {
       child: const Center(
         child: Text(
           'Hello World',
-          textDirection: TextDirection.ltr,
+          textDirection: .ltr,
           style: TextStyle(fontSize: 32, color: Colors.black87),
         ),
       ),
@@ -264,7 +264,7 @@ class MyApp extends StatelessWidget {
     return const CupertinoApp(
       title: 'Flutter layout demo',
       theme: CupertinoThemeData(
-        brightness: Brightness.light,
+        brightness: .light,
         primaryColor: CupertinoColors.systemBlue,
       ),
       home: CupertinoPageScaffold(
@@ -274,7 +274,7 @@ class MyApp extends StatelessWidget {
         ),
         child: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: .center,
             children: [Text('Hello World')],
           ),
         ),
@@ -426,7 +426,7 @@ space evenly between, before, and after each image.
 <?code-excerpt "layout/row_column/lib/main.dart (row)" replace="/Row/[!$&!]/g"?>
 ```dart
 [!Row!](
-  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+  mainAxisAlignment: .spaceEvenly,
   children: [
     Image.asset('images/pic1.jpg'),
     Image.asset('images/pic2.jpg'),
@@ -455,7 +455,7 @@ space evenly between, above, and below each image.
   <?code-excerpt "layout/row_column/lib/main.dart (column)" replace="/Column/[!$&!]/g"?>
   ```dart
   [!Column!](
-    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    mainAxisAlignment: .spaceEvenly,
     children: [
       Image.asset('images/pic1.jpg'),
       Image.asset('images/pic2.jpg'),
@@ -495,7 +495,7 @@ wrap each image with an `Expanded` widget.
   <?code-excerpt "layout/sizing/lib/main.dart (expanded-images)" replace="/Expanded/[!$&!]/g"?>
   ```dart
   Row(
-    crossAxisAlignment: CrossAxisAlignment.center,
+    crossAxisAlignment: .center,
     children: [
       [!Expanded!](child: Image.asset('images/pic1.jpg')),
       [!Expanded!](child: Image.asset('images/pic2.jpg')),
@@ -524,7 +524,7 @@ the flex factor of the middle image to 2:
   <?code-excerpt "layout/sizing/lib/main.dart (expanded-images-with-flex)" replace="/flex.*/[!$&!]/g"?>
   ```dart
   Row(
-    crossAxisAlignment: CrossAxisAlignment.center,
+    crossAxisAlignment: .center,
     children: [
       Expanded(child: Image.asset('images/pic1.jpg')),
       Expanded([!flex: 2, child: Image.asset('images/pic2.jpg')),!]
@@ -557,7 +557,7 @@ uses this property to pack the star icons together.
   <?code-excerpt "layout/pavlova/lib/main.dart (stars)" replace="/mainAxisSize.*/[!$&!]/g; /\w+ \w+ = //g; /;//g"?>
   ```dart
   Row(
-    [!mainAxisSize: MainAxisSize.min,!]
+    [!mainAxisSize: .min,!]
     children: [
       Icon(Icons.star, color: Colors.green[500]),
       Icon(Icons.star, color: Colors.green[500]),
@@ -599,7 +599,7 @@ of 5-star icons, and text:
 <?code-excerpt "layout/pavlova/lib/main.dart (ratings)" replace="/ratings/[!$&!]/g"?>
 ```dart
 final stars = Row(
-  mainAxisSize: MainAxisSize.min,
+  mainAxisSize: .min,
   children: [
     Icon(Icons.star, color: Colors.green[500]),
     Icon(Icons.star, color: Colors.green[500]),
@@ -610,16 +610,16 @@ final stars = Row(
 );
 
 final [!ratings!] = Container(
-  padding: const EdgeInsets.all(20),
+  padding: .all(20),
   child: Row(
-    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    mainAxisAlignment: .spaceEvenly,
     children: [
       stars,
       const Text(
         '170 Reviews',
         style: TextStyle(
           color: Colors.black,
-          fontWeight: FontWeight.w800,
+          fontWeight: .w800,
           fontFamily: 'Roboto',
           letterSpacing: 0.5,
           fontSize: 20,
@@ -648,7 +648,7 @@ The `iconList` variable defines the icons row:
 ```dart
 const descTextStyle = TextStyle(
   color: Colors.black,
-  fontWeight: FontWeight.w800,
+  fontWeight: .w800,
   fontFamily: 'Roboto',
   letterSpacing: 0.5,
   fontSize: 18,
@@ -660,9 +660,9 @@ const descTextStyle = TextStyle(
 final [!iconList!] = DefaultTextStyle.merge(
   style: descTextStyle,
   child: Container(
-    padding: const EdgeInsets.all(20),
+    padding: .all(20),
     child: Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      mainAxisAlignment: .spaceEvenly,
       children: [
         Column(
           children: [
@@ -697,7 +697,7 @@ as well as the title and text that describes the Pavlova:
 <?code-excerpt "layout/pavlova/lib/main.dart (left-column)" replace="/leftColumn/[!$&!]/g"?>
 ```dart
 final [!leftColumn!] = Container(
-  padding: const EdgeInsets.fromLTRB(20, 30, 20, 20),
+  padding: .fromLTRB(20, 30, 20, 20),
   child: Column(children: [titleText, subTitle, ratings, iconList]),
 );
 ```
@@ -716,11 +716,11 @@ For more information, see [Adding assets and images][].
 ```dart
 body: Center(
   child: Container(
-    margin: const EdgeInsets.fromLTRB(0, 40, 0, 30),
+    margin: .fromLTRB(0, 40, 0, 30),
     height: 600,
     child: Card(
       child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: .start,
         children: [
           SizedBox(width: 440, child: leftColumn),
           mainImage,
@@ -900,10 +900,10 @@ to each image:
 Widget _buildDecoratedImage(int imageIndex) => Expanded(
   child: [!Container!](
     decoration: BoxDecoration(
-      border: Border.all(width: 10, color: Colors.black38),
-      borderRadius: const BorderRadius.all(Radius.circular(8)),
+      border: .all(width: 10, color: Colors.black38),
+      borderRadius: .all(Radius.circular(8)),
     ),
-    margin: const EdgeInsets.all(4),
+    margin: .all(4),
     child: Image.asset('images/pic$imageIndex.jpg'),
   ),
 );
@@ -988,7 +988,7 @@ it's the entry in the "calorie" column for the "avocado" row), use
 ```dart
 Widget _buildGrid() => [!GridView!].extent(
   maxCrossAxisExtent: 150,
-  padding: const EdgeInsets.all(4),
+  padding: .all(4),
   mainAxisSpacing: 4,
   crossAxisSpacing: 4,
   children: _buildGridTileList(30),
@@ -1075,7 +1075,7 @@ ListTile _tile(String title, String subtitle, IconData icon) {
   return ListTile(
     title: Text(
       title,
-      style: const TextStyle(fontWeight: FontWeight.w500, fontSize: 20),
+      style: const TextStyle(fontWeight: .w500, fontSize: 20),
     ),
     subtitle: Text(subtitle),
     leading: Icon(icon, color: Colors.blue[500]),
@@ -1144,7 +1144,7 @@ Widget _buildStack() {
           'Mia B',
           style: TextStyle(
             fontSize: 20,
-            fontWeight: FontWeight.bold,
+            fontWeight: .bold,
             color: Colors.white,
           ),
         ),
@@ -1230,7 +1230,7 @@ Widget _buildCard() {
           ListTile(
             title: const Text(
               '1625 Main Street',
-              style: TextStyle(fontWeight: FontWeight.w500),
+              style: TextStyle(fontWeight: .w500),
             ),
             subtitle: const Text('My City, CA 99984'),
             leading: Icon(Icons.restaurant_menu, color: Colors.blue[500]),
@@ -1239,7 +1239,7 @@ Widget _buildCard() {
           ListTile(
             title: const Text(
               '(408) 555-1212',
-              style: TextStyle(fontWeight: FontWeight.w500),
+              style: TextStyle(fontWeight: .w500),
             ),
             leading: Icon(Icons.contact_phone, color: Colors.blue[500]),
           ),

@@ -122,13 +122,13 @@ class StatusBubble extends StatelessWidget {
     return Container(
       width: 85,
       height: 44,
-      padding: const EdgeInsets.symmetric(horizontal: 8),
+      padding: .symmetric(horizontal: 8),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(27),
+        borderRadius: .circular(27),
         color: bubbleColor,
       ),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: .spaceEvenly,
         children: [
           FlashingCircle(
             index: 0,
@@ -187,7 +187,7 @@ class FlashingCircle extends StatelessWidget {
           width: 12,
           height: 12,
           decoration: BoxDecoration(
-            shape: BoxShape.circle,
+            shape: .circle,
             color: Color.lerp(
               flashingCircleDarkColor,
               flashingCircleBrightColor,

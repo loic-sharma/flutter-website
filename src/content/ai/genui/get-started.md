@@ -316,7 +316,7 @@ Follow these instructions:
             children: <Widget>[
               Expanded(
                 child: ListView.builder(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: .all(8.0),
                   reverse: true,
                   itemBuilder: (_, int index) =>
                       _buildMessage(_messages[index]),
@@ -343,22 +343,22 @@ Follow these instructions:
 
       Widget _buildMessage(ChatMessage message) {
         return Container(
-          margin: const EdgeInsets.symmetric(vertical: 10.0),
+          margin: .symmetric(vertical: 10.0),
           child: Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: .start,
             children: <Widget>[
               Container(
-                margin: const EdgeInsets.only(right: 16.0),
+                margin: .only(right: 16.0),
                 child: CircleAvatar(child: Text(message.role == Role.user ? 'U' : 'A')),
               ),
               Expanded(
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: .start,
                   children: <Widget>[
                     Text(message.role == Role.user ? 'User' : 'Agent',
-                        style: const TextStyle(fontWeight: FontWeight.bold)),
+                        style: const TextStyle(fontWeight: .bold)),
                     Container(
-                      margin: const EdgeInsets.only(top: 5.0),
+                      margin: .only(top: 5.0),
                       child: Text(message.parts.whereType<TextPart>().map((e) => e.text).join('\n')),
                     ),
                   ],
@@ -373,7 +373,7 @@ Follow these instructions:
         return IconTheme(
           data: IconThemeData(color: Theme.of(context).colorScheme.secondary),
           child: Container(
-            margin: const EdgeInsets.symmetric(horizontal: 8.0),
+            margin: .symmetric(horizontal: 8.0),
             child: Row(
               children: <Widget>[
                 Flexible(
@@ -385,7 +385,7 @@ Follow these instructions:
                   ),
                 ),
                 Container(
-                  margin: const EdgeInsets.symmetric(horizontal: 4.0),
+                  margin: .symmetric(horizontal: 4.0),
                   child: IconButton(
                     icon: const Icon(Icons.send),
                     onPressed: () => _handleSubmitted(_textController.text),
@@ -566,7 +566,7 @@ To receive and display generated UI:
                ),
                SafeArea(
                  child: Padding(
-                   padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                   padding: .symmetric(horizontal: 16.0),
                    child: Row(
                      children: [
                        Expanded(
@@ -660,10 +660,10 @@ To add your own widgets, use the following instructions.
 
             return Container(
               constraints: const BoxConstraints(maxWidth: 400),
-              decoration: BoxDecoration(border: Border.all()),
-              padding: const EdgeInsets.all(16),
+              decoration: BoxDecoration(border: .all()),
+              padding: .all(16),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: .start,
                 children: [
                   Text(question, style: Theme.of(context).textTheme.headlineMedium),
                   const SizedBox(height: 8.0),

@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text('Hello World!', textDirection: TextDirection.ltr),
+      child: Text('Hello World!', textDirection: .ltr),
     );
   }
 }

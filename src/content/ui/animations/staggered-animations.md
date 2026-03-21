@@ -240,7 +240,7 @@ resulting in a call to `_buildAnimation()`.
   [!Widget _buildAnimation(BuildContext context, Widget? child)!] {
     return Container(
       padding: padding.value,
-      alignment: Alignment.bottomCenter,
+      alignment: .bottomCenter,
       child: Opacity(
         opacity: opacity.value,
         child: Container(
@@ -248,7 +248,7 @@ resulting in a call to `_buildAnimation()`.
           height: height.value,
           decoration: BoxDecoration(
             color: color.value,
-            border: Border.all(
+            border: .all(
               color: Colors.indigo[300]!,
               width: 3,
             ),
@@ -326,7 +326,7 @@ class _StaggerDemoState extends State<StaggerDemo>
             height: 300,
             decoration: BoxDecoration(
               color: Colors.black.withValues(alpha: 0.1),
-              border: Border.all(
+              border: .all(
                 color: Colors.black.withValues(alpha: 0.5),
               ),
             ),

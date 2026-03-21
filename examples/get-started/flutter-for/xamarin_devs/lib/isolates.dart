@@ -99,7 +99,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
 
   Widget getRow(int index) {
     return Padding(
-      padding: const EdgeInsets.all(10),
+      padding: .all(10),
       child: Text('Row ${data[index]['title']}'),
     );
   }

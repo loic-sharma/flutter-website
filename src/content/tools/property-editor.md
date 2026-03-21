@@ -38,7 +38,7 @@ UI development and iteration.
     Widget build(BuildContext context) {
         return Text(
             'Hello World!',
-            overflow: TextOverflow.clip,
+            overflow: .clip,
         );
     }
     ```

@@ -35,7 +35,7 @@ class _MyCustomFormState extends State<MyCustomForm> {
     return Scaffold(
       appBar: AppBar(title: const Text('Text Field Focus')),
       body: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: .all(16),
         child: Column(
           children: [
             // The first text field is focused on as soon as the app starts.

@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return const CupertinoApp(
       title: 'Flutter layout demo',
       theme: CupertinoThemeData(
-        brightness: Brightness.light,
+        brightness: .light,
         primaryColor: CupertinoColors.systemBlue,
       ),
       home: CupertinoPageScaffold(
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         ),
         child: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: .center,
             children: [Text('Hello World')],
           ),
         ),

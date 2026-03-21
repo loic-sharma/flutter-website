@@ -33,10 +33,10 @@ class MyApp extends StatelessWidget {
   Widget _buildDecoratedImage(int imageIndex) => Expanded(
     child: Container(
       decoration: BoxDecoration(
-        border: Border.all(width: 10, color: Colors.black38),
-        borderRadius: const BorderRadius.all(Radius.circular(8)),
+        border: .all(width: 10, color: Colors.black38),
+        borderRadius: .all(Radius.circular(8)),
       ),
-      margin: const EdgeInsets.all(4),
+      margin: .all(4),
       child: Image.asset('images/pic$imageIndex.jpg'),
     ),
   );

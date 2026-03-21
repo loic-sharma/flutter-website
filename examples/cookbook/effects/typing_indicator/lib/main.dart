@@ -33,24 +33,24 @@ class _ExampleIsTypingState extends State<ExampleIsTyping> {
         children: [
           Expanded(
             child: ListView.builder(
-              padding: const EdgeInsets.symmetric(vertical: 8),
+              padding: .symmetric(vertical: 8),
               itemCount: 25,
               reverse: true,
               itemBuilder: (context, index) {
                 return Padding(
-                  padding: const EdgeInsets.only(left: 100),
+                  padding: .only(left: 100),
                   child: FakeMessage(isBig: index.isOdd),
                 );
               },
             ),
           ),
           Align(
-            alignment: Alignment.bottomLeft,
+            alignment: .bottomLeft,
             child: TypingIndicator(showIndicator: _isSomeoneTyping),
           ),
           Container(
             color: Colors.grey,
-            padding: const EdgeInsets.all(16),
+            padding: .all(16),
             child: Center(
               child: CupertinoSwitch(
                 onChanged: (newValue) {
@@ -232,7 +232,7 @@ class CircleBubble extends StatelessWidget {
     return Container(
       width: size,
       height: size,
-      decoration: BoxDecoration(shape: BoxShape.circle, color: bubbleColor),
+      decoration: BoxDecoration(shape: .circle, color: bubbleColor),
     );
   }
 }
@@ -261,7 +261,7 @@ class AnimatedBubble extends StatelessWidget {
         builder: (context, child) {
           return Transform.scale(
             scale: animation.value,
-            alignment: Alignment.bottomLeft,
+            alignment: .bottomLeft,
             child: child,
           );
         },
@@ -292,13 +292,13 @@ class StatusBubble extends StatelessWidget {
     return Container(
       width: 85,
       height: 44,
-      padding: const EdgeInsets.symmetric(horizontal: 8),
+      padding: .symmetric(horizontal: 8),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(27),
+        borderRadius: .circular(27),
         color: bubbleColor,
       ),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: .spaceEvenly,
         children: [
           FlashingCircle(
             index: 0,
@@ -357,7 +357,7 @@ class FlashingCircle extends StatelessWidget {
           width: 12,
           height: 12,
           decoration: BoxDecoration(
-            shape: BoxShape.circle,
+            shape: .circle,
             color: Color.lerp(
               flashingCircleDarkColor,
               flashingCircleBrightColor,
@@ -378,10 +378,10 @@ class FakeMessage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 24),
+      margin: .symmetric(vertical: 8, horizontal: 24),
       height: isBig ? 128 : 36,
       decoration: BoxDecoration(
-        borderRadius: const BorderRadius.all(Radius.circular(8)),
+        borderRadius: .all(Radius.circular(8)),
         color: Colors.grey.shade300,
       ),
     );

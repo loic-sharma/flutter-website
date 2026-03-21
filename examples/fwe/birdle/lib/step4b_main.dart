@@ -13,12 +13,12 @@ class GuessInput extends StatelessWidget {
       children: [
         Expanded(
           child: Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: .all(8.0),
             child: TextField(
               maxLength: 5,
               decoration: InputDecoration(
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(35)),
+                  borderRadius: .all(Radius.circular(35)),
                 ),
               ),
             ),

@@ -57,19 +57,19 @@ class CircleListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+      padding: .symmetric(horizontal: 8, vertical: 8),
       child: Container(
         width: 54,
         height: 54,
         decoration: const BoxDecoration(
           color: Colors.black,
-          shape: BoxShape.circle,
+          shape: .circle,
         ),
         child: ClipOval(
           child: Image.network(
             'https://docs.flutter.dev/assets/images/'
             'exercise/split-check/Avatar1.jpg',
-            fit: BoxFit.cover,
+            fit: .cover,
           ),
         ),
       ),
@@ -98,9 +98,9 @@ class CardListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+      padding: .symmetric(horizontal: 24, vertical: 16),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: .start,
         children: [_buildImage(), const SizedBox(height: 16), _buildText()],
       ),
     );
@@ -113,14 +113,14 @@ class CardListItem extends StatelessWidget {
         width: double.infinity,
         decoration: BoxDecoration(
           color: Colors.black,
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: .circular(16),
         ),
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: .circular(16),
           child: Image.network(
             'https://docs.flutter.dev/assets/images/'
             'exercise/split-check/Food1.jpg',
-            fit: BoxFit.cover,
+            fit: .cover,
           ),
         ),
       ),
@@ -130,14 +130,14 @@ class CardListItem extends StatelessWidget {
   Widget _buildText() {
     if (isLoading) {
       return Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: .start,
         children: [
           Container(
             width: double.infinity,
             height: 24,
             decoration: BoxDecoration(
               color: Colors.black,
-              borderRadius: BorderRadius.circular(16),
+              borderRadius: .circular(16),
             ),
           ),
           const SizedBox(height: 16),
@@ -146,14 +146,14 @@ class CardListItem extends StatelessWidget {
             height: 24,
             decoration: BoxDecoration(
               color: Colors.black,
-              borderRadius: BorderRadius.circular(16),
+              borderRadius: .circular(16),
             ),
           ),
         ],
       );
     } else {
       return const Padding(
-        padding: EdgeInsets.symmetric(horizontal: 8),
+        padding: .symmetric(horizontal: 8),
         child: Text(
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do '
           'eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -194,7 +194,7 @@ const _shimmerGradient = LinearGradient(
   stops: [0.1, 0.3, 0.4],
   begin: Alignment(-1.0, -0.3),
   end: Alignment(1.0, 0.3),
-  tileMode: TileMode.clamp,
+  tileMode: .clamp,
 );
 ```
 
@@ -566,7 +566,7 @@ const _shimmerGradient = LinearGradient(
   stops: [0.1, 0.3, 0.4],
   begin: Alignment(-1.0, -0.3),
   end: Alignment(1.0, 0.3),
-  tileMode: TileMode.clamp,
+  tileMode: .clamp,
 );
 
 class ExampleUiLoadingAnimation extends StatefulWidget {
@@ -800,19 +800,19 @@ class CircleListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
+      padding: .symmetric(horizontal: 8, vertical: 8),
       child: Container(
         width: 54,
         height: 54,
         decoration: const BoxDecoration(
           color: Colors.black,
-          shape: BoxShape.circle,
+          shape: .circle,
         ),
         child: ClipOval(
           child: Image.network(
             'https://docs.flutter.dev/assets/images/'
             'exercise/split-check/Avatar1.jpg',
-            fit: BoxFit.cover,
+            fit: .cover,
           ),
         ),
       ),
@@ -828,9 +828,9 @@ class CardListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+      padding: .symmetric(horizontal: 24, vertical: 16),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: .start,
         children: [_buildImage(), const SizedBox(height: 16), _buildText()],
       ),
     );
@@ -843,14 +843,14 @@ class CardListItem extends StatelessWidget {
         width: double.infinity,
         decoration: BoxDecoration(
           color: Colors.black,
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: .circular(16),
         ),
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: .circular(16),
           child: Image.network(
             'https://docs.flutter.dev/assets/images/'
             'exercise/split-check/Food1.jpg',
-            fit: BoxFit.cover,
+            fit: .cover,
           ),
         ),
       ),
@@ -860,14 +860,14 @@ class CardListItem extends StatelessWidget {
   Widget _buildText() {
     if (isLoading) {
       return Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: .start,
         children: [
           Container(
             width: double.infinity,
             height: 24,
             decoration: BoxDecoration(
               color: Colors.black,
-              borderRadius: BorderRadius.circular(16),
+              borderRadius: .circular(16),
             ),
           ),
           const SizedBox(height: 16),
@@ -876,14 +876,14 @@ class CardListItem extends StatelessWidget {
             height: 24,
             decoration: BoxDecoration(
               color: Colors.black,
-              borderRadius: BorderRadius.circular(16),
+              borderRadius: .circular(16),
             ),
           ),
         ],
       );
     } else {
       return const Padding(
-        padding: EdgeInsets.symmetric(horizontal: 8),
+        padding: .symmetric(horizontal: 8),
         child: Text(
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do '
           'eiusmod tempor incididunt ut labore et dolore magna aliqua.',

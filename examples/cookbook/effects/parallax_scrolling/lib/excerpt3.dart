@@ -16,11 +16,11 @@ class LocationListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+      padding: .symmetric(horizontal: 24, vertical: 16),
       child: AspectRatio(
         aspectRatio: 16 / 9,
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: .circular(16),
           child: Stack(
             children: [
               _buildParallaxBackground(context),
@@ -34,7 +34,7 @@ class LocationListItem extends StatelessWidget {
   }
 
   Widget _buildParallaxBackground(BuildContext context) {
-    return Image.network(imageUrl, fit: BoxFit.cover);
+    return Image.network(imageUrl, fit: .cover);
   }
 
   Widget _buildGradient() {
@@ -57,15 +57,15 @@ class LocationListItem extends StatelessWidget {
       left: 20,
       bottom: 20,
       child: Column(
-        mainAxisSize: MainAxisSize.min,
-        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: .min,
+        crossAxisAlignment: .start,
         children: [
           Text(
             name,
             style: const TextStyle(
               color: Colors.white,
               fontSize: 20,
-              fontWeight: FontWeight.bold,
+              fontWeight: .bold,
             ),
           ),
           Text(

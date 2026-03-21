@@ -395,7 +395,7 @@ After running this app, change the code as follows:
 import 'package:flutter/widgets.dart';
 
 void main() {
-  runApp(const Center(child: Text('Hello', textDirection: TextDirection.ltr)));
+  runApp(const Center(child: Text('Hello', textDirection: .ltr)));
 }
 ```
 

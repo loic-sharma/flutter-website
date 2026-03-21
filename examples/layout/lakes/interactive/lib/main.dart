@@ -48,20 +48,20 @@ class TitleSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(32),
+      padding: .all(32),
       child: Row(
         children: [
           Expanded(
             /*1*/
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: .start,
               children: [
                 /*2*/
                 Padding(
-                  padding: const EdgeInsets.only(bottom: 8),
+                  padding: .only(bottom: 8),
                   child: Text(
                     name,
-                    style: const TextStyle(fontWeight: FontWeight.bold),
+                    style: const TextStyle(fontWeight: .bold),
                   ),
                 ),
                 Text(location, style: TextStyle(color: Colors.grey[500])),
@@ -83,7 +83,7 @@ class ButtonSection extends StatelessWidget {
     final Color color = Theme.of(context).primaryColor;
     return SizedBox(
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: .spaceEvenly,
         children: [
           ButtonWithText(color: color, icon: Icons.call, label: 'CALL'),
           ButtonWithText(color: color, icon: Icons.near_me, label: 'ROUTE'),
@@ -109,17 +109,17 @@ class ButtonWithText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisSize: MainAxisSize.min,
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisSize: .min,
+      mainAxisAlignment: .center,
       children: [
         Icon(icon, color: color),
         Padding(
-          padding: const EdgeInsets.only(top: 8),
+          padding: .only(top: 8),
           child: Text(
             label,
             style: TextStyle(
               fontSize: 12,
-              fontWeight: FontWeight.w400,
+              fontWeight: .w400,
               color: color,
             ),
           ),
@@ -137,7 +137,7 @@ class TextSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(32),
+      padding: .all(32),
       child: Text(description, softWrap: true),
     );
   }
@@ -150,7 +150,7 @@ class ImageSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Image.asset(image, width: 600, height: 240, fit: BoxFit.cover);
+    return Image.asset(image, width: 600, height: 240, fit: .cover);
   }
 }
 
@@ -188,13 +188,13 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisSize: MainAxisSize.min,
+      mainAxisSize: .min,
       children: [
         Container(
-          padding: const EdgeInsets.all(0),
+          padding: .all(0),
           child: IconButton(
-            padding: const EdgeInsets.all(0),
-            alignment: Alignment.center,
+            padding: .all(0),
+            alignment: .center,
             icon: (_isFavorited
                 ? const Icon(Icons.star)
                 : const Icon(Icons.star_border)),

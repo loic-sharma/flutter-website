@@ -35,13 +35,13 @@ class _LifecycleWatcherState extends State<LifecycleWatcher>
     if (_lastLifecycleState == null) {
       return const Text(
         'This widget has not observed any lifecycle changes.',
-        textDirection: TextDirection.ltr,
+        textDirection: .ltr,
       );
     }
 
     return Text(
       'The most recent lifecycle state this widget observed was: $_lastLifecycleState.',
-      textDirection: TextDirection.ltr,
+      textDirection: .ltr,
     );
   }
 }

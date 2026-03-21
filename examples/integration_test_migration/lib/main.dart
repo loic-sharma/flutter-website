@@ -147,10 +147,10 @@ class DetailPlant extends StatelessWidget {
     if (plant == null) {
       return const Center(child: Text('Please select a plant from the list.'));
     }
-    const textStyleLabel = TextStyle(fontWeight: FontWeight.bold, fontSize: 20);
+    const textStyleLabel = TextStyle(fontWeight: .bold, fontSize: 20);
     const textStyleText = TextStyle(fontSize: 20);
     return Padding(
-      padding: const EdgeInsets.all(32),
+      padding: .all(32),
       child: Column(
         children: [
           Row(

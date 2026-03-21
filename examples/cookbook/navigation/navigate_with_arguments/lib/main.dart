@@ -66,7 +66,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(title: const Text('Home Screen')),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: .center,
           children: [
             // #docregion PushNamed
             // A button that navigates to a named route.

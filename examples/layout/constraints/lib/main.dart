@@ -108,7 +108,7 @@ class _FlutterLayoutArticleState extends State<FlutterLayoutArticle> {
               height: 670,
               color: const Color(0xFFCCCCCC),
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
+                crossAxisAlignment: .center,
                 children: [
                   Expanded(
                     child: ConstrainedBox(
@@ -126,12 +126,12 @@ class _FlutterLayoutArticleState extends State<FlutterLayoutArticle> {
                     child: SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       child: Row(
-                        mainAxisSize: MainAxisSize.min,
+                        mainAxisSize: .min,
                         children: [
                           for (int i = 0; i < widget.examples.length; i++)
                             Container(
                               width: 58,
-                              padding: const EdgeInsets.only(left: 4, right: 4),
+                              padding: .only(left: 4, right: 4),
                               child: button(i + 1),
                             ),
                         ],
@@ -145,7 +145,7 @@ class _FlutterLayoutArticleState extends State<FlutterLayoutArticle> {
                       child: SingleChildScrollView(
                         key: ValueKey(count),
                         child: Padding(
-                          padding: const EdgeInsets.all(10),
+                          padding: .all(10),
                           child: Column(
                             children: [
                               Center(child: Text(code)),
@@ -154,7 +154,7 @@ class _FlutterLayoutArticleState extends State<FlutterLayoutArticle> {
                                 explanation,
                                 style: TextStyle(
                                   color: Colors.blue[900],
-                                  fontStyle: FontStyle.italic,
+                                  fontStyle: .italic,
                                 ),
                               ),
                             ],
@@ -308,7 +308,7 @@ class Example4 extends Example {
   @override
   final code =
       'Align(\n'
-      '   alignment: Alignment.bottomRight,\n'
+      '   alignment: .bottomRight,\n'
       '   child: Container(width: 100, height: 100, color: red))';
   @override
   final String explanation =
@@ -321,7 +321,7 @@ class Example4 extends Example {
   Widget build(BuildContext context) {
     // #docregion Example4
     return Align(
-      alignment: Alignment.bottomRight,
+      alignment: .bottomRight,
       child: Container(width: 100, height: 100, color: red),
     );
     // #enddocregion Example4
@@ -437,7 +437,7 @@ class Example8 extends Example {
   final code =
       'Center(\n'
       '   child: Container(color: red\n'
-      '      padding: const EdgeInsets.all(20),\n'
+      '      padding: .all(20),\n'
       '      child: Container(color: green, width: 30, height: 30)))';
   @override
   final String explanation =
@@ -450,7 +450,7 @@ class Example8 extends Example {
     // #docregion Example8
     return Center(
       child: Container(
-        padding: const EdgeInsets.all(20),
+        padding: .all(20),
         color: red,
         child: Container(color: green, width: 30, height: 30),
       ),

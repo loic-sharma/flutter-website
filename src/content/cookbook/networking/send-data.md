@@ -164,7 +164,7 @@ is set to the value returned by `createAlbum()` method.
 <?code-excerpt "lib/main.dart (Column)" replace="/^return //g;/^\);$/)/g"?>
 ```dart
 Column(
-  mainAxisAlignment: MainAxisAlignment.center,
+  mainAxisAlignment: .center,
   children: <Widget>[
     TextField(
       controller: _controller,
@@ -295,8 +295,8 @@ class _MyAppState extends State<MyApp> {
       home: Scaffold(
         appBar: AppBar(title: const Text('Create Data Example')),
         body: Container(
-          alignment: Alignment.center,
-          padding: const EdgeInsets.all(8),
+          alignment: .center,
+          padding: .all(8),
           child: (_futureAlbum == null) ? buildColumn() : buildFutureBuilder(),
         ),
       ),
@@ -305,7 +305,7 @@ class _MyAppState extends State<MyApp> {
 
   Column buildColumn() {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: .center,
       children: <Widget>[
         TextField(
           controller: _controller,

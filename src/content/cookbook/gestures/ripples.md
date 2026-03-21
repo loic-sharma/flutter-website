@@ -27,7 +27,7 @@ InkWell(
     ).showSnackBar(const SnackBar(content: Text('Tap')));
   },
   child: const Padding(
-    padding: EdgeInsets.all(12),
+    padding: .all(12),
     child: Text('Flat Button'),
   ),
 )
@@ -83,7 +83,7 @@ class MyButton extends StatelessWidget {
         ).showSnackBar(const SnackBar(content: Text('Tap')));
       },
       child: const Padding(
-        padding: EdgeInsets.all(12),
+        padding: .all(12),
         child: Text('Flat Button'),
       ),
     );

@@ -76,7 +76,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text('Hello World!', textDirection: TextDirection.ltr),
+      child: Text('Hello World!', textDirection: .ltr),
     );
   }
 }
@@ -171,7 +171,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: .center,
           children: <Widget>[
             const Text('You have pushed the button this many times:'),
             Text(
@@ -279,7 +279,7 @@ you'll find it subclasses `StatelessWidget`.
 ```dart
 const Text(
   'I like Flutter!',
-  style: TextStyle(fontWeight: FontWeight.bold),
+  style: TextStyle(fontWeight: .bold),
 );
 ```
 
@@ -361,7 +361,7 @@ Widget build(BuildContext context) {
     body: Center(
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          padding: const EdgeInsets.only(left: 20, right: 30),
+          padding: .only(left: 20, right: 30),
         ),
         onPressed: () {},
         child: const Text('Hello'),
@@ -856,7 +856,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
 
   Widget getRow(int index) {
     return Padding(
-      padding: const EdgeInsets.all(10),
+      padding: .all(10),
       child: Text('Row ${data[index]['title']}'),
     );
   }
@@ -1079,7 +1079,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
 
   Widget getRow(int index) {
     return Padding(
-      padding: const EdgeInsets.all(10),
+      padding: .all(10),
       child: Text('Row ${data[index]['title']}'),
     );
   }
@@ -1209,7 +1209,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
 
   Widget getRow(int index) {
     return Padding(
-      padding: const EdgeInsets.all(10),
+      padding: .all(10),
       child: Text('Row ${data[index]['title']}'),
     );
   }
@@ -1471,7 +1471,7 @@ that can change overtime with the same children.
 @override
 Widget build(BuildContext context) {
   return const Row(
-    mainAxisAlignment: MainAxisAlignment.center,
+    mainAxisAlignment: .center,
     children: <Widget>[
       Text('Row One'),
       Text('Row Two'),
@@ -1487,7 +1487,7 @@ Widget build(BuildContext context) {
 @override
 Widget build(BuildContext context) {
   return const Column(
-    mainAxisAlignment: MainAxisAlignment.center,
+    mainAxisAlignment: .center,
     children: <Widget>[
       Text('Column One'),
       Text('Column Two'),
@@ -1806,7 +1806,7 @@ class SampleAppPage extends StatelessWidget {
     return List<Widget>.generate(
       100,
       (index) =>
-          Padding(padding: const EdgeInsets.all(10), child: Text('Row $index')),
+          Padding(padding: .all(10), child: Text('Row $index')),
     );
   }
 
@@ -1865,7 +1865,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
           developer.log('Row $index tapped');
         },
         child: Padding(
-          padding: const EdgeInsets.all(10),
+          padding: .all(10),
           child: Text('Row $index'),
         ),
       ),
@@ -1952,7 +1952,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
         });
       },
       child: Padding(
-        padding: const EdgeInsets.all(10),
+        padding: .all(10),
         child: Text('Row $index'),
       ),
     );
@@ -2021,7 +2021,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
         });
       },
       child: Padding(
-        padding: const EdgeInsets.all(10),
+        padding: .all(10),
         child: Text('Row $index'),
       ),
     );
@@ -2157,7 +2157,7 @@ class _MyFormState extends State<MyForm> {
     return Scaffold(
       appBar: AppBar(title: const Text('Retrieve Text Input')),
       body: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: .all(16),
         child: TextField(controller: myController),
       ),
       floatingActionButton: FloatingActionButton(

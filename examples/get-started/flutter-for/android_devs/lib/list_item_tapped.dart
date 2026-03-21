@@ -46,7 +46,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
             developer.log('row tapped');
           },
           child: Padding(
-            padding: const EdgeInsets.all(10),
+            padding: .all(10),
             child: Text('Row $i'),
           ),
         ),

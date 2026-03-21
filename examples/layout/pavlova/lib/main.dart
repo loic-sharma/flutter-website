@@ -19,11 +19,11 @@ class MyApp extends StatelessWidget {
 
   Widget buildHomePage(String title) {
     const titleText = Padding(
-      padding: EdgeInsets.all(20),
+      padding: .all(20),
       child: Text(
         'Strawberry Pavlova',
         style: TextStyle(
-          fontWeight: FontWeight.w800,
+          fontWeight: .w800,
           letterSpacing: 0.5,
           fontSize: 30,
         ),
@@ -34,13 +34,13 @@ class MyApp extends StatelessWidget {
       'Pavlova is a meringue-based dessert named after the Russian ballerina '
       'Anna Pavlova. Pavlova features a crisp crust and soft, light inside, '
       'topped with fruit and whipped cream.',
-      textAlign: TextAlign.center,
+      textAlign: .center,
       style: TextStyle(fontFamily: 'Georgia', fontSize: 25),
     );
 
     // #docregion ratings, stars
     final stars = Row(
-      mainAxisSize: MainAxisSize.min,
+      mainAxisSize: .min,
       children: [
         Icon(Icons.star, color: Colors.green[500]),
         Icon(Icons.star, color: Colors.green[500]),
@@ -52,16 +52,16 @@ class MyApp extends StatelessWidget {
     // #enddocregion stars
 
     final ratings = Container(
-      padding: const EdgeInsets.all(20),
+      padding: .all(20),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: .spaceEvenly,
         children: [
           stars,
           const Text(
             '170 Reviews',
             style: TextStyle(
               color: Colors.black,
-              fontWeight: FontWeight.w800,
+              fontWeight: .w800,
               fontFamily: 'Roboto',
               letterSpacing: 0.5,
               fontSize: 20,
@@ -75,7 +75,7 @@ class MyApp extends StatelessWidget {
     // #docregion icon-list
     const descTextStyle = TextStyle(
       color: Colors.black,
-      fontWeight: FontWeight.w800,
+      fontWeight: .w800,
       fontFamily: 'Roboto',
       letterSpacing: 0.5,
       fontSize: 18,
@@ -87,9 +87,9 @@ class MyApp extends StatelessWidget {
     final iconList = DefaultTextStyle.merge(
       style: descTextStyle,
       child: Container(
-        padding: const EdgeInsets.all(20),
+        padding: .all(20),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          mainAxisAlignment: .spaceEvenly,
           children: [
             Column(
               children: [
@@ -120,23 +120,23 @@ class MyApp extends StatelessWidget {
 
     // #docregion left-column
     final leftColumn = Container(
-      padding: const EdgeInsets.fromLTRB(20, 30, 20, 20),
+      padding: .fromLTRB(20, 30, 20, 20),
       child: Column(children: [titleText, subTitle, ratings, iconList]),
     );
     // #enddocregion left-column
 
-    final mainImage = Image.asset('images/pavlova.jpg', fit: BoxFit.cover);
+    final mainImage = Image.asset('images/pavlova.jpg', fit: .cover);
 
     return Scaffold(
       appBar: AppBar(title: Text(title)),
       // #docregion body
       body: Center(
         child: Container(
-          margin: const EdgeInsets.fromLTRB(0, 40, 0, 30),
+          margin: .fromLTRB(0, 40, 0, 30),
           height: 600,
           child: Card(
             child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: .start,
               children: [
                 SizedBox(width: 440, child: leftColumn),
                 mainImage,

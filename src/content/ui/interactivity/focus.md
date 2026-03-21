@@ -194,7 +194,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: const Text(_title)),
         body: const Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: .center,
           children: <Widget>[MyCustomWidget(), MyCustomWidget()],
         ),
       ),
@@ -226,7 +226,7 @@ class _MyCustomWidgetState extends State<MyCustomWidget> {
         child: Container(
           width: 300,
           height: 50,
-          alignment: Alignment.center,
+          alignment: .center,
           color: _color,
           child: Text(_label),
         ),

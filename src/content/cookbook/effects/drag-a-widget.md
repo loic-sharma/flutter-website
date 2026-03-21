@@ -325,7 +325,7 @@ class _ExampleDragAndDropState extends State<ExampleDragAndDrop>
         style: Theme.of(context).textTheme.headlineMedium?.copyWith(
           fontSize: 36,
           color: const Color(0xFFF64209),
-          fontWeight: FontWeight.bold,
+          fontWeight: .bold,
         ),
       ),
       backgroundColor: const Color(0xFFF7F7F7),
@@ -350,7 +350,7 @@ class _ExampleDragAndDropState extends State<ExampleDragAndDrop>
 
   Widget _buildMenuList() {
     return ListView.separated(
-      padding: const EdgeInsets.all(16),
+      padding: .all(16),
       itemCount: _items.length,
       separatorBuilder: (context, index) {
         return const SizedBox(height: 12);
@@ -380,7 +380,7 @@ class _ExampleDragAndDropState extends State<ExampleDragAndDrop>
 
   Widget _buildPeopleRow() {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 20),
+      padding: .symmetric(horizontal: 8, vertical: 20),
       child: Row(children: _people.map(_buildPersonWithDropZone).toList()),
     );
   }
@@ -388,7 +388,7 @@ class _ExampleDragAndDropState extends State<ExampleDragAndDrop>
   Widget _buildPersonWithDropZone(Customer customer) {
     return Expanded(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 6),
+        padding: .symmetric(horizontal: 6),
         child: DragTarget<Item>(
           builder: (context, candidateItems, rejectedItems) {
             return CustomerCart(
@@ -426,12 +426,12 @@ class CustomerCart extends StatelessWidget {
       scale: highlighted ? 1.075 : 1.0,
       child: Material(
         elevation: highlighted ? 8 : 4,
-        borderRadius: BorderRadius.circular(22),
+        borderRadius: .circular(22),
         color: highlighted ? const Color(0xFFF64209) : Colors.white,
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 24),
+          padding: .symmetric(horizontal: 12, vertical: 24),
           child: Column(
-            mainAxisSize: MainAxisSize.min,
+            mainAxisSize: .min,
             children: [
               ClipOval(
                 child: SizedBox(
@@ -439,7 +439,7 @@ class CustomerCart extends StatelessWidget {
                   height: 46,
                   child: Image(
                     image: customer.imageProvider,
-                    fit: BoxFit.cover,
+                    fit: .cover,
                   ),
                 ),
               ),
@@ -464,7 +464,7 @@ class CustomerCart extends StatelessWidget {
                       style: Theme.of(context).textTheme.bodySmall!.copyWith(
                         color: textColor,
                         fontSize: 16,
-                        fontWeight: FontWeight.bold,
+                        fontWeight: .bold,
                       ),
                     ),
                     const SizedBox(height: 4),
@@ -504,14 +504,14 @@ class MenuListItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       elevation: 12,
-      borderRadius: BorderRadius.circular(20),
+      borderRadius: .circular(20),
       child: Padding(
-        padding: const EdgeInsets.all(12),
+        padding: .all(12),
         child: Row(
-          mainAxisSize: MainAxisSize.max,
+          mainAxisSize: .max,
           children: [
             ClipRRect(
-              borderRadius: BorderRadius.circular(12),
+              borderRadius: .circular(12),
               child: SizedBox(
                 width: 120,
                 height: 120,
@@ -521,7 +521,7 @@ class MenuListItem extends StatelessWidget {
                     curve: Curves.easeInOut,
                     height: isDepressed ? 115 : 120,
                     width: isDepressed ? 115 : 120,
-                    child: Image(image: photoProvider, fit: BoxFit.cover),
+                    child: Image(image: photoProvider, fit: .cover),
                   ),
                 ),
               ),
@@ -529,7 +529,7 @@ class MenuListItem extends StatelessWidget {
             const SizedBox(width: 30),
             Expanded(
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: .start,
                 children: [
                   Text(
                     name,
@@ -541,7 +541,7 @@ class MenuListItem extends StatelessWidget {
                   Text(
                     price,
                     style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
+                      fontWeight: .bold,
                       fontSize: 18,
                     ),
                   ),
@@ -571,13 +571,13 @@ class DraggingListItem extends StatelessWidget {
       translation: const Offset(-0.5, -0.5),
       child: ClipRRect(
         key: dragKey,
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: .circular(12),
         child: SizedBox(
           height: 150,
           width: 150,
           child: Opacity(
             opacity: 0.85,
-            child: Image(image: photoProvider, fit: BoxFit.cover),
+            child: Image(image: photoProvider, fit: .cover),
           ),
         ),
       ),

@@ -471,7 +471,7 @@ class RecipeResponseView extends StatelessWidget {
         final recipe = Recipe.fromJson(json);
         children.add(const Gap(16));
         children.add(Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: .start,
           children: [
             Text(recipe.title, style: Theme.of(context).textTheme.titleLarge),
             Text(recipe.description),
@@ -494,7 +494,7 @@ class RecipeResponseView extends StatelessWidget {
     ...
 
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: .start,
       children: children,
     );
   }
@@ -646,7 +646,7 @@ class _EditRecipePageState extends State<EditRecipePage> {
         builder: (context) => AlertDialog(
           title: Text(recipe.title),
           content: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: .start,
             children: [
               const Text('Modifications:'),
               const Gap(16),

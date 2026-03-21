@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
             ListTile(
               title: const Text(
                 '1625 Main Street',
-                style: TextStyle(fontWeight: FontWeight.w500),
+                style: TextStyle(fontWeight: .w500),
               ),
               subtitle: const Text('My City, CA 99984'),
               leading: Icon(Icons.restaurant_menu, color: Colors.blue[500]),
@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
             ListTile(
               title: const Text(
                 '(408) 555-1212',
-                style: TextStyle(fontWeight: FontWeight.w500),
+                style: TextStyle(fontWeight: .w500),
               ),
               leading: Icon(Icons.contact_phone, color: Colors.blue[500]),
             ),
@@ -71,7 +71,7 @@ class MyApp extends StatelessWidget {
             'Mia B',
             style: TextStyle(
               fontSize: 20,
-              fontWeight: FontWeight.bold,
+              fontWeight: .bold,
               color: Colors.white,
             ),
           ),

@@ -43,7 +43,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
         });
       },
       child: Padding(
-        padding: const EdgeInsets.all(10),
+        padding: .all(10),
         child: Text('Row $index'),
       ),
     );

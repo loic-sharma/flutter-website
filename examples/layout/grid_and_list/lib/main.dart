@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
   // #docregion grid
   Widget _buildGrid() => GridView.extent(
     maxCrossAxisExtent: 150,
-    padding: const EdgeInsets.all(4),
+    padding: .all(4),
     mainAxisSpacing: 4,
     crossAxisSpacing: 4,
     children: _buildGridTileList(30),
@@ -65,7 +65,7 @@ class MyApp extends StatelessWidget {
     return ListTile(
       title: Text(
         title,
-        style: const TextStyle(fontWeight: FontWeight.w500, fontSize: 20),
+        style: const TextStyle(fontWeight: .w500, fontSize: 20),
       ),
       subtitle: Text(subtitle),
       leading: Icon(icon, color: Colors.blue[500]),

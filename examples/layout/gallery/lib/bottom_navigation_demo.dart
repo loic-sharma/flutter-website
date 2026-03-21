@@ -131,9 +131,9 @@ class _NavigationDestinationView extends StatelessWidget {
         ExcludeSemantics(
           child: Center(
             child: Padding(
-              padding: const EdgeInsets.all(16),
+              padding: .all(16),
               child: ClipRRect(
-                borderRadius: BorderRadius.circular(8),
+                borderRadius: .circular(8),
                 child: Image.asset(
                   'assets/demos/bottom_navigation_background.png',
                 ),

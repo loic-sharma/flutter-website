@@ -11,7 +11,7 @@ class GamePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: .all(8.0),
       child: Column(
         spacing: 5.0,
         children: [
@@ -61,7 +61,7 @@ class GuessInput extends StatelessWidget {
       children: [
         Expanded(
           child: Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: .all(8.0),
             // #docregion TextField
             child: TextField(
               maxLength: 5,
@@ -69,7 +69,7 @@ class GuessInput extends StatelessWidget {
               autofocus: true,
               decoration: const InputDecoration(
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(35)),
+                  borderRadius: .all(Radius.circular(35)),
                 ),
               ),
               controller: _textEditingController,
@@ -82,7 +82,7 @@ class GuessInput extends StatelessWidget {
         ),
         // #docregion IconButton
         IconButton(
-          padding: EdgeInsets.zero,
+          padding: .zero,
           icon: const Icon(Icons.arrow_circle_up),
           onPressed: _onSubmit,
         ),

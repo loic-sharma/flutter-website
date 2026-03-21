@@ -38,9 +38,9 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(title: Text(widget.title)),
       body: Padding(
-        padding: const EdgeInsets.all(20),
+        padding: .all(20),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: .start,
           children: [
             Form(
               child: TextFormField(

@@ -10,7 +10,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const CupertinoApp(
-      theme: CupertinoThemeData(brightness: Brightness.dark),
+      theme: CupertinoThemeData(brightness: .dark),
       debugShowCheckedModeBanner: false,
       home: HomePage(),
     );
@@ -36,13 +36,13 @@ class HomePage extends StatelessWidget {
         child: CupertinoButton(
           color: CupertinoColors.systemYellow,
           onPressed: () {},
-          padding: const EdgeInsets.all(16),
+          padding: .all(16),
           child: const Text(
             'Do something',
             style: TextStyle(
               color: CupertinoColors.systemBlue,
               fontSize: 30,
-              fontWeight: FontWeight.bold,
+              fontWeight: .bold,
             ),
           ),
         ),

@@ -442,7 +442,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     const Center(
-      child: Text('Hello, world!', textDirection: TextDirection.ltr),
+      child: Text('Hello, world!', textDirection: .ltr),
     ),
   );
 }
@@ -1033,7 +1033,7 @@ style in multiple places, you can create a
 const TextStyle textStyle = TextStyle(
   color: Colors.cyan,
   fontSize: 32,
-  fontWeight: FontWeight.w600,
+  fontWeight: .w600,
 );
 
 return const Center(
@@ -1041,7 +1041,7 @@ return const Center(
     children: <Widget>[
       Text('Sample text', style: textStyle),
       Padding(
-        padding: EdgeInsets.all(20),
+        padding: .all(20),
         child: Icon(
           Icons.lightbulb_outline,
           size: 48,
@@ -1140,7 +1140,7 @@ class and passing it to the theme property in the
 @override
 Widget build(BuildContext context) {
   return MaterialApp(
-    theme: ThemeData(primaryColor: Colors.cyan, brightness: Brightness.dark),
+    theme: ThemeData(primaryColor: Colors.cyan, brightness: .dark),
     home: const StylingPage(),
   );
 }
@@ -1206,7 +1206,7 @@ class MyStatelessWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text(text, textDirection: TextDirection.ltr));
+    return Center(child: Text(text, textDirection: .ltr));
   }
 }
 ```
@@ -1304,7 +1304,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             if (showText)
               const Text('This execution will be done before you can blink.'),
             Padding(
-              padding: const EdgeInsets.only(top: 70),
+              padding: .only(top: 70),
               child: ElevatedButton(
                 onPressed: toggleBlinkState,
                 child: toggleState
@@ -1925,7 +1925,7 @@ Widget build(BuildContext context) {
       appBar: AppBar(title: const Text('Gestures')),
       body: const Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: .center,
           children: <Widget>[
             Text('Tap, Long Press, Swipe Horizontally or Vertically'),
           ],

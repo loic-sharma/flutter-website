@@ -70,7 +70,7 @@ class GamePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: .all(8.0),
       child: Column(
         spacing: 5.0,
         children: [
@@ -177,7 +177,7 @@ class Tile extends StatelessWidget {
       width: 60,
       height: 60,
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.grey.shade300),
+        border: .all(color: Colors.grey.shade300),
         color: switch (hitType) {
           HitType.hit => Colors.green,
           HitType.partial => Colors.yellow,

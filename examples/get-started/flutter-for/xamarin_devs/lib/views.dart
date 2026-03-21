@@ -9,7 +9,7 @@ class MyWidget extends StatelessWidget {
     // #docregion text
     return const Text(
       'I like Flutter!',
-      style: TextStyle(fontWeight: FontWeight.bold),
+      style: TextStyle(fontWeight: .bold),
     );
     // #enddocregion text
   }

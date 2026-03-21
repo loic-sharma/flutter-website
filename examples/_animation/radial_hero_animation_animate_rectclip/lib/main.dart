@@ -31,7 +31,7 @@ class Photo extends StatelessWidget {
         onTap: onTap,
         child: LayoutBuilder(
           builder: (context, size) {
-            return Image.asset(photo, fit: BoxFit.contain);
+            return Image.asset(photo, fit: .contain);
           },
         ),
       ),
@@ -121,7 +121,7 @@ class RadialExpansionDemo extends StatelessWidget {
               Text(
                 description,
                 style: const TextStyle(fontWeight: .bold),
-                textScaler: const TextScaler.linear(3),
+                textScaler: .linear(3),
               ),
               const SizedBox(height: 16),
             ],
@@ -177,7 +177,7 @@ class RadialExpansionDemo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Radial Transition Demo')),
       body: Container(
-        padding: const EdgeInsets.all(32),
+        padding: .all(32),
         alignment: FractionalOffset.bottomLeft,
         child: Row(
           mainAxisAlignment: .spaceBetween,

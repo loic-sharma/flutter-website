@@ -10,11 +10,11 @@ class FocusExamplesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(Insets.extraLarge),
+      padding: .all(Insets.extraLarge),
       child: Center(
         child: SeparatedColumn(
           separatorBuilder: () => const SizedBox(height: 5),
-          mainAxisSize: MainAxisSize.min,
+          mainAxisSize: .min,
           children: [
             // Basic widget that can accept traversal, built with FocusableActionDetector
             const Text('BasicActionDetector:'),
@@ -89,7 +89,7 @@ class _BasicActionDetectorState extends State<BasicActionDetector> {
         ),
       },
       child: Stack(
-        clipBehavior: Clip.none,
+        clipBehavior: .none,
         children: [
           const FlutterLogo(size: 100),
           // Position focus in the negative margin for a cool effect
@@ -202,7 +202,7 @@ class Logo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      clipBehavior: Clip.none,
+      clipBehavior: .none,
       children: [
         // Content
         const FlutterLogo(size: 100),
@@ -222,8 +222,8 @@ class Logo extends StatelessWidget {
 
 Widget _roundedBorder() => Container(
   decoration: BoxDecoration(
-    border: Border.all(color: Colors.orange),
-    borderRadius: BorderRadius.circular(6),
+    border: .all(color: Colors.orange),
+    borderRadius: .circular(6),
   ),
 );
 

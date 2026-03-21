@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       child: const Center(
         child: Text(
           'Hello World',
-          textDirection: TextDirection.ltr,
+          textDirection: .ltr,
           style: TextStyle(fontSize: 32, color: Colors.black87),
         ),
       ),

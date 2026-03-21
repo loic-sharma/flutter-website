@@ -12,7 +12,7 @@ class AnimatedLogo extends AnimatedWidget {
     final animation = listenable as Animation<double>;
     return Center(
       child: Container(
-        margin: const EdgeInsets.symmetric(vertical: 10),
+        margin: .symmetric(vertical: 10),
         height: animation.value,
         width: animation.value,
         child: const FlutterLogo(),

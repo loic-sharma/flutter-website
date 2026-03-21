@@ -106,7 +106,7 @@ LayoutBuilder(
       child: ConstrainedBox(
         constraints: BoxConstraints(minHeight: constraints.maxHeight),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: .spaceBetween,
           children: [
             ItemWidget(text: 'Item 1'),
             ItemWidget(text: 'Item 2'),
@@ -190,8 +190,8 @@ class SpacedItemsList extends StatelessWidget {
               child: ConstrainedBox(
                 constraints: BoxConstraints(minHeight: constraints.maxHeight),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  mainAxisAlignment: .spaceBetween,
+                  crossAxisAlignment: .stretch,
                   children: List.generate(
                     items,
                     (index) => ItemWidget(text: 'Item $index'),

@@ -72,7 +72,7 @@ class MainApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Align(
-            alignment: Alignment.centerLeft,
+            alignment: .centerLeft,
             child: Text('Birdle'),
           ),
         ),
@@ -129,7 +129,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Align(alignment: Alignment.centerLeft, child: Text('Birdle')),
+          title: Align(alignment: .centerLeft, child: Text('Birdle')),
         ),
         body: Center(child: GamePage()),
       ),
@@ -164,7 +164,7 @@ class GamePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: .all(8.0),
       child: Column(
         spacing: 5.0,
         children: [
@@ -198,7 +198,7 @@ class GamePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: .all(8.0),
       child: Column(
         spacing: 5.0,
         children: [
@@ -258,7 +258,7 @@ class GamePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: .all(8.0),
       child: Column(
         spacing: 5.0,
         children: [

@@ -208,7 +208,7 @@ class MyCustomFormState extends State<MyCustomForm> {
     return Form(
       key: _formKey,
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: .start,
         children: [
           TextFormField(
             // The validator receives the text that the user has entered.
@@ -220,7 +220,7 @@ class MyCustomFormState extends State<MyCustomForm> {
             },
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 16),
+            padding: .symmetric(vertical: 16),
             child: ElevatedButton(
               onPressed: () {
                 // Validate returns true if the form is valid, or false otherwise.

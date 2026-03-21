@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // #enddocregion internationalized-title
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: .center,
           children: <Widget>[
             // Add the following code
             Localizations.override(

@@ -179,7 +179,7 @@ To add font files to your Flutter app, complete the following steps.
 
 This `pubspec.yaml` file defines the italic style for the
 `Raleway` font family as the `Raleway-Italic.ttf` font file.
-When you set `style: TextStyle(fontStyle: FontStyle.italic)`,
+When you set `style: TextStyle(fontStyle: .italic)`,
 Flutter swaps `Raleway-Regular` with `Raleway-Italic`.
 
 The `family` value sets the name of the typeface.
@@ -227,7 +227,7 @@ The text then might appear to be somewhat darker.
 
 You can't use the `weight` property to override the weight of the font.
 You can't set `RobotoMono-Bold` to any other weight than `700`.
-If you set `TextStyle(fontFamily: 'RobotoMono', fontWeight: FontWeight.w900)`,
+If you set `TextStyle(fontFamily: 'RobotoMono', fontWeight: .w900)`,
 the displayed font would still render as however bold `RobotoMono-Bold` looks.
 
 #### Set font style
@@ -241,7 +241,7 @@ of a [`TextStyle`][] object.
 In the `pubspec.yaml` shown in this guide,
 you defined `Raleway-Italic` as being in the `italic` style.
 To use the `Raleway-Italic` font that you added to your app,
-set `style: TextStyle(fontStyle: FontStyle.italic)`.
+set `style: TextStyle(fontStyle: .italic)`.
 Flutter swaps `Raleway-Regular` with `Raleway-Italic` when rendering.
 
 If hadn't added `Raleway-Italic` to your app,
@@ -249,7 +249,7 @@ Flutter attempts to make the font _look_ italic.
 The text then might appear to be leaning to the right.
 
 You can't use the `style` property to override the glyphs of a font.
-If you set `TextStyle(fontFamily: 'Raleway', fontStyle: FontStyle.normal)`,
+If you set `TextStyle(fontFamily: 'Raleway', fontStyle: .normal)`,
 the displayed font would still render as italic.
 The `regular` style of an italic font _is_ italic.
 

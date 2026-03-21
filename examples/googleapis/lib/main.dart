@@ -85,7 +85,7 @@ class _LikedVideosWidgetState extends State<_LikedVideosWidget> {
         child: ConstrainedBox(
           constraints: const BoxConstraints(maxWidth: 520),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
+            mainAxisAlignment: .start,
             children: _widgets(),
           ),
         ),
@@ -113,7 +113,7 @@ class _LikedVideosWidgetState extends State<_LikedVideosWidget> {
                 minVerticalPadding: 20,
                 leading: Image.network(
                   thumbnailUrl,
-                  fit: BoxFit.contain,
+                  fit: .contain,
                   errorBuilder: (context, error, stackTrace) {
                     Timer.run(
                       () => _snackbarError(
@@ -132,7 +132,7 @@ class _LikedVideosWidgetState extends State<_LikedVideosWidget> {
 
     return [
       const Padding(
-        padding: EdgeInsets.all(8),
+        padding: .all(8),
         child: Text('You are not currently signed in.'),
       ),
       ElevatedButton(onPressed: _onSignIn, child: const Text('Sign in')),

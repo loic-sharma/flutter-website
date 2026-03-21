@@ -101,7 +101,7 @@ class _MyAppState extends State<MyApp> {
                 if (snapshot.hasData) {
                   // #docregion Column
                   return Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisAlignment: .center,
                     children: <Widget>[
                       Text(snapshot.data?.title ?? 'Deleted'),
                       ElevatedButton(

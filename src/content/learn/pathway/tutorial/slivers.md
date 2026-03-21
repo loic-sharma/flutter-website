@@ -169,7 +169,7 @@ Widget _buildTrailing(List<Contact> contacts, BuildContext context) {
   ).textTheme.textStyle.copyWith(color: CupertinoColors.systemGrey);
 
   return Row(
-    mainAxisSize: MainAxisSize.min,
+    mainAxisSize: .min,
     children: [
       Text(contacts.length.toString(), style: style),
       const Icon(
@@ -461,18 +461,18 @@ class ContactListSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
+      padding: .fromSTEB(20, 0, 20, 0),
       child: Column(
         children: [
           const SizedBox(height: 15),
           Align(
-            alignment: AlignmentDirectional.bottomStart,
+            alignment: .bottomStart,
             child: Text(
               lastInitial,
               style: const TextStyle(
                 color: CupertinoColors.systemGrey,
                 fontSize: 15,
-                fontWeight: FontWeight.w700,
+                fontWeight: .w700,
               ),
             ),
           ),
@@ -484,7 +484,7 @@ class ContactListSection extends StatelessWidget {
             children: [
               for (final Contact contact in contacts)
                 CupertinoListTile(
-                  padding: EdgeInsets.all(0),
+                  padding: .all(0),
                   title: Text('${contact.firstName} ${contact.lastName}'),
                 ),
             ],

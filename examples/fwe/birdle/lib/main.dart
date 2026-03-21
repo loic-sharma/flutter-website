@@ -14,7 +14,7 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Align(alignment: Alignment.centerLeft, child: Text('Birdle')),
+          title: Align(alignment: .centerLeft, child: Text('Birdle')),
         ),
         body: Center(child: GamePage()),
       ),
@@ -37,15 +37,15 @@ class _GamePageState extends State<GamePage> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: .all(8.0),
       child: Column(
         spacing: 5.0,
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: .center,
         children: [
           for (var guess in _game.guesses)
             Row(
               spacing: 5.0,
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: .center,
               children: [
                 for (var letter in guess) Tile(letter.char, letter.type),
               ],
@@ -82,17 +82,17 @@ class GuessInput extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: .center,
       children: [
         SizedBox(
           width: 250,
           child: Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: .all(8.0),
             child: TextField(
               maxLength: 5,
               decoration: const InputDecoration(
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(35)),
+                  borderRadius: .all(Radius.circular(35)),
                 ),
               ),
               controller: _textEditingController,
@@ -105,7 +105,7 @@ class GuessInput extends StatelessWidget {
           ),
         ),
         IconButton(
-          padding: EdgeInsets.zero,
+          padding: .zero,
           icon: const Icon(Icons.arrow_circle_up),
           onPressed: _onSubmit,
         ),
@@ -133,7 +133,7 @@ class Tile extends StatelessWidget {
       height: 60,
       width: 60,
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.grey.shade300),
+        border: .all(color: Colors.grey.shade300),
         color: switch (hitType) {
           HitType.hit => Colors.green,
           HitType.partial => Colors.yellow,

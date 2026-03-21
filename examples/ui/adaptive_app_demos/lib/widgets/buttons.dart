@@ -35,7 +35,7 @@ class SecondaryMenuButton extends StatelessWidget {
       onPressed: () {},
       child: Container(
         width: double.infinity,
-        padding: const EdgeInsets.all(16),
+        padding: .all(16),
         child: Text(label),
       ),
     );
@@ -61,7 +61,7 @@ class SelectedPageButton extends StatelessWidget {
         onPressed: onPressed,
         child: Container(
           width: double.infinity,
-          padding: const EdgeInsets.all(Insets.large),
+          padding: .all(Insets.large),
           child: Text(label, style: TextStyles.buttonText1, maxLines: 1),
         ),
       ),

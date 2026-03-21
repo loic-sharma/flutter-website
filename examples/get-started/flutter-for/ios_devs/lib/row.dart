@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
       body: Center(
         // #docregion row
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: .center,
           children: [Icon(CupertinoIcons.globe), Text('Hello, world!')],
         ),
         // #enddocregion row

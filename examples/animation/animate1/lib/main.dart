@@ -37,7 +37,7 @@ class _LogoAppState extends State<LogoApp> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        margin: const EdgeInsets.symmetric(vertical: 10),
+        margin: .symmetric(vertical: 10),
         height: animation.value,
         width: animation.value,
         child: const FlutterLogo(),

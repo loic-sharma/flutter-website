@@ -76,7 +76,7 @@ when pressed, calls the `deleteAlbum()` method.
 <?code-excerpt "lib/main.dart (Column)" replace="/return //g"?>
 ```dart
 Column(
-  mainAxisAlignment: MainAxisAlignment.center,
+  mainAxisAlignment: .center,
   children: <Widget>[
     Text(snapshot.data?.title ?? 'Deleted'),
     ElevatedButton(
@@ -240,7 +240,7 @@ class _MyAppState extends State<MyApp> {
               if (snapshot.connectionState == ConnectionState.done) {
                 if (snapshot.hasData) {
                   return Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisAlignment: .center,
                     children: <Widget>[
                       Text(snapshot.data?.title ?? 'Deleted'),
                       ElevatedButton(

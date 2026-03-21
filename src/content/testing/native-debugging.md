@@ -217,7 +217,7 @@ test Flutter app. This update adds native code to debug.
           title: 'URL Launcher',
           theme: ThemeData(
             colorSchemeSeed: Colors.purple,
-            brightness: Brightness.light,
+            brightness: .light,
           ),
           home: const MyHomePage(title: 'URL Launcher'),
         );
@@ -273,10 +273,10 @@ test Flutter app. This update adds native code to debug.
           ),
           body: Center(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: .center,
               children: <Widget>[
                 Padding(
-                  padding: const EdgeInsets.all(16),
+                  padding: .all(16),
                   child: Text(toLaunch.toString()),
                 ),
                 FilledButton(
@@ -285,14 +285,14 @@ test Flutter app. This update adds native code to debug.
                   }),
                   child: const Text('Launch in browser'),
                 ),
-                const Padding(padding: EdgeInsets.all(16)),
+                const Padding(padding: .all(16)),
                 FilledButton(
                   onPressed: () => setState(() {
                     _launched = _launchInWebView(toLaunch);
                   }),
                   child: const Text('Launch in app'),
                 ),
-                const Padding(padding: EdgeInsets.all(16.0)),
+                const Padding(padding: .all(16.0)),
                 FutureBuilder<void>(future: _launched, builder: _launchStatus),
               ],
             ),

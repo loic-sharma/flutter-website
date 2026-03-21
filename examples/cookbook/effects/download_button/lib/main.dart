@@ -62,12 +62,12 @@ class _ExampleCupertinoDownloadButtonState
       leading: const DemoAppIcon(),
       title: Text(
         'App ${index + 1}',
-        overflow: TextOverflow.ellipsis,
+        overflow: .ellipsis,
         style: theme.textTheme.titleLarge,
       ),
       subtitle: Text(
         'Lorem ipsum dolor #${index + 1}',
-        overflow: TextOverflow.ellipsis,
+        overflow: .ellipsis,
         style: theme.textTheme.bodySmall,
       ),
       trailing: SizedBox(

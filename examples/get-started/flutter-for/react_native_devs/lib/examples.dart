@@ -97,7 +97,7 @@ class TextStyleExample extends StatelessWidget {
     const TextStyle textStyle = TextStyle(
       color: Colors.cyan,
       fontSize: 32,
-      fontWeight: FontWeight.w600,
+      fontWeight: .w600,
     );
 
     return const Center(
@@ -105,7 +105,7 @@ class TextStyleExample extends StatelessWidget {
         children: <Widget>[
           Text('Sample text', style: textStyle),
           Padding(
-            padding: EdgeInsets.all(20),
+            padding: .all(20),
             child: Icon(
               Icons.lightbulb_outline,
               size: 48,
@@ -157,7 +157,7 @@ class ThemeExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(primaryColor: Colors.cyan, brightness: Brightness.dark),
+      theme: ThemeData(primaryColor: Colors.cyan, brightness: .dark),
       home: const StylingPage(),
     );
   }
@@ -289,7 +289,7 @@ class GestureDetectorExample extends StatelessWidget {
         appBar: AppBar(title: const Text('Gestures')),
         body: const Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: .center,
             children: <Widget>[
               Text('Tap, Long Press, Swipe Horizontally or Vertically'),
             ],

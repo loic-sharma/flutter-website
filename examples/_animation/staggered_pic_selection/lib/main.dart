@@ -265,7 +265,7 @@ class _PhotoItemState extends State<PhotoItem> with TickerProviderStateMixin {
               position: _replaceNewPhotoAnimation,
               child: _newPhoto == null
                   ? null
-                  : Image.asset(_newPhoto!.asset, fit: BoxFit.cover),
+                  : Image.asset(_newPhoto!.asset, fit: .cover),
             ),
           ),
         ),

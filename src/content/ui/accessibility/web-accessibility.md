@@ -98,21 +98,21 @@ class MyCustomListWidget extends StatelessWidget {
     // This example shows how to explicitly assign list and listitem roles
     // when building a custom list structure.
     return Semantics(
-      role: SemanticsRole.list,
+      role: .list,
       explicitChildNodes: true,
       child: Column(
         children: <Widget>[
           Semantics(
-            role: SemanticsRole.listItem,
+            role: .listItem,
             child: const Padding(
-              padding: EdgeInsets.all(8.0),
+              padding: .all(8.0),
               child: Text('Content of the first custom list item.'),
             ),
           ),
           Semantics(
-            role: SemanticsRole.listItem,
+            role: .listItem,
             child: const Padding(
-              padding: EdgeInsets.all(8.0),
+              padding: .all(8.0),
               child: Text('Content of the second custom list item.'),
             ),
           ),

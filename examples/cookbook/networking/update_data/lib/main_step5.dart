@@ -87,8 +87,8 @@ class _MyAppState extends State<MyApp> {
       home: Scaffold(
         appBar: AppBar(title: const Text('Update Data Example')),
         body: Container(
-          alignment: Alignment.center,
-          padding: const EdgeInsets.all(8),
+          alignment: .center,
+          padding: .all(8),
         ),
       ),
     );
@@ -114,10 +114,10 @@ class _MyAppState extends State<MyApp> {
   void column() {
     // #docregion Column
     Column(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: .center,
       children: <Widget>[
         Padding(
-          padding: const EdgeInsets.all(8),
+          padding: .all(8),
           child: TextField(
             controller: _controller,
             decoration: const InputDecoration(hintText: 'Enter Title'),

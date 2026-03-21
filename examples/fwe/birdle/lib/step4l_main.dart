@@ -16,7 +16,7 @@ class GuessInput extends StatelessWidget {
       children: [
         Expanded(child: Container()),
         IconButton(
-          padding: EdgeInsets.zero,
+          padding: .zero,
           icon: Icon(Icons.arrow_circle_up),
           onPressed: null,
         ),

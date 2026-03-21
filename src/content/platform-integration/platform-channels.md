@@ -330,7 +330,7 @@ Widget build(BuildContext context) {
   return Material(
     child: Center(
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: .spaceEvenly,
         children: [
           ElevatedButton(
             onPressed: _getBatteryLevel,

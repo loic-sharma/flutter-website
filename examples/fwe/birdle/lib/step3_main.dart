@@ -25,7 +25,7 @@ class MainApp extends StatelessWidget {
       home: Scaffold(
         // #docregion AppBar
         appBar: AppBar(
-          title: Align(alignment: Alignment.centerLeft, child: Text('Birdle')),
+          title: Align(alignment: .centerLeft, child: Text('Birdle')),
         ),
         // #enddocregion AppBar
         body: Center(child: GamePage()),
@@ -45,7 +45,7 @@ class GamePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: .all(8.0),
       // #docregion Column
       child: Column(
         spacing: 5.0,

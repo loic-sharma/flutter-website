@@ -27,7 +27,7 @@ void main() {
 
   // #docregion test3
   testWidgets('finds a specific instance', (tester) async {
-    const childWidget = Padding(padding: EdgeInsets.zero);
+    const childWidget = Padding(padding: .zero);
 
     // Provide the childWidget to the Container.
     await tester.pumpWidget(Container(child: childWidget));

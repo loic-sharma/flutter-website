@@ -37,7 +37,7 @@ void column() {
         child: ConstrainedBox(
           constraints: BoxConstraints(minHeight: constraints.maxHeight),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: .spaceBetween,
             children: [
               ItemWidget(text: 'Item 1'),
               ItemWidget(text: 'Item 2'),

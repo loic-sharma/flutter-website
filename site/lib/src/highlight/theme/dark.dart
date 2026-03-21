@@ -285,7 +285,7 @@ final Map<Tag, TextStyle> dashDarkTheme = {
       green: 0xF5,
       blue: 0xDE,
     ),
-    fontWeight: FontWeight.w600,
+    fontWeight: .w600,
   ),
 
   Tags.stringInterpolation: const TextStyle(
@@ -297,10 +297,10 @@ final Map<Tag, TextStyle> dashDarkTheme = {
   ),
 
   MarkupTags.bold: const TextStyle(
-    fontWeight: FontWeight.w700,
+    fontWeight: .w700,
   ),
   MarkupTags.italic: const TextStyle(
-    fontStyle: FontStyle.italic,
+    fontStyle: .italic,
   ),
   MarkupTags.underline: const TextStyle(
     foregroundColor: Color.fromArgb(
@@ -317,7 +317,7 @@ final Map<Tag, TextStyle> dashDarkTheme = {
     ),
   ),
   MarkupTags.heading: const TextStyle(
-    fontWeight: FontWeight.w700,
+    fontWeight: .w700,
   ),
   MarkupTags.code: const TextStyle(
     foregroundColor: Color.fromArgb(
@@ -376,6 +376,6 @@ final Map<Tag, TextStyle> dashDarkTheme = {
       green: 0x89,
       blue: 0x7E,
     ),
-    fontWeight: FontWeight.w600,
+    fontWeight: .w600,
   ),
 };
