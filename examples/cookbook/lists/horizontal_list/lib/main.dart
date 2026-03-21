@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: const Text(title)),
         body: Container(
-          margin: .symmetric(vertical: 20),
+          margin: const .symmetric(vertical: 20),
           height: 200,
           child: ScrollConfiguration(
             // Add a custom scroll behavior that

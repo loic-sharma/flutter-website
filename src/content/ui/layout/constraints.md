@@ -296,7 +296,7 @@ class _FlutterLayoutArticleState extends State<FlutterLayoutArticle> {
                           for (int i = 0; i < widget.examples.length; i++)
                             Container(
                               width: 58,
-                              padding: .only(left: 4, right: 4),
+                              padding: const .only(left: 4, right: 4),
                               child: button(i + 1),
                             ),
                         ],
@@ -310,7 +310,7 @@ class _FlutterLayoutArticleState extends State<FlutterLayoutArticle> {
                       child: SingleChildScrollView(
                         key: ValueKey(count),
                         child: Padding(
-                          padding: .all(10),
+                          padding: const .all(10),
                           child: Column(
                             children: [
                               Center(child: Text(code)),
@@ -588,7 +588,7 @@ class Example8 extends Example {
   final code =
       'Center(\n'
       '   child: Container(color: red\n'
-      '      padding: .all(20),\n'
+      '      padding: const .all(20),\n'
       '      child: Container(color: green, width: 30, height: 30)))';
   @override
   final String explanation =
@@ -600,7 +600,7 @@ class Example8 extends Example {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        padding: .all(20),
+        padding: const .all(20),
         color: red,
         child: Container(color: green, width: 30, height: 30),
       ),
@@ -1464,7 +1464,7 @@ entirely covers the red `Container`.
 ```dart
 Center(
   child: Container(
-    padding: .all(20),
+    padding: const .all(20),
     color: red,
     child: Container(color: green, width: 30, height: 30),
   ),

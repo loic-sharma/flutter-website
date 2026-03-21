@@ -185,7 +185,7 @@ Column(
   mainAxisAlignment: .center,
   children: <Widget>[
     Padding(
-      padding: .all(8),
+      padding: const .all(8),
       child: TextField(
         controller: _controller,
         decoration: const InputDecoration(hintText: 'Enter Title'),
@@ -338,7 +338,7 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(title: const Text('Update Data Example')),
         body: Container(
           alignment: .center,
-          padding: .all(8),
+          padding: const .all(8),
           child: FutureBuilder<Album>(
             future: _futureAlbum,
             builder: (context, snapshot) {

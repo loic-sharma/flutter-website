@@ -276,7 +276,7 @@ test Flutter app. This update adds native code to debug.
               mainAxisAlignment: .center,
               children: <Widget>[
                 Padding(
-                  padding: .all(16),
+                  padding: const .all(16),
                   child: Text(toLaunch.toString()),
                 ),
                 FilledButton(

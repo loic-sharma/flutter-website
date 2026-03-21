@@ -11,7 +11,7 @@ class MyWidget extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
-            padding: .only(left: 20, right: 30),
+            padding: const .only(left: 20, right: 30),
           ),
           onPressed: () {},
           child: const Text('Hello'),

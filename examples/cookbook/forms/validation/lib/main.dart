@@ -59,7 +59,7 @@ class MyCustomFormState extends State<MyCustomForm> {
           ),
           // #enddocregion TextFormField
           Padding(
-            padding: .symmetric(vertical: 16),
+            padding: const .symmetric(vertical: 16),
             // #docregion ElevatedButton
             child: ElevatedButton(
               onPressed: () {

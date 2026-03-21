@@ -113,7 +113,7 @@ class _ExampleDragAndDropState extends State<ExampleDragAndDrop>
 
   Widget _buildMenuList() {
     return ListView.separated(
-      padding: .all(16),
+      padding: const .all(16),
       itemCount: _items.length,
       separatorBuilder: (context, index) {
         return const SizedBox(height: 12);

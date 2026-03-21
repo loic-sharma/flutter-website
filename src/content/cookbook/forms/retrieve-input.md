@@ -145,7 +145,7 @@ class _MyCustomFormState extends State<MyCustomForm> {
     return Scaffold(
       appBar: AppBar(title: const Text('Retrieve Text Input')),
       body: Padding(
-        padding: .all(16),
+        padding: const .all(16),
         child: TextField(controller: myController),
       ),
       floatingActionButton: FloatingActionButton(

@@ -39,7 +39,7 @@ class TitleSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: .all(32),
+      padding: const .all(32),
       child: Row(
         children: [
           Expanded(
@@ -49,7 +49,7 @@ class TitleSection extends StatelessWidget {
               children: [
                 /*2*/
                 Padding(
-                  padding: .only(bottom: 8),
+                  padding: const .only(bottom: 8),
                   child: Text(
                     name,
                     style: const TextStyle(fontWeight: .bold),
@@ -117,7 +117,7 @@ class ButtonWithText extends StatelessWidget {
       children: [
         Icon(icon, color: color),
         Padding(
-          padding: .only(top: 8),
+          padding: const .only(top: 8),
           child: Text(
             label,
             style: TextStyle(

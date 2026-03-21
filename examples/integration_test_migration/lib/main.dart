@@ -150,7 +150,7 @@ class DetailPlant extends StatelessWidget {
     const textStyleLabel = TextStyle(fontWeight: .bold, fontSize: 20);
     const textStyleText = TextStyle(fontSize: 20);
     return Padding(
-      padding: .all(32),
+      padding: const .all(32),
       child: Column(
         children: [
           Row(

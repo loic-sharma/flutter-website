@@ -350,7 +350,7 @@ class _ExampleDragAndDropState extends State<ExampleDragAndDrop>
 
   Widget _buildMenuList() {
     return ListView.separated(
-      padding: .all(16),
+      padding: const .all(16),
       itemCount: _items.length,
       separatorBuilder: (context, index) {
         return const SizedBox(height: 12);
@@ -380,7 +380,7 @@ class _ExampleDragAndDropState extends State<ExampleDragAndDrop>
 
   Widget _buildPeopleRow() {
     return Container(
-      padding: .symmetric(horizontal: 8, vertical: 20),
+      padding: const .symmetric(horizontal: 8, vertical: 20),
       child: Row(children: _people.map(_buildPersonWithDropZone).toList()),
     );
   }
@@ -388,7 +388,7 @@ class _ExampleDragAndDropState extends State<ExampleDragAndDrop>
   Widget _buildPersonWithDropZone(Customer customer) {
     return Expanded(
       child: Padding(
-        padding: .symmetric(horizontal: 6),
+        padding: const .symmetric(horizontal: 6),
         child: DragTarget<Item>(
           builder: (context, candidateItems, rejectedItems) {
             return CustomerCart(
@@ -429,7 +429,7 @@ class CustomerCart extends StatelessWidget {
         borderRadius: .circular(22),
         color: highlighted ? const Color(0xFFF64209) : Colors.white,
         child: Padding(
-          padding: .symmetric(horizontal: 12, vertical: 24),
+          padding: const .symmetric(horizontal: 12, vertical: 24),
           child: Column(
             mainAxisSize: .min,
             children: [
@@ -506,7 +506,7 @@ class MenuListItem extends StatelessWidget {
       elevation: 12,
       borderRadius: .circular(20),
       child: Padding(
-        padding: .all(12),
+        padding: const .all(12),
         child: Row(
           mainAxisSize: .max,
           children: [

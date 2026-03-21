@@ -961,7 +961,7 @@ In the following example:
 child: CupertinoButton(
   color: CupertinoColors.systemYellow,
   onPressed: () {},
-  padding: .all(16),
+  padding: const .all(16),
   child: const Text(
     'Do something',
     style: TextStyle(

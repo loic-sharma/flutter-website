@@ -31,7 +31,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
           developer.log('Row $index tapped');
         },
         child: Padding(
-          padding: .all(10),
+          padding: const .all(10),
           child: Text('Row $index'),
         ),
       ),

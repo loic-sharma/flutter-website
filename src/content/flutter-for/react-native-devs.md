@@ -1304,7 +1304,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             if (showText)
               const Text('This execution will be done before you can blink.'),
             Padding(
-              padding: .only(top: 70),
+              padding: const .only(top: 70),
               child: ElevatedButton(
                 onPressed: toggleBlinkState,
                 child: toggleState

@@ -113,7 +113,7 @@ class Nested extends StatelessWidget {
         /*[[highlight]]*/ width: 240,
         /*[[/highlight]]*/
         // max-width is 240
-        padding: .all(16),
+        padding: const .all(16),
         decoration: BoxDecoration(color: Colors.red[400]),
         child: Text('Lorem ipsum', style: bold24Roboto),
       ),
@@ -144,7 +144,7 @@ class Absolute extends StatelessWidget {
           top: 24,
           /*[[/highlight]]*/
           child: Container(
-            padding: .all(16),
+            padding: const .all(16),
             decoration: BoxDecoration(color: Colors.red[400]),
             child: Text('Lorem ipsum', style: bold24Roboto),
           ),
@@ -175,7 +175,7 @@ class Rotating extends StatelessWidget {
         transform: Matrix4.identity()..rotateZ(15 * 3.1415927 / 180),
         child: /*[[/highlight]]*/ Container(
           // red box
-          padding: .all(16),
+          padding: const .all(16),
           decoration: BoxDecoration(color: Colors.red[400]),
           child: Text(
             'Lorem ipsum',
@@ -209,7 +209,7 @@ class Scaling extends StatelessWidget {
         transform: Matrix4.identity()..scaleByDouble(1.5, 1.5, 1.5, 1.5),
         child: /*[[/highlight]]*/ Container(
           // red box
-          padding: .all(16),
+          padding: const .all(16),
           decoration: BoxDecoration(color: Colors.red[400]),
           child: Text(
             'Lorem ipsum',
@@ -248,7 +248,7 @@ class Gradient extends StatelessWidget {
           ),
         ),
         /*[[/highlight]]*/
-        padding: .all(16),
+        padding: const .all(16),
         child: Text('Lorem ipsum', style: bold24Roboto),
       ),
     ),
@@ -273,7 +273,7 @@ class HorizontalGradient extends StatelessWidget {
     child: Center(
       child: Container(
         // red box
-        padding: .all(16),
+        padding: const .all(16),
         /*[[highlight]]*/ decoration: const BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment(-1.0, 0.0),
@@ -306,10 +306,10 @@ class RoundCorners extends StatelessWidget {
     child: Center(
       child: Container(
         // red circle
-        padding: .all(16),
+        padding: const .all(16),
         decoration: BoxDecoration(
           color: Colors.red[400],
-          /*[[highlight]]*/ borderRadius: .all(
+          /*[[highlight]]*/ borderRadius: const .all(
             Radius.circular(8),
           ) /*[[/highlight]]*/,
         ),
@@ -333,12 +333,12 @@ class BoxShadowExample extends StatelessWidget {
     // grey box
     width: 320,
     height: 240,
-    margin: .only(bottom: 16),
+    margin: const .only(bottom: 16),
     decoration: BoxDecoration(color: Colors.grey[300]),
     child: Center(
       child: Container(
         // red box
-        padding: .all(16),
+        padding: const .all(16),
         decoration: BoxDecoration(
           color: Colors.red[400],
           /*[[highlight]]*/ boxShadow: const <BoxShadow>[
@@ -382,7 +382,7 @@ class CircleExample extends StatelessWidget {
           color: Colors.red[400],
           /*[[highlight]]*/ shape: .circle /*[[/highlight]]*/,
         ),
-        padding: .all(16),
+        padding: const .all(16),
         /*[[highlight]]*/ width: 160,
         height: 160,
         /*[[/highlight]]*/
@@ -414,7 +414,7 @@ class TextSpacingExample extends StatelessWidget {
     child: Center(
       child: Container(
         // red box
-        padding: .all(16),
+        padding: const .all(16),
         decoration: BoxDecoration(color: Colors.red[400]),
         child: const Text(
           'Lorem ipsum',
@@ -449,7 +449,7 @@ class InlineFormattingExample extends StatelessWidget {
       child: Container(
         // red box
         decoration: BoxDecoration(color: Colors.red[400]),
-        padding: .all(16),
+        padding: const .all(16),
         child: /*[[highlight]]*/ RichText(
           text: TextSpan(
             style: bold24Roboto,
@@ -490,7 +490,7 @@ class TextExcerptsExample extends StatelessWidget {
       child: Container(
         // red box
         decoration: BoxDecoration(color: Colors.red[400]),
-        padding: .all(16),
+        padding: const .all(16),
         child: Text(
           'Lorem ipsum dolor sit amet, consec etur',
           style: bold24Roboto,

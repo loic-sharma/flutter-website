@@ -10,7 +10,7 @@ class FocusExamplesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: .all(Insets.extraLarge),
+      padding: const .all(Insets.extraLarge),
       child: Center(
         child: SeparatedColumn(
           separatorBuilder: () => const SizedBox(height: 5),

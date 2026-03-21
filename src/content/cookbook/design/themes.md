@@ -103,7 +103,7 @@ In the following example, the `Container` constructor uses this technique to set
 <?code-excerpt "lib/main.dart (Container)" replace="/^child: //g"?>
 ```dart
 Container(
-  padding: .symmetric(horizontal: 12, vertical: 12),
+  padding: const .symmetric(horizontal: 12, vertical: 12),
   color: Theme.of(context).colorScheme.primary,
   child: Text(
     'Text with a background color',
@@ -238,7 +238,7 @@ class MyHomePage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          padding: .symmetric(horizontal: 12, vertical: 12),
+          padding: const .symmetric(horizontal: 12, vertical: 12),
           color: Theme.of(context).colorScheme.primary,
           child: Text(
             'Text with a background color',

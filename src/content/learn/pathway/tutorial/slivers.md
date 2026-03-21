@@ -461,7 +461,7 @@ class ContactListSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: .fromSTEB(20, 0, 20, 0),
+      padding: const EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
       child: Column(
         children: [
           const SizedBox(height: 15),

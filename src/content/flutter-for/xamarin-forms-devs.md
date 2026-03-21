@@ -361,7 +361,7 @@ Widget build(BuildContext context) {
     body: Center(
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          padding: .only(left: 20, right: 30),
+          padding: const .only(left: 20, right: 30),
         ),
         onPressed: () {},
         child: const Text('Hello'),
@@ -856,7 +856,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
 
   Widget getRow(int index) {
     return Padding(
-      padding: .all(10),
+      padding: const .all(10),
       child: Text('Row ${data[index]['title']}'),
     );
   }
@@ -1079,7 +1079,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
 
   Widget getRow(int index) {
     return Padding(
-      padding: .all(10),
+      padding: const .all(10),
       child: Text('Row ${data[index]['title']}'),
     );
   }
@@ -1209,7 +1209,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
 
   Widget getRow(int index) {
     return Padding(
-      padding: .all(10),
+      padding: const .all(10),
       child: Text('Row ${data[index]['title']}'),
     );
   }
@@ -1806,7 +1806,7 @@ class SampleAppPage extends StatelessWidget {
     return List<Widget>.generate(
       100,
       (index) =>
-          Padding(padding: .all(10), child: Text('Row $index')),
+          Padding(padding: const .all(10), child: Text('Row $index')),
     );
   }
 
@@ -1865,7 +1865,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
           developer.log('Row $index tapped');
         },
         child: Padding(
-          padding: .all(10),
+          padding: const .all(10),
           child: Text('Row $index'),
         ),
       ),
@@ -1952,7 +1952,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
         });
       },
       child: Padding(
-        padding: .all(10),
+        padding: const .all(10),
         child: Text('Row $index'),
       ),
     );
@@ -2021,7 +2021,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
         });
       },
       child: Padding(
-        padding: .all(10),
+        padding: const .all(10),
         child: Text('Row $index'),
       ),
     );
@@ -2157,7 +2157,7 @@ class _MyFormState extends State<MyForm> {
     return Scaffold(
       appBar: AppBar(title: const Text('Retrieve Text Input')),
       body: Padding(
-        padding: .all(16),
+        padding: const .all(16),
         child: TextField(controller: myController),
       ),
       floatingActionButton: FloatingActionButton(

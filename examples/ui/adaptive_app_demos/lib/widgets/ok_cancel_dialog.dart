@@ -12,7 +12,7 @@ class OkCancelDialog extends StatelessWidget {
       child: ConstrainedBox(
         constraints: const BoxConstraints(maxWidth: 400),
         child: Padding(
-          padding: .all(Insets.large),
+          padding: const .all(Insets.large),
           child: Column(
             mainAxisSize: .min,
             children: [
@@ -67,7 +67,7 @@ class DialogButton extends StatelessWidget {
     return TextButton(
       onPressed: onPressed,
       child: Padding(
-        padding: .symmetric(horizontal: 16, vertical: 8),
+        padding: const .symmetric(horizontal: 16, vertical: 8),
         child: Text(label),
       ),
     );

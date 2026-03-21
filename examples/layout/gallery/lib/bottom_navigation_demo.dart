@@ -131,7 +131,7 @@ class _NavigationDestinationView extends StatelessWidget {
         ExcludeSemantics(
           child: Center(
             child: Padding(
-              padding: .all(16),
+              padding: const .all(16),
               child: ClipRRect(
                 borderRadius: .circular(8),
                 child: Image.asset(

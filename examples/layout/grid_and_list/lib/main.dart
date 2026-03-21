@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
   // #docregion grid
   Widget _buildGrid() => GridView.extent(
     maxCrossAxisExtent: 150,
-    padding: .all(4),
+    padding: const .all(4),
     mainAxisSpacing: 4,
     crossAxisSpacing: 4,
     children: _buildGridTileList(30),

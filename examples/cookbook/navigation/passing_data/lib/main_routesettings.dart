@@ -73,7 +73,7 @@ class DetailScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text(todo.title)),
       body: Padding(
-        padding: .all(16),
+        padding: const .all(16),
         child: Text(todo.description),
       ),
     );

@@ -69,7 +69,7 @@ class TravelDestinationItem extends StatelessWidget {
       top: false,
       bottom: false,
       child: Padding(
-        padding: .all(8),
+        padding: const .all(8),
         child: Column(
           children: [
             const SectionTitle(title: 'Normal'),
@@ -111,7 +111,7 @@ class TappableTravelDestinationItem extends StatelessWidget {
       top: false,
       bottom: false,
       child: Padding(
-        padding: .all(8),
+        padding: const .all(8),
         child: Column(
           children: [
             const SectionTitle(title: 'Tappable'),
@@ -169,7 +169,7 @@ class SelectableTravelDestinationItem extends StatelessWidget {
       top: false,
       bottom: false,
       child: Padding(
-        padding: .all(8),
+        padding: const .all(8),
         child: Column(
           children: [
             const SectionTitle(title: 'Selectable (long press)'),
@@ -201,7 +201,7 @@ class SelectableTravelDestinationItem extends StatelessWidget {
                       Align(
                         alignment: .topRight,
                         child: Padding(
-                          padding: .all(8),
+                          padding: const .all(8),
                           child: Icon(
                             Icons.check_circle,
                             color: isSelected
@@ -230,7 +230,7 @@ class SectionTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: .fromLTRB(4, 4, 4, 12),
+      padding: const .fromLTRB(4, 4, 4, 12),
       child: Align(
         alignment: .centerLeft,
         child: Text(title, style: Theme.of(context).textTheme.titleMedium),
@@ -291,7 +291,7 @@ class TravelDestinationContent extends StatelessWidget {
         Semantics(
           container: true,
           child: Padding(
-            padding: .fromLTRB(16, 16, 16, 0),
+            padding: const .fromLTRB(16, 16, 16, 0),
             child: DefaultTextStyle(
               softWrap: false,
               overflow: .ellipsis,
@@ -301,7 +301,7 @@ class TravelDestinationContent extends StatelessWidget {
                 children: [
                   // The three line description on each card demo.
                   Padding(
-                    padding: .only(bottom: 8),
+                    padding: const .only(bottom: 8),
                     child: Text(
                       destination.description,
                       style: descriptionStyle.copyWith(color: Colors.black54),
@@ -317,7 +317,7 @@ class TravelDestinationContent extends StatelessWidget {
         if (destination.cardType == CardType.standard)
           // share, explore buttons
           Padding(
-            padding: .all(8),
+            padding: const .all(8),
             child: OverflowBar(
               alignment: MainAxisAlignment.start,
               spacing: 8,
@@ -380,11 +380,11 @@ class _CardsDemoState extends State<CardsDemo> with RestorationMixin {
         body: Scrollbar(
           child: ListView(
             restorationId: 'cards_demo_list_view',
-            padding: .only(top: 8, left: 8, right: 8),
+            padding: const .only(top: 8, left: 8, right: 8),
             children: [
               for (final destination in _destinations)
                 Container(
-                  margin: .only(bottom: 8),
+                  margin: const .only(bottom: 8),
                   child: switch (destination.cardType) {
                     CardType.standard => TravelDestinationItem(
                       destination: destination,

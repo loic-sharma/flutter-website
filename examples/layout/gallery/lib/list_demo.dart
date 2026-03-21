@@ -23,7 +23,7 @@ class ListDemo extends StatelessWidget {
         body: Scrollbar(
           child: ListView(
             restorationId: 'list_demo_list_view',
-            padding: .symmetric(vertical: 8),
+            padding: const .symmetric(vertical: 8),
             children: [
               for (var index = 1; index < 21; index++)
                 ListTile(

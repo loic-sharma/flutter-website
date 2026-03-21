@@ -53,7 +53,7 @@ class _LoginForm extends StatelessWidget {
         // Very small screens may require vertical scrolling of the form
         child: SingleChildScrollView(
           child: Padding(
-            padding: .all(16),
+            padding: const .all(16),
             child: Column(
               children: [
                 TextField(decoration: _getTextDecoration('Enter email...')),
@@ -68,7 +68,7 @@ class _LoginForm extends StatelessWidget {
                   child: Container(
                     width: double.infinity,
                     alignment: .center,
-                    padding: .all(16),
+                    padding: const .all(16),
                     child: const Text('Log In'),
                   ),
                 ),

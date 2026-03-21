@@ -65,7 +65,7 @@ class _AdaptiveGridPageState extends State<AdaptiveGridPage> {
                   controller: _scrollController,
                   child: GridView.count(
                     controller: _scrollController,
-                    padding: .all(Insets.extraLarge),
+                    padding: const .all(Insets.extraLarge),
                     childAspectRatio: 1,
                     crossAxisCount: colCount,
                     children: listChildren,
@@ -110,7 +110,7 @@ class _GridItem extends StatelessWidget {
   Widget build(BuildContext context) {
     double borderWidth = isSelected ? 6 : 0;
     return Padding(
-      padding: .all(Insets.large),
+      padding: const .all(Insets.large),
       child: TextButton(
         onPressed: () => onPressed.call(index),
         child: Stack(

@@ -39,7 +39,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
     List<Widget> widgets = [];
     for (int i = 0; i < 100; i++) {
       widgets.add(
-        Padding(padding: .all(10), child: Text('Row $i')),
+        Padding(padding: const .all(10), child: Text('Row $i')),
       );
     }
     return widgets;

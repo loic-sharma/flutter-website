@@ -72,7 +72,7 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(title: const Text('Create Data Example')),
         body: Container(
           alignment: .center,
-          padding: .all(8),
+          padding: const .all(8),
           child: (_futureAlbum == null) ? buildColumn() : buildFutureBuilder(),
         ),
       ),

@@ -20,7 +20,7 @@ class _GamePageState extends State<GamePage> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: .all(8.0),
+      padding: const .all(8.0),
       child: Column(
         children: [
           for (var guess in _game.guesses)
@@ -29,7 +29,7 @@ class _GamePageState extends State<GamePage> {
               children: [
                 for (var letter in guess)
                   Padding(
-                    padding: .symmetric(
+                    padding: const .symmetric(
                       horizontal: 2.5,
                       vertical: 2.5,
                     ),

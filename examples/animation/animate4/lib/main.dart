@@ -10,7 +10,7 @@ class LogoWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: .symmetric(vertical: 10),
+      margin: const .symmetric(vertical: 10),
       child: const FlutterLogo(),
     );
   }

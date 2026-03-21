@@ -79,7 +79,7 @@ class ThemeSwitch extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: .symmetric(horizontal: 16.0),
+      padding: const .symmetric(horizontal: 16.0),
       child: Row(
         children: [
           const Text('Dark Mode'),

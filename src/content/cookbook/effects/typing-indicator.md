@@ -390,7 +390,7 @@ class StatusBubble extends StatelessWidget {
     return Container(
       width: 85,
       height: 44,
-      padding: .symmetric(horizontal: 8),
+      padding: const .symmetric(horizontal: 8),
       decoration: BoxDecoration(
         borderRadius: .circular(27),
         color: bubbleColor,
@@ -529,7 +529,7 @@ class StatusBubble extends StatelessWidget {
     return Container(
       width: 85,
       height: 44,
-      padding: .symmetric(horizontal: 8),
+      padding: const .symmetric(horizontal: 8),
       decoration: BoxDecoration(
         borderRadius: .circular(27),
         color: bubbleColor,
@@ -667,12 +667,12 @@ class _ExampleIsTypingState extends State<ExampleIsTyping> {
         children: [
           Expanded(
             child: ListView.builder(
-              padding: .symmetric(vertical: 8),
+              padding: const .symmetric(vertical: 8),
               itemCount: 25,
               reverse: true,
               itemBuilder: (context, index) {
                 return Padding(
-                  padding: .only(left: 100),
+                  padding: const .only(left: 100),
                   child: FakeMessage(isBig: index.isOdd),
                 );
               },
@@ -684,7 +684,7 @@ class _ExampleIsTypingState extends State<ExampleIsTyping> {
           ),
           Container(
             color: Colors.grey,
-            padding: .all(16),
+            padding: const .all(16),
             child: Center(
               child: CupertinoSwitch(
                 onChanged: (newValue) {
@@ -926,7 +926,7 @@ class StatusBubble extends StatelessWidget {
     return Container(
       width: 85,
       height: 44,
-      padding: .symmetric(horizontal: 8),
+      padding: const .symmetric(horizontal: 8),
       decoration: BoxDecoration(
         borderRadius: .circular(27),
         color: bubbleColor,
@@ -1012,10 +1012,10 @@ class FakeMessage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: .symmetric(vertical: 8, horizontal: 24),
+      margin: const .symmetric(vertical: 8, horizontal: 24),
       height: isBig ? 128 : 36,
       decoration: BoxDecoration(
-        borderRadius: .all(Radius.circular(8)),
+        borderRadius: const .all(Radius.circular(8)),
         color: Colors.grey.shade300,
       ),
     );

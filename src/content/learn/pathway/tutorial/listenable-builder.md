@@ -304,7 +304,7 @@ class ArticleWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: .all(8.0),
+      padding: const .all(8.0),
       child: Column(
         spacing: 10.0,
         children: [
@@ -329,7 +329,7 @@ class ArticleWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: .all(8.0),
+      padding: const .all(8.0),
       child: Column(
         spacing: 10.0,
         children: [
@@ -359,7 +359,7 @@ class ArticleWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: .all(8.0),
+      padding: const .all(8.0),
       child: Column(
         spacing: 10.0,
         children: [

@@ -23,7 +23,7 @@ class AnimatedLogo extends AnimatedWidget {
       child: Opacity(
         opacity: _opacityTween.evaluate(animation),
         child: Container(
-          margin: .symmetric(vertical: 10),
+          margin: const .symmetric(vertical: 10),
           height: _sizeTween.evaluate(animation),
           width: _sizeTween.evaluate(animation),
           child: const FlutterLogo(),

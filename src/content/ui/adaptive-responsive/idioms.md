@@ -116,7 +116,7 @@ return Scrollbar(
   controller: _scrollController,
   child: GridView.count(
     controller: _scrollController,
-    padding: .all(Insets.extraLarge),
+    padding: const .all(Insets.extraLarge),
     childAspectRatio: 1,
     crossAxisCount: colCount,
     children: listChildren,

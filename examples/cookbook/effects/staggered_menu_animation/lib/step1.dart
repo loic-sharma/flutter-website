@@ -50,7 +50,7 @@ class _MenuState extends State<Menu> {
     for (var i = 0; i < _menuTitles.length; ++i) {
       listItems.add(
         Padding(
-          padding: .symmetric(horizontal: 36, vertical: 16),
+          padding: const .symmetric(horizontal: 36, vertical: 16),
           child: Text(
             _menuTitles[i],
             textAlign: .left,
@@ -66,12 +66,12 @@ class _MenuState extends State<Menu> {
     return SizedBox(
       width: double.infinity,
       child: Padding(
-        padding: .all(24),
+        padding: const .all(24),
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
             shape: const StadiumBorder(),
             backgroundColor: Colors.blue,
-            padding: .symmetric(horizontal: 48, vertical: 14),
+            padding: const .symmetric(horizontal: 48, vertical: 14),
           ),
           onPressed: () {},
           child: const Text(

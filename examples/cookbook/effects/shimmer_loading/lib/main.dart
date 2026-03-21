@@ -7,7 +7,7 @@ class CircleListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: .symmetric(horizontal: 8, vertical: 8),
+      padding: const .symmetric(horizontal: 8, vertical: 8),
       child: Container(
         width: 54,
         height: 54,
@@ -37,7 +37,7 @@ class CardListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: .symmetric(horizontal: 24, vertical: 16),
+      padding: const .symmetric(horizontal: 24, vertical: 16),
       child: Column(
         crossAxisAlignment: .start,
         children: [_buildImage(), const SizedBox(height: 16), _buildText()],

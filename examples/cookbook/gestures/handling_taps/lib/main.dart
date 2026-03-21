@@ -46,7 +46,7 @@ class MyButton extends StatelessWidget {
       },
       // The custom button
       child: Container(
-        padding: .all(12),
+        padding: const .all(12),
         decoration: BoxDecoration(
           color: Colors.lightBlue,
           borderRadius: .circular(8),

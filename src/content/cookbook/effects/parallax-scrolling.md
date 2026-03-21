@@ -79,7 +79,7 @@ class LocationListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: .symmetric(horizontal: 24, vertical: 16),
+      padding: const .symmetric(horizontal: 24, vertical: 16),
       child: AspectRatio(
         aspectRatio: 16 / 9,
         child: ClipRRect(
@@ -615,7 +615,7 @@ class LocationListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: .symmetric(horizontal: 24, vertical: 16),
+      padding: const .symmetric(horizontal: 24, vertical: 16),
       child: AspectRatio(
         aspectRatio: 16 / 9,
         child: ClipRRect(

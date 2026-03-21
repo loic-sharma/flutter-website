@@ -95,7 +95,7 @@ class GuessInput extends StatelessWidget {
       children: [
         Expanded(
           child: Padding(
-            padding: .all(8.0),
+            padding: const .all(8.0),
             child: TextField(
               maxLength: 5,
               decoration: InputDecoration(
@@ -161,7 +161,7 @@ class GuessInput extends StatelessWidget {
       children: [
         Expanded(
           child: Padding(
-            padding: .all(8.0),
+            padding: const .all(8.0),
             child: TextField(
               maxLength: 5,
               decoration: InputDecoration(
@@ -198,7 +198,7 @@ class GuessInput extends StatelessWidget {
       children: [
         Expanded(
           child: Padding(
-            padding: .all(8.0),
+            padding: const .all(8.0),
             child: TextField(
               maxLength: 5,
               decoration: const InputDecoration(
@@ -242,7 +242,7 @@ class GuessInput extends StatelessWidget {
       children: [
         Expanded(
           child: Padding(
-            padding: .all(8.0),
+            padding: const .all(8.0),
             child: TextField(
               maxLength: 5,
               decoration: const InputDecoration(
@@ -284,7 +284,7 @@ class GuessInput extends StatelessWidget {
       children: [
         Expanded(
           child: Padding(
-            padding: .all(8.0),
+            padding: const .all(8.0),
             child: TextField(
               maxLength: 5,
               decoration: const InputDecoration(
@@ -343,7 +343,7 @@ class GuessInput extends StatelessWidget {
       children: [
         Expanded(
           child: Padding(
-            padding: .all(8.0),
+            padding: const .all(8.0),
             child: TextField(
               maxLength: 5,
               decoration: const InputDecoration(
@@ -413,7 +413,7 @@ class GuessInput extends StatelessWidget {
       children: [
         Expanded(
           child: Padding(
-            padding: .all(8.0),
+            padding: const .all(8.0),
             child: TextField(
               maxLength: 5,
               decoration: const InputDecoration(
@@ -468,7 +468,7 @@ class GuessInput extends StatelessWidget {
       children: [
         Expanded(
           child: Padding(
-            padding: .all(8.0),
+            padding: const .all(8.0),
             child: TextField(
               maxLength: 5,
               decoration: const InputDecoration(
@@ -511,7 +511,7 @@ class GamePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: .all(8.0),
+      padding: const .all(8.0),
       child: Column(
         spacing: 5.0,
         children: [
@@ -660,7 +660,7 @@ class GuessInput extends StatelessWidget {
       children: [
         Expanded(
           child: Padding(
-            padding: .all(8.0),
+            padding: const .all(8.0),
             child: TextField(
               maxLength: 5,
               focusNode: _focusNode,

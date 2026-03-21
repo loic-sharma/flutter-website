@@ -199,9 +199,9 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
       mainAxisSize: .min,
       children: [
         Container(
-          padding: .all(0),
+          padding: const .all(0),
           child: IconButton(
-            padding: .all(0),
+            padding: const .all(0),
             alignment: .center,
             [!icon: (_isFavorited!]
                 ? const Icon(Icons.star)

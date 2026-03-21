@@ -570,7 +570,7 @@ class SelectDevicePage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Padding(
-          padding: .symmetric(horizontal: 24),
+          padding: const .symmetric(horizontal: 24),
           child: Column(
             mainAxisSize: .min,
             children: [
@@ -639,7 +639,7 @@ class _WaitingPageState extends State<WaitingPage> {
     return Scaffold(
       body: Center(
         child: Padding(
-          padding: .symmetric(horizontal: 24),
+          padding: const .symmetric(horizontal: 24),
           child: Column(
             mainAxisSize: .min,
             children: [
@@ -664,7 +664,7 @@ class FinishedPage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Padding(
-          padding: .symmetric(horizontal: 24),
+          padding: const .symmetric(horizontal: 24),
           child: SingleChildScrollView(
             child: Column(
               mainAxisSize: .min,
@@ -728,7 +728,7 @@ class HomeScreen extends StatelessWidget {
       appBar: _buildAppBar(context),
       body: Center(
         child: Padding(
-          padding: .symmetric(horizontal: 24),
+          padding: const .symmetric(horizontal: 24),
           child: Column(
             mainAxisSize: .min,
             children: [
@@ -795,7 +795,7 @@ class SettingsScreen extends StatelessWidget {
             return Container(
               width: double.infinity,
               height: 54,
-              margin: .only(left: 16, right: 16, top: 16),
+              margin: const .only(left: 16, right: 16, top: 16),
               decoration: BoxDecoration(
                 borderRadius: .circular(8),
                 color: const Color(0xFF222222),

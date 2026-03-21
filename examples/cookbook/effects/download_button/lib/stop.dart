@@ -37,7 +37,7 @@ class ButtonShapeWidget extends StatelessWidget {
       width: double.infinity,
       decoration: shape,
       child: Padding(
-        padding: .symmetric(vertical: 6),
+        padding: const .symmetric(vertical: 6),
         child: AnimatedOpacity(
           duration: transitionDuration,
           opacity: isDownloading || isFetching ? 0.0 : 1.0,

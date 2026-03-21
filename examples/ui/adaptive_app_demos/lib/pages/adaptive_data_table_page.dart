@@ -58,7 +58,7 @@ class _TableHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Expanded(
     child: Padding(
-      padding: .all(Insets.medium),
+      padding: const .all(Insets.medium),
       child: Text(
         label,
         style: const TextStyle(fontWeight: .bold, fontSize: 16),
@@ -74,7 +74,7 @@ class _TableRowItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Expanded(
     child: Padding(
-      padding: .symmetric(
+      padding: const .symmetric(
         horizontal: Insets.medium,
         vertical: Insets.extraLarge,
       ),

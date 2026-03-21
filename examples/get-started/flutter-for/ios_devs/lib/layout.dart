@@ -67,7 +67,7 @@ class MyWidget extends StatelessWidget {
       body: Center(
         child: CupertinoButton(
           onPressed: () {},
-          padding: .only(left: 10, right: 10),
+          padding: const .only(left: 10, right: 10),
           child: const Text('Hello'),
         ),
       ),

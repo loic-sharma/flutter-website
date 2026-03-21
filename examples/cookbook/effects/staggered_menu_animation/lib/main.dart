@@ -229,7 +229,7 @@ class _MenuState extends State<Menu> with SingleTickerProviderStateMixin {
             );
           },
           child: Padding(
-            padding: .symmetric(horizontal: 36, vertical: 16),
+            padding: const .symmetric(horizontal: 36, vertical: 16),
             child: Text(
               _menuTitles[i],
               textAlign: .left,
@@ -246,7 +246,7 @@ class _MenuState extends State<Menu> with SingleTickerProviderStateMixin {
     return SizedBox(
       width: double.infinity,
       child: Padding(
-        padding: .all(24),
+        padding: const .all(24),
         child: AnimatedBuilder(
           animation: _staggeredController,
           builder: (context, child) {
@@ -265,7 +265,7 @@ class _MenuState extends State<Menu> with SingleTickerProviderStateMixin {
             style: ElevatedButton.styleFrom(
               shape: const StadiumBorder(),
               backgroundColor: Colors.blue,
-              padding: .symmetric(horizontal: 48, vertical: 14),
+              padding: const .symmetric(horizontal: 48, vertical: 14),
             ),
             onPressed: () {},
             child: const Text(

@@ -51,7 +51,7 @@ class _ExampleGradientBubblesState extends State<ExampleGradientBubbles> {
       child: Scaffold(
         appBar: AppBar(title: const Text('Flutter Chat')),
         body: ListView.builder(
-          padding: .symmetric(vertical: 16.0),
+          padding: const .symmetric(vertical: 16.0),
           reverse: true,
           itemCount: data.length,
           itemBuilder: (context, index) {
@@ -83,9 +83,9 @@ class MessageBubble extends StatelessWidget {
       child: Align(
         alignment: messageAlignment,
         child: Padding(
-          padding: .symmetric(vertical: 6.0, horizontal: 20.0),
+          padding: const .symmetric(vertical: 6.0, horizontal: 20.0),
           child: ClipRRect(
-            borderRadius: .all(Radius.circular(16.0)),
+            borderRadius: const .all(Radius.circular(16.0)),
             child: BubbleBackground(
               colors: [
                 if (message.isMine) ...const [
@@ -96,7 +96,7 @@ class MessageBubble extends StatelessWidget {
               child: DefaultTextStyle.merge(
                 style: const TextStyle(fontSize: 18.0, color: Colors.white),
                 child: Padding(
-                  padding: .all(12.0),
+                  padding: const .all(12.0),
                   child: child,
                 ),
               ),

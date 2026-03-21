@@ -201,7 +201,7 @@ class StatusBubble extends StatelessWidget {
     return Container(
       width: 85,
       height: 44,
-      padding: .symmetric(horizontal: 8),
+      padding: const .symmetric(horizontal: 8),
       decoration: BoxDecoration(
         borderRadius: .circular(27),
         color: bubbleColor,

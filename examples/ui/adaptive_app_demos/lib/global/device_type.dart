@@ -74,7 +74,7 @@ class MyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     // #docregion use-constants
     return Padding(
-      padding: .all(Insets.small),
+      padding: const .all(Insets.small),
       child: Text('Hello!', style: TextStyles.body1),
     );
     // #enddocregion use-constants

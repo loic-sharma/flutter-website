@@ -197,7 +197,7 @@ Widget build(BuildContext context) {
     body: Center(
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          padding: .only(left: 20, right: 30),
+          padding: const .only(left: 20, right: 30),
         ),
         onPressed: () {},
         child: const Text('Hello'),
@@ -832,7 +832,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
 
   Widget getRow(int i) {
     return Padding(
-      padding: .all(10),
+      padding: const .all(10),
       child: Text("Row ${widgets[i]["title"]}"),
     );
   }
@@ -1036,7 +1036,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
 
   Widget getRow(int i) {
     return Padding(
-      padding: .all(10),
+      padding: const .all(10),
       child: Text("Row ${widgets[i]["title"]}"),
     );
   }
@@ -1206,7 +1206,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
 
   Widget getRow(int i) {
     return Padding(
-      padding: .all(10),
+      padding: const .all(10),
       child: Text("Row ${widgets[i]["title"]}"),
     );
   }
@@ -1752,7 +1752,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
     List<Widget> widgets = [];
     for (int i = 0; i < 100; i++) {
       widgets.add(
-        Padding(padding: .all(10), child: Text('Row $i')),
+        Padding(padding: const .all(10), child: Text('Row $i')),
       );
     }
     return widgets;
@@ -1816,7 +1816,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
             developer.log('row tapped');
           },
           child: Padding(
-            padding: .all(10),
+            padding: const .all(10),
             child: Text('Row $i'),
           ),
         ),
@@ -1903,7 +1903,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
           developer.log('row $i');
         });
       },
-      child: Padding(padding: .all(10), child: Text('Row $i')),
+      child: Padding(padding: const .all(10), child: Text('Row $i')),
     );
   }
 }
@@ -1979,7 +1979,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
           developer.log('row $i');
         });
       },
-      child: Padding(padding: .all(10), child: Text('Row $i')),
+      child: Padding(padding: const .all(10), child: Text('Row $i')),
     );
   }
 }

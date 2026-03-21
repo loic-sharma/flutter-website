@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(title: Text(widget.title)),
       body: Padding(
-        padding: .all(20),
+        padding: const .all(20),
         child: Column(
           crossAxisAlignment: .start,
           children: [

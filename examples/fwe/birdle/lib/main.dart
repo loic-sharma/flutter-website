@@ -37,7 +37,7 @@ class _GamePageState extends State<GamePage> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: .all(8.0),
+      padding: const .all(8.0),
       child: Column(
         spacing: 5.0,
         mainAxisAlignment: .center,
@@ -87,7 +87,7 @@ class GuessInput extends StatelessWidget {
         SizedBox(
           width: 250,
           child: Padding(
-            padding: .all(8.0),
+            padding: const .all(8.0),
             child: TextField(
               maxLength: 5,
               decoration: const InputDecoration(

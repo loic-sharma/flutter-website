@@ -98,7 +98,7 @@ class _MyChatState extends State<MyChat> {
       child: DefaultTextStyle.merge(
         style: const TextStyle(fontSize: 18.0, color: Colors.white),
         child: Padding(
-          padding: .all(12),
+          padding: const .all(12),
           child: Text(message.text),
         ),
       ),

@@ -60,7 +60,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
           developer.log('row $i');
         });
       },
-      child: Padding(padding: .all(10), child: Text('Row $i')),
+      child: Padding(padding: const .all(10), child: Text('Row $i')),
     );
   }
 }

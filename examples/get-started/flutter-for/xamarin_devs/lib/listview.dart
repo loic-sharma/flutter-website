@@ -21,7 +21,7 @@ class SampleAppPage extends StatelessWidget {
     return List<Widget>.generate(
       100,
       (index) =>
-          Padding(padding: .all(10), child: Text('Row $index')),
+          Padding(padding: const .all(10), child: Text('Row $index')),
     );
   }
 

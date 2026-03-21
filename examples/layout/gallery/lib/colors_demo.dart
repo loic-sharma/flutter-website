@@ -131,7 +131,7 @@ class _ColorItem extends StatelessWidget {
       container: true,
       child: Container(
         height: _colorItemHeight,
-        padding: .symmetric(horizontal: 16),
+        padding: const .symmetric(horizontal: 16),
         color: color,
         child: Row(
           mainAxisAlignment: .spaceBetween,

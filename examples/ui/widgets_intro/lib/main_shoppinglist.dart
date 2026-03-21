@@ -93,7 +93,7 @@ class _ShoppingListState extends State<ShoppingList> {
     return Scaffold(
       appBar: AppBar(title: const Text('Shopping List')),
       body: ListView(
-        padding: .symmetric(vertical: 8),
+        padding: const .symmetric(vertical: 8),
         children: widget.products.map((product) {
           return ShoppingListItem(
             product: product,

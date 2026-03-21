@@ -67,7 +67,7 @@ class _LogoAppState extends State<LogoApp> {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        margin: .symmetric(vertical: 10),
+        margin: const .symmetric(vertical: 10),
         height: 300,
         width: 300,
         child: const FlutterLogo(),
@@ -111,7 +111,7 @@ The changes from the non-animated example are highlighted:
     Widget build(BuildContext context) {
       return Center(
         child: Container(
-          margin: .symmetric(vertical: 10),
+          margin: const .symmetric(vertical: 10),
 -         height: 300,
 -         width: 300,
 +         height: animation.value,
@@ -208,7 +208,7 @@ class AnimatedLogo extends AnimatedWidget {
     final animation = listenable as Animation<double>;
     return Center(
       child: Container(
-        margin: .symmetric(vertical: 10),
+        margin: const .symmetric(vertical: 10),
         height: animation.value,
         width: animation.value,
         child: const FlutterLogo(),
@@ -237,7 +237,7 @@ and it passes the `Animation` object to `AnimatedLogo`:
 +     final animation = listenable as Animation<double>;
 +     return Center(
 +       child: Container(
-+         margin: .symmetric(vertical: 10),
++         margin: const .symmetric(vertical: 10),
 +         height: animation.value,
 +         width: animation.value,
 +         child: const FlutterLogo(),
@@ -268,7 +268,7 @@ and it passes the `Animation` object to `AnimatedLogo`:
 -   Widget build(BuildContext context) {
 -     return Center(
 -       child: Container(
--         margin: .symmetric(vertical: 10),
+-         margin: const .symmetric(vertical: 10),
 -         height: animation.value,
 -         width: animation.value,
 -         child: const FlutterLogo(),
@@ -404,7 +404,7 @@ class LogoWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: .symmetric(vertical: 10),
+      margin: const .symmetric(vertical: 10),
       child: const FlutterLogo(),
     );
   }
@@ -480,7 +480,7 @@ in the bullet points above.
 +   @override
 +   Widget build(BuildContext context) {
 +     return Container(
-+       margin: .symmetric(vertical: 10),
++       margin: const .symmetric(vertical: 10),
 +       child: const FlutterLogo(),
 +     );
 +   }
@@ -597,7 +597,7 @@ class AnimatedLogo extends AnimatedWidget {
       [!child: Opacity(!]
         [!opacity: _opacityTween.evaluate(animation),!]
         child: Container(
-          margin: .symmetric(vertical: 10),
+          margin: const .symmetric(vertical: 10),
           height: [!_sizeTween.evaluate(animation),!]
           width: [!_sizeTween.evaluate(animation),!]
           child: const FlutterLogo(),

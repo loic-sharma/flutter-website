@@ -221,7 +221,7 @@ Widget build(BuildContext context) {
     body: Center(
       child: CupertinoButton(
         onPressed: () {},
-        padding: .only(left: 10, right: 10),
+        padding: const .only(left: 10, right: 10),
         child: const Text('Hello'),
       ),
     ),
@@ -826,7 +826,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
     final List<Widget> widgets = [];
     for (int i = 0; i < 100; i++) {
       widgets.add(
-        Padding(padding: .all(10), child: Text('Row $i')),
+        Padding(padding: const .all(10), child: Text('Row $i')),
       );
     }
     return widgets;
@@ -884,7 +884,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
             developer.log('row tapped');
           },
           child: Padding(
-            padding: .all(10),
+            padding: const .all(10),
             child: Text('Row $i'),
           ),
         ),
@@ -972,7 +972,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
           developer.log('row $i');
         });
       },
-      child: Padding(padding: .all(10), child: Text('Row $i')),
+      child: Padding(padding: const .all(10), child: Text('Row $i')),
     );
   }
 
@@ -1036,7 +1036,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
           developer.log('row $i');
         });
       },
-      child: Padding(padding: .all(10), child: Text('Row $i')),
+      child: Padding(padding: const .all(10), child: Text('Row $i')),
     );
   }
 
@@ -1494,7 +1494,7 @@ class _MyFormState extends State<MyForm> {
     return Scaffold(
       appBar: AppBar(title: const Text('Retrieve Text Input')),
       body: Padding(
-        padding: .all(16),
+        padding: const .all(16),
         child: TextField(controller: myController),
       ),
       floatingActionButton: FloatingActionButton(
@@ -1701,7 +1701,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
 
   Widget getRow(int index) {
     return Padding(
-      padding: .all(10),
+      padding: const .all(10),
       child: Text('Row ${data[index]['title']}'),
     );
   }
@@ -1930,7 +1930,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
 
   Widget getRow(int i) {
     return Padding(
-      padding: .all(10),
+      padding: const .all(10),
       child: Text("Row ${data[i]["title"]}"),
     );
   }
@@ -2057,7 +2057,7 @@ class _SampleAppPageState extends State<SampleAppPage> {
 
   Widget getRow(int i) {
     return Padding(
-      padding: .all(10),
+      padding: const .all(10),
       child: Text("Row ${data[i]["title"]}"),
     );
   }

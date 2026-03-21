@@ -52,7 +52,7 @@ class MyApp extends StatelessWidget {
     // #enddocregion stars
 
     final ratings = Container(
-      padding: .all(20),
+      padding: const .all(20),
       child: Row(
         mainAxisAlignment: .spaceEvenly,
         children: [
@@ -87,7 +87,7 @@ class MyApp extends StatelessWidget {
     final iconList = DefaultTextStyle.merge(
       style: descTextStyle,
       child: Container(
-        padding: .all(20),
+        padding: const .all(20),
         child: Row(
           mainAxisAlignment: .spaceEvenly,
           children: [
@@ -120,7 +120,7 @@ class MyApp extends StatelessWidget {
 
     // #docregion left-column
     final leftColumn = Container(
-      padding: .fromLTRB(20, 30, 20, 20),
+      padding: const .fromLTRB(20, 30, 20, 20),
       child: Column(children: [titleText, subTitle, ratings, iconList]),
     );
     // #enddocregion left-column
@@ -132,7 +132,7 @@ class MyApp extends StatelessWidget {
       // #docregion body
       body: Center(
         child: Container(
-          margin: .fromLTRB(0, 40, 0, 30),
+          margin: const .fromLTRB(0, 40, 0, 30),
           height: 600,
           child: Card(
             child: Row(

@@ -34,9 +34,9 @@ class MyApp extends StatelessWidget {
     child: Container(
       decoration: BoxDecoration(
         border: .all(width: 10, color: Colors.black38),
-        borderRadius: .all(Radius.circular(8)),
+        borderRadius: const .all(Radius.circular(8)),
       ),
-      margin: .all(4),
+      margin: const .all(4),
       child: Image.asset('images/pic$imageIndex.jpg'),
     ),
   );

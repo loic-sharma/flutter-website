@@ -610,7 +610,7 @@ final stars = Row(
 );
 
 final [!ratings!] = Container(
-  padding: .all(20),
+  padding: const .all(20),
   child: Row(
     mainAxisAlignment: .spaceEvenly,
     children: [
@@ -660,7 +660,7 @@ const descTextStyle = TextStyle(
 final [!iconList!] = DefaultTextStyle.merge(
   style: descTextStyle,
   child: Container(
-    padding: .all(20),
+    padding: const .all(20),
     child: Row(
       mainAxisAlignment: .spaceEvenly,
       children: [
@@ -697,7 +697,7 @@ as well as the title and text that describes the Pavlova:
 <?code-excerpt "layout/pavlova/lib/main.dart (left-column)" replace="/leftColumn/[!$&!]/g"?>
 ```dart
 final [!leftColumn!] = Container(
-  padding: .fromLTRB(20, 30, 20, 20),
+  padding: const .fromLTRB(20, 30, 20, 20),
   child: Column(children: [titleText, subTitle, ratings, iconList]),
 );
 ```
@@ -716,7 +716,7 @@ For more information, see [Adding assets and images][].
 ```dart
 body: Center(
   child: Container(
-    margin: .fromLTRB(0, 40, 0, 30),
+    margin: const .fromLTRB(0, 40, 0, 30),
     height: 600,
     child: Card(
       child: Row(
@@ -901,9 +901,9 @@ Widget _buildDecoratedImage(int imageIndex) => Expanded(
   child: [!Container!](
     decoration: BoxDecoration(
       border: .all(width: 10, color: Colors.black38),
-      borderRadius: .all(Radius.circular(8)),
+      borderRadius: const .all(Radius.circular(8)),
     ),
-    margin: .all(4),
+    margin: const .all(4),
     child: Image.asset('images/pic$imageIndex.jpg'),
   ),
 );
@@ -988,7 +988,7 @@ it's the entry in the "calorie" column for the "avocado" row), use
 ```dart
 Widget _buildGrid() => [!GridView!].extent(
   maxCrossAxisExtent: 150,
-  padding: .all(4),
+  padding: const .all(4),
   mainAxisSpacing: 4,
   crossAxisSpacing: 4,
   children: _buildGridTileList(30),

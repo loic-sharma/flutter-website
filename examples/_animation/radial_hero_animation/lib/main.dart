@@ -108,7 +108,7 @@ class RadialExpansionDemo extends StatelessWidget {
               Text(
                 description,
                 style: const TextStyle(fontWeight: .bold),
-                textScaler: .linear(3),
+                textScaler: const .linear(3),
               ),
               const SizedBox(height: 16),
             ],
@@ -163,7 +163,7 @@ class RadialExpansionDemo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Radial Transition Demo')),
       body: Container(
-        padding: .all(32),
+        padding: const .all(32),
         alignment: FractionalOffset.bottomLeft,
         child: Row(
           mainAxisAlignment: .spaceBetween,

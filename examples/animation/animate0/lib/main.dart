@@ -14,7 +14,7 @@ class _LogoAppState extends State<LogoApp> {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        margin: .symmetric(vertical: 10),
+        margin: const .symmetric(vertical: 10),
         height: 300,
         width: 300,
         child: const FlutterLogo(),
